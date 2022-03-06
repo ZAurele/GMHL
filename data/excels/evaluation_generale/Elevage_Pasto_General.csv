@@ -1,0 +1,16 @@
+Q_ID;Question;R1;R2;R3;R4;R5;R6;R7;R8;R9
+pasto1;Pratiquez vous l'élevage de plein air durant une certaine partie de l'année ?;Ne sais pas / Non applicable;Non;Oui, moins de 6 mois dans l'année;Oui, plus de 6 mois dans l'année;NA;NA;NA;NA;NA
+pasto2;Pratiquez vous le pâturage libre ?;Ne sais pas / Non applicable;Non;Oui;NA;NA;NA;NA;NA;NA
+pasto3;Pratiquez vous un élevage sédentaire ?;Ne sais pas / Non applicable;Oui;Non;NA;NA;NA;NA;NA;NA
+pasto4;A quelle fréquence visitez-vous un même lot en moyenne ?;Ne sais pas / Non applicable;Plusieurs fois par jour (2>=);1 fois par jour;Quelques fois par semaine (mais pas par jour);Une fois par semaine;Moins d'une fois par semaine;NA;NA;NA
+pasto5;Combien de bêtes se trouvent sur votre exploitation ?;Ne sais pas / Non applicable;0 à 100;101 à 200;201 à 300;301 à 600;601 à 1000;1001 à 1500;1501 à 2000;Au moins 2001 et plus
+pasto6;Combien de lots simultanés avez vous ?;Ne sais pas / Non applicable;1;2;3;>3;NA;NA;NA;NA
+pasto7;Combien de bêtes constituent vos lots ?;Ne sais pas / Non applicable;0 à 100;101 à 200;201 à 300;301 à 600;Plus de 600;NA;NA;NA
+pasto8;Quel est le ratio entre la taille de votre cheptel et l'UTH (Unité de temps Humain)?;Ne sais pas / Non applicable;1 UTH pour 0 à 100;1 UTH pour 101 à 200;1 UTH pour 201 à 300;1 UTH pour  301 à 600;1 UTH pour 601 et plus;NA;NA;NA
+pasto9;Regroupez vous vos bêtes la nuit ?;Ne sais pas / Non applicable;Oui, dans un parc ou un abri clos;Oui, sans parc clos;Non;NA;NA;NA;NA;NA
+pasto10;Vos bêtes sont elles confinées en abri de nuit ?;Ne sais pas / Non applicable;Oui, imperméables;Oui, perméables aux prédateurs;Absence;NA;NA;NA;NA;NA
+pasto11;Utilisez-vous des cabanes de mise bas ?;Ne sais pas / Non applicable;Oui;Non;NA;NA;NA;NA;NA;NA
+pasto12;Si oui, dans quel état sont ces cabanes ?;Ne sais pas / Non applicable;Imperméables;Perméables aux prédateurs;NA;NA;NA;NA;NA;NA
+pasto13;Les naissances s'effectuent-elles à l'exterieur ?;Ne sais pas / Non applicable;Non;Oui;NA;NA;NA;NA;NA;NA
+pasto14;combien de temps votre troupeau passe-t-il sur ce parc de pâturage à l'année ?;Ne sais pas / Non applicable;< 1 semaine;< 2 semaines;< 1 mois;< 2 mois;> 2 mois;NA;NA;NA
+pasto15;Retirez vous les carcasses/ placentas /dechets de vos parcs systématiquement (< 24h) ?;Ne sais pas / Non applicable;oui;non;NA;NA;NA;NA;NA;NA

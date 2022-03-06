@@ -1,0 +1,7 @@
+Q_ID;Question;R1;R1;R2;R3;R4;R5;R6
+stru1;Quel type de parc avez vous ?;Ne sais pas / Non applicable;Parc electrique avec combinaison de clotûres fixes et mobiles ou semi mobiles;Parc electrique fixe;Parc mobile ou semi mobile;Parc mobile non electrifié;Parc fixe non electrifié;Pas de clôtures
+stru2;Quel est l'état général de vos clôtures ?;Ne sais pas / Non applicable;Bon (clôtures neuve ou en parfait état, transmission electrique fluide, fils et pquets en parfait état );Moyen (quelques signes de faiblesses, transmission moyenne de l'lectricité);Mauvais (clôtures dégradées, mauvaise transmission de l'electricité, etc.);NA;NA;NA
+stru3;Souhaitez vous mettre en place des moyens de protection ?;Ne sais pas / Non applicable;Oui;Non;NA;NA;NA;NA
+stru4;Des protections d'urgence sont elles disponibles (Lumineuse, olfactive, sonores, physiques) en cas de risque accru d'exposition à la prédation ?;Ne sais pas / Non applicable;Au moins 3 de type différents;Au moins 2 de types différents;Au moins 1;Aucune;NA;NA
+stru5;Un système d'alarme localisé est il disponible pour se prévenir de faits de prédation (Maploup, ProxyLoup, Groupes whatsapp…etc)?;Ne sais pas / Non applicable;Oui, MapLoup ou ProxyLoup ;Oui, Groupes whatsapp ou autre;Non;NA;NA;NA
+stru6;Les tirs ont ils été mis en place dans le cas de prédation par le Loup gris ?;Ne sais pas / Non applicable;Létal selectif (tirs de défense simple);Non létal (tir d'éffarouchement);Létal non selectif;NA;NA;NA

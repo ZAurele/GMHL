@@ -1,0 +1,44 @@
+header.faible > :last-child {
+	border-bottom: solid 3px #01B0F0;
+	display: inline-block;
+	margin: 0 0 2em 0;
+	padding: 0 0.75em 0.5em 0;
+}
+
+.faibleColor {
+	color: #01B0F0;
+}
+
+header.normal > :last-child {
+	border-bottom: solid 3px #3498db;
+	display: inline-block;
+	margin: 0 0 2em 0;
+	padding: 0 0.75em 0.5em 0;
+}
+
+.normalColor {
+	color: #3498db;
+}
+
+header.forte > :last-child {
+	border-bottom: solid 3px #000000;
+	display: inline-block;
+	margin: 0 0 2em 0;
+	padding: 0 0.75em 0.5em 0;
+}
+
+.forteColor {
+	color: #000000;
+}
+
+h3.profil > :last-child {
+	border-bottom: solid 3px #3498db;
+	display: inline-block;
+	margin: 0 0 2em 0;
+	padding: 0 0.75em 0.5em 0;
+}
+
+.logo{
+	max-width: 400px;
+	height: auto;
+}

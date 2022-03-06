@@ -1,0 +1,365 @@
+Q_ID;Reponse;Score;Score_Max
+pasto1;Ne sais pas / Non applicable;NA;3
+pasto1;Non;1;3
+pasto1;Oui, moins de 6 mois dans l'année;2;3
+pasto1;Oui, plus de 6 mois dans l'année;3;3
+pasto2;Ne sais pas / Non applicable;NA;10
+pasto2;Non;1;10
+pasto2;Oui;10;10
+pasto3;Ne sais pas / Non applicable;NA;0
+pasto3;Oui;0;0
+pasto3;Non;0;0
+pasto4;Ne sais pas / Non applicable;NA;8
+pasto4;Plusieurs fois par jour (2>=);1;8
+pasto4;1 fois par jour;2;8
+pasto4;Quelques fois par semaine (mais pas par jour);4;8
+pasto4;Une fois par semaine;6;8
+pasto4;Moins d'une fois par semaine;8;8
+pasto5;Ne sais pas / Non applicable;NA;14
+pasto5;0 à 100;1;14
+pasto5;101 à 200;2;14
+pasto5;201 à 300;3;14
+pasto5;301 à 600;4;14
+pasto5;601 à 1000;8;14
+pasto5;1001 à 1500;10;14
+pasto5;1501 à 2000;12;14
+pasto5;Au moins 2001 et plus;14;14
+pasto6;Ne sais pas / Non applicable;NA;5
+pasto6;1;1;5
+pasto6;2;2;5
+pasto6;3;4;5
+pasto6;>3;5;5
+pasto7;Ne sais pas / Non applicable;NA;5
+pasto7;0 à 100;1;5
+pasto7;101 à 200;2;5
+pasto7;201 à 300;3;5
+pasto7;301 à 600;4;5
+pasto7;Plus de 600;5;5
+pasto8;Ne sais pas / Non applicable;NA;6
+pasto8;1 UTH pour 0 à 100;1;6
+pasto8;1 UTH pour 101 à 200;2;6
+pasto8;1 UTH pour 201 à 300;3;6
+pasto8;1 UTH pour  301 à 600;4;6
+pasto8;1 UTH pour 601 et plus;6;6
+pasto9;Ne sais pas / Non applicable;NA;3
+pasto9;Oui, dans un parc ou un abri clos;1;3
+pasto9;Oui, sans parc clos;2;3
+pasto9;Non;3;3
+pasto10;Ne sais pas / Non applicable;NA;3
+pasto10;Oui, imperméables;1;3
+pasto10;Oui, perméables aux prédateurs;2;3
+pasto10;Absence;3;3
+pasto11;Ne sais pas / Non applicable;NA;2
+pasto11;Oui;1;2
+pasto11;Non;2;2
+pasto12;Ne sais pas / Non applicable;NA;2
+pasto12;Imperméables;1;2
+pasto12;Perméables aux prédateurs;2;2
+pasto13;Ne sais pas / Non applicable;NA;6
+pasto13;Non;1;6
+pasto13;Oui;6;6
+pasto14;Ne sais pas / Non applicable;NA;5
+pasto14;< 1 semaine;1;5
+pasto14;< 2 semaines;2;5
+pasto14;< 1 mois;3;5
+pasto14;< 2 mois;4;5
+pasto14;> 2 mois;5;5
+pasto15;Ne sais pas / Non applicable;NA;3
+pasto15;oui;1;3
+pasto15;non;3;3
+ani1;Ne sais pas / Non applicable;NA;5
+ani1;Equins;1;5
+ani1;Bovins;2;5
+ani1;Caprins;4;5
+ani1;Ovins;5;5
+ani2;Ne sais pas / Non applicable;NA;3
+ani2;Lait;1;3
+ani2;Génetique, viande, autre;3;3
+ani3;Ne sais pas / Non applicable;NA;4
+ani3;1;1;4
+ani3;2;2;4
+ani3;3;3;4
+ani3;>3;4;4
+ani4;Ne sais pas / Non applicable;NA;2
+ani4;"Troupeau ""bavard"" ou qui prévient en cas d'évement inhabituel, troupeau équipé de sonnaille";1;2
+ani4;Troupeau silencieux ou qui ne prévient pas;2;2
+ani5;Ne sais pas / Non applicable;NA;4
+ani5;Regroupement;1;4
+ani5;Dispersion;4;4
+ani6;Ne sais pas / Non applicable;NA;5
+ani6;Les bêtes viennent spontannément au contact de l'eleveur dès qu'elles le voient;1;5
+ani6;Les bêtes viennent au contact de l'éleveur lorsqu'il les appelent;2;5
+ani6;Les bêtes sont indifférentes/ne bougent pas lorsque l'éleveur les appelent, mais elles restent calmes lorsqu'il vient les voir;3;5
+ani6;Les bêtes s'éloignent ou ne bougent pas lorsque l'eleveur les appèlent et partent lorsqu'il vient à leur contact;4;5
+ani6;Les bêtes s'éloignent à la vue de l'éleveur;5;5
+ani7;Ne sais pas / Non applicable;NA;4
+ani7;Troupeau apaisé, mange correctement, prise de poids bonne;1;4
+ani7;Difficultés à prendre du poids;2;4
+ani7;Signes de stress;3;4
+ani7;Signes de stress importants, prostration;4;4
+ani8;Ne sais pas / Non applicable;NA;6
+ani8;<1% ;1;6
+ani8;<5% ;2;6
+ani8;5 à 10% ;3;6
+ani8;10 à 20% ;5;6
+ani8;>20% ;6;6
+stru1;Ne sais pas / Non applicable;NA;10
+stru1;Parc electrique avec combinaison de clotûres fixes et mobiles ou semi mobiles;1;10
+stru1;Parc electrique fixe;2;10
+stru1;Parc mobile ou semi mobile;3;10
+stru1;Parc mobile non electrifié;6;10
+stru1;Parc fixe non electrifié;8;10
+stru1;Pas de clôtures;10;10
+stru2;Ne sais pas / Non applicable;NA;6
+stru2;Bon (clôtures neuve ou en parfait état, transmission electrique fluide, fils et pquets en parfait état );1;6
+stru2;Moyen (quelques signes de faiblesses, transmission moyenne de l'lectricité);3;6
+stru2;Mauvais (clôtures dégradées, mauvaise transmission de l'electricité, etc.);6;6
+stru3;Ne sais pas / Non applicable;NA;5
+stru3;Oui;1;5
+stru3;Non;5;5
+stru4;Ne sais pas / Non applicable;NA;4
+stru4;Au moins 3 de type différents;1;4
+stru4;Au moins 2 de types différents;2;4
+stru4;Au moins 1;3;4
+stru4;Aucune;4;4
+stru5;Ne sais pas / Non applicable;NA;2
+stru5;Oui, MapLoup ou ProxyLoup;1;2
+stru5;Oui, Groupes whatsapp ou autre;1;2
+stru5;Non;2;2
+stru6;Ne sais pas / Non applicable;NA;5
+stru6;Létal selectif (tirs de défense simple);1;5
+stru6;Non létal (tir d'éffarouchement);3;5
+stru6;Létal non selectif;5;5
+viv1;Ne sais pas / Non applicable;NA;5
+viv1;Diurne et nocturne;1;5
+viv1;Nocturne;2;5
+viv1;Diurne;3;5
+viv1;Aucun;5;5
+viv2;Ne sais pas / Non applicable;NA;6
+viv2;> 10 ans;1;6
+viv2;> 5 ans;2;6
+viv2;> 1 an;3;6
+viv2;< 1 an;4;6
+viv2;absence;6;6
+viv3;Ne sais pas / Non applicable;NA;2
+viv3;Oui;1;2
+viv3;Non;2;2
+viv4;Ne sais pas / Non applicable;NA;3
+viv4;Oui, formation théorique et pratique (Idele, Chambre d'agriculture, ADEAR, etc.);1;3
+viv4;Oui, formation autodidacte;2;3
+viv4;Non;3;3
+viv5;Ne sais pas / Non applicable;NA;20
+viv5;Chien de protection de troupeau;1;20
+viv5;âne, lama, vache (Herens);6;20
+viv5;Autre animal de protection (Bouc, chien de compagnie, oies…etc);12;20
+viv5;absence;20;20
+viv6;Ne sais pas / Non applicable;NA;5
+viv6;non ;1;5
+viv6;oui;5;5
+viv7;Ne sais pas / Non applicable;NA;10
+viv7;PLus de 3 chiens pour 100 brebis ;1;10
+viv7;3 chiens pour 100 brebis;2;10
+viv7;2 chiens pour 100 brebis  ;3;10
+viv7;1 chien pour 100 brebis ;4;10
+viv7;< 1 chien pour 100 brebis ;6;10
+viv7;<1 chien pour 200 brebis;8;10
+viv7;0 chiens ;10;10
+viv8;Ne sais pas / Non applicable;NA;9
+viv8;Très bonne;1;9
+viv8;Bonne;2;9
+viv8;Moyenne;4;9
+viv8;Mauvaise;7;9
+viv8;Très mauvaise;9;9
+viv9;Ne sais pas / Non applicable;NA;5
+viv9;> 6 mois;1;5
+viv9;Entre 3 et 6 mois;2;5
+viv9;Entre 1 et 3 mois;3;5
+viv9;< 1 mois;4;5
+viv9;Aucune;5;5
+viv10;Ne sais pas / Non applicable;NA;4
+viv10;Non;1;4
+viv10;Oui, sans explication;2;4
+viv10;Oui, suite à un traumatisme mais pas en lien avec un facteur externe (promeneur, bruit, etc.);3;4
+viv10;Oui, suite à un traumatisme en lien avec un prédateur;4;4
+viv11;Ne sais pas / Non applicable;NA;4
+viv11;Non;1;4
+viv11;Oui, sans explication;2;4
+viv11;Oui, vous avez été témoin d'une expérience négative (confrontation, etc.) entre votre chien et un facteur externe (promeneur, bétail, etc.) ;3;4
+viv11;Oui, vous avez été témoin d'une confrontation entre votre chien et un predateur;4;4
+viv12;Ne sais pas / Non applicable;NA;4
+viv12;Oui, il intervient immédiatement ;1;4
+viv12;Oui, avec hésitation;2;4
+viv12;Non, n'intervient pas ;3;4
+viv12;Non, prend la fuite;4;4
+viv13;Ne sais pas / Non applicable;NA;4
+viv13;Oui, toujours;1;4
+viv13;Oui, la majorité du temps;2;4
+viv13;Variable ;3;4
+viv13;Non;4;4
+viv14;Ne sais pas / Non applicable;NA;5
+viv14;3 à 7 ans;1;5
+viv14;1 à 3 ans;3;5
+viv14;> 7 ans;4;5
+viv14;< 1 an;5;5
+viv15;Ne sais pas / Non applicable;NA;4
+viv15;Tolérant  ;1;4
+viv15;Amical ;2;4
+viv15;Agressif ;4;4
+viv16;Ne sais pas / Non applicable;NA;5
+viv16;Oui au moins 1 fois  ;1;5
+viv16;Oui occasionnellement 1 fois / an ;2;5
+viv16;Oui plusieurs fois par an ;3;5
+viv16;Peut être  ;4;5
+viv16;Probable ;5;5
+viv17;Ne sais pas / Non applicable;NA;1
+viv17;Oui;1;1
+viv17;Non;1;1
+viv18;Ne sais pas / Non applicable;NA;4
+viv18;Oui, par des professionnels des chiens de protections (tout au long du développement du/des chien(s));1;4
+viv18;Oui, lors de la mise en place ou de l'achat seulement (2 ou 3 visites par des professionnels);2;4
+viv18;Oui, par des collègues éleveurs non professionnels des chiens de protection;3;4
+viv18;Non;4;4
+viv19;Ne sais pas / Non applicable;NA;4
+viv19;Plus de 4 fois par an ;1;4
+viv19;de 3 à 4 fois par an;2;4
+viv19;De 1 à 2 fois par an;3;4
+viv19;Moins de 1 fois par an ;4;4
+viv20;Ne sais pas / Non applicable;NA;3
+viv20;>1;1;3
+viv20;Plus de 1 ;2;3
+viv20;1;3;3
+viv21;Ne sais pas / Non applicable;NA;5
+viv21;J'ai plusieurs cpt depuis plus de 5 ans ;1;5
+viv21;J'ai plusieurs cpt depuis moins de 5 ans ;2;5
+viv21;J'ai un CPT depuis plus de 5 ans;3;5
+viv21;J'ai un CPT depuis moins de 5 ans ;4;5
+viv21;Absence;5;5
+viv22;Ne sais pas / Non applicable;NA;8
+viv22;Plusieurs chiens depuis plusieurs années sur tout le troupeau ;1;8
+viv22;1 CPT depuis plusieurs années sur plusieurs lots;2;8
+viv22;1 Chien de protection quelques mois sur 1 seul lot (tout le troupeau ne connait pas le chien) ;4;8
+viv22;Légère;6;8
+viv22;Nul ;8;8
+ecoG1;Ne sais pas / Non applicable;NA;5
+ecoG1;O, un seul tenant;1;5
+ecoG1;L, T,U;3;5
+ecoG1;Dispersé;5;5
+ecoG2;Ne sais pas / Non applicable;NA;8
+ecoG2;< 100 m;1;8
+ecoG2;< 1 km;2;8
+ecoG2;< 10 km;3;8
+ecoG2;< 20km;6;8
+ecoG2;> 20 km;8;8
+ecoG3;Ne sais pas / Non applicable;NA;2
+ecoG3;Oui;1;2
+ecoG3;Non;2;2
+ecoG4;Ne sais pas / Non applicable;NA;2
+ecoG4;Oui;1;2
+ecoG4;Non;2;2
+ecoG5;Ne sais pas / Non applicable;NA;3
+ecoG5;Bonne;1;3
+ecoG5;Moyenne;2;3
+ecoG5;Mauvaise;3;3
+ecoG6;Ne sais pas / Non applicable;NA;3
+ecoG6;Non;1;3
+ecoG6;Oui, mais <10 heures par semaine;2;3
+ecoG6;Oui >10 heures par semaine;3;3
+ecoG7;Ne sais pas / Non applicable;NA;4
+ecoG7;10 ans et plus;1;4
+ecoG7;Entre 1 et 10 ans;2;4
+ecoG7;Moins d'un an;4;4
+ecoG8;Ne sais pas / Non applicable;NA;8
+ecoG8;Cercle 0;1;8
+ecoG8;Cercle 1;2;8
+ecoG8;Cercle 2;4;8
+ecoG8;Cercle 3;5;8
+ecoG8;Aucun;8;8
+ecoG9;Ne sais pas / Non applicable;NA;4
+ecoG9;Oui, main d'œuvre compétente et efficace;1;4
+ecoG9;Oui, main d'œuvre moyennement compétente et efficace;2;4
+ecoG9;Non;3;4
+ecoG9;Oui, main d'œuvre non compétente ou efficace;4;4
+soc1;Ne sais pas / Non applicable;NA;4
+soc1;> 10 ans;1;4
+soc1;entre 5 et 10 ans;2;4
+soc1;< 5 ans;3;4
+soc1;< 2 ans;4;4
+soc2;Ne sais pas / Non applicable;NA;4
+soc2;> 10 ans;1;4
+soc2;entre 5 et 10 ans;2;4
+soc2;< 5 ans;3;4
+soc2;< 2 ans;4;4
+soc3;Ne sais pas / Non applicable;NA;3
+soc3;Oui, de façon réccurente;1;3
+soc3;Oui, occasionnellement;2;3
+soc3;Non;3;3
+soc4;Ne sais pas / Non applicable;NA;6
+soc4;Oui, formations;1;6
+soc4;Oui, autoformations;3;6
+soc4;Non;6;6
+soc5;Ne sais pas / Non applicable;NA;6
+soc5;Pluridisciplinaire (pastoralistes, écologues, éthologues, comportementalistes..etc) sans conflits entre les accompagnants;1;6
+soc5;Pluridisciplinaire (pastoralistes, écologues, éthologues, comportementalistes..etc) avec conflits entre les accompagnants;2;6
+soc5;Monodisciplinaire;3;6
+soc5;Aucun;6;6
+soc6;Ne sais pas / Non applicable;NA;3
+soc6;Associations, spécialistes …etc;1;3
+soc6;Familles, amis;2;3
+soc6;Aucun;3;3
+soc7;Ne sais pas / Non applicable;NA;6
+soc7;0;1;6
+soc7;1 à 2;2;6
+soc7;3 à 4 ;3;6
+soc7;5 à 6 ;4;6
+soc7;7 à 8 ;5;6
+soc7;9 à 10;6;6
+soc8;Ne sais pas / Non applicable;NA;6
+soc8;Apaisé, pas ou peu de conflits et difficultés;1;6
+soc8;Quelques conflits et difficultés soutenables;2;6
+soc8;Conflits et difficultés majeurs;4;6
+soc8;Situation insoutenable avec necessité de faire appel à un accompagnement;6;6
+mil1;Ne sais pas / Non applicable;NA;2
+mil1;Proximité d'un GR, route ou sentiers frequemment empruntés;1;2
+mil1;Non;2;2
+mil2;Ne sais pas / Non applicable;NA;6
+mil2;Bonne visibilité, temps clair (>3kms);1;6
+mil2;Bonne visibilité, temps gris (<3kms );2;6
+mil2;Visibilité moyenne (<1km);3;6
+mil2;Visibilité mauvaise (<500m);5;6
+mil2;Visibilité très mauvaise (<50m);6;6
+bio1;Ne sais pas / Non applicable;NA;5
+bio1;Novembre/décembre;1;5
+bio1;Janvier/Fevrier;2;5
+bio1;Octobre;3;5
+bio1;Mars à mai;4;5
+bio1;Juin à septembre;5;5
+bio2;Ne sais pas / Non applicable;NA;9
+bio2;> 40 km;1;9
+bio2;>20 km;3;9
+bio2;> 10km;5;9
+bio2;> 5 km;7;9
+bio2;< 5 km;9;9
+bio3;Ne sais pas / Non applicable;NA;4
+bio3;> 1 an;1;4
+bio3;> 1 mois;2;4
+bio3;< 1 mois;3;4
+bio3;< 1 semaine;4;4
+bio4;Ne sais pas / Non applicable;NA;3
+bio4;Oui;1;3
+bio4;Non;3;3
+bio5;Ne sais pas / Non applicable;NA;10
+bio5;Pas de cercle;1;10
+bio5;Cercle 3;4;10
+bio5;Cercle 2;6;10
+bio5;Cercle 1;8;10
+bio5;Cercle 0;10;10
+bio6;Ne sais pas / Non applicable;NA;5
+bio6;>6;2;5
+bio6;Entre 4 et 6;3;5
+bio6;Entre 2 et 4;4;5
+bio6;<2;5;5
+bio7;Ne sais pas / Non applicable;NA;5
+bio7;Présence occasionelle de loups solitaires;2;5
+bio7;ZPP non meutes;3;5
+bio7;ZPP meutes;4;5
+bio7;ZPP meutes avec foyers de prédation;5;5

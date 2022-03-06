@@ -1,0 +1,10 @@
+Q_ID;Question;R1;R2;R3;R4;R5;R6
+envp1;Y a t-il la présence de tourisme/loisir dérangeant autour de votre exploitation/votre parc ?;Ne sais pas / Non applicable;Proximité d'un GR, route ou sentiers frequemment empruntés;Non;NA;NA;NA
+envp2;Proximité d'un élevage de gibier;Ne sais pas / Non applicable;Permeable au passage de prédateurs;Non;Imperméable au passage de prédateurs;NA;NA
+envp3;Quelle catégorie de cours d'eau situé le plus à proximité ?;Ne sais pas / Non applicable;Fleuve, rivière majeure, etc. : largeur du cours d'eau supérieur à 20 mètres;Rivière mineure, fleuve cotier : largeur comprise entre 4 et 20 mètres;Torrent : largeur comprise entre 2m50 et 4 mètres.;Ruisseau : largeur comprise en 1m et 2m50;Rigole, ru, ruisselet : Largeur inférieure à 1 mètre
+envp4;Quel est le type de sol sur vos pâturages ?;Ne sais pas / Non applicable;Frais;Humide ou sec;Innondé ou désséché;NA;NA
+envp5;Y a t-il des objets remarquables dans le pâturage (objets imposants, rochers, tas de bois, etc.) ?;Ne sais pas / Non applicable;Non;Oui;NA;NA;NA
+envp6;Dans quel type de relief vos bêtes sont elles en pâturage ?;Ne sais pas / Non applicable;Bonne visibilité grâce au relief : l'ensemble du pâturage ou de l'exploitation est visible;Visibilité moyenne : certains élements du relief empêchent de voir l'ensemble de l'exploitation ou du pâturage à moins de se deplacer;Visibilité mauvaise : le relief ne permet pas de bien voir l'exploitation ou le pâturage;NA;NA
+envp7;Quel est le niveau d'embroussaillement du ou des pâturages que vous exploitez ?;Ne sais pas / Non applicable;<10%;<20%;<40%;<50%;>50%
+envp8;Quelle est la hauteur de la végétation attenante à la parcelle ?;Ne sais pas / Non applicable;Végétation très basse : < 30 cm;Végétation basse : 30 cm à 1 mètre;Vegetation moyenne : 1 à 2 mètres;Végétation haute : 2 à 7 mètres;Végétation très haute : > 8 mètres
+envp9;A quelle période de l'année votre parcelle est-elle pâturée ? ;Ne sais pas / Non applicable;Novembre/décembre;Janvier/Fevrier;Octobre;Mars à mai;Juin à septembre

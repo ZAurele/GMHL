@@ -1,0 +1,9 @@
+Q_ID;Question;R1;R2;R3;R4;R5;R6
+elep1;Y a-t-il un abri fermé dans votre pâturage ?;Ne sais pas / Non applicable;Oui;Non;NA;NA;NA
+elep2;Dans le cas où vous évaluez une parcelle, combien de temps votre troupeau passe-t-il sur ce parc de pâturage à l'année ?;Ne sais pas / Non applicable;< 1 semaine;< 2 semaines;< 1 mois;< 2 mois;> 2 mois
+elep3;Comment se distribuent les points d'eau dans et autour du parc ?;Ne sais pas / Non applicable;Présence de points d'eau à l'interieur et en dehors du parc de pâturage;Présence d'un point d'eau uniquement à l'interieur du parc de pâturage;NA;NA;NA
+elep4;Quelle est la situation du point d'eau dans le parc ? ;Ne sais pas / Non applicable;Point d'eau accessible facilement, vue dégagée et fuite aisée. ;Point d'eau difficilement acessible, vue peu dégagée et/ou fuite compliquée. ;NA;NA;NA
+elep5;Comment réagissent vos bêtes face à une perturbation ?;Ne sais pas / Non applicable;Regroupement;Dispersion;NA;NA;NA
+elep6;Quelle est l'attitude de vos bêtes lorsque vous venez à leur rencontre ?;Ne sais pas / Non applicable;Les bêtes viennent spontannément au contact de l'eleveur dès qu'elles le voient;Les bêtes viennent au contact de l'éleveur lorsqu'il les appelent;Les bêtes sont indifférentes/ne bougent pas lorsque l'éleveur les appelent, mais elles restent calmes lorsqu'il vient les voir;Les bêtes s'éloignent ou ne bougent pas lorsque l'eleveur les appèlent et partent lorsqu'il vient à leur contact;Les bêtes s'éloignent à la vue de l'éleveur
+elep7;Comment définiriez vous le comportement de vos bêtes ?;Ne sais pas / Non applicable;Troupeau apaisé, mange correctement, prise de poids bonne;Difficultés à prendre du poids;Signes de stress;Signes de stress importants, prostration;NA
+elep8;Quel est le pourcentage d'animaux pouvant avoir des difficultés à se déplacer dans votre troupeau ? ;Ne sais pas / Non applicable;<1% ;<5% ;5 à 10% ;10 à 20% ;>20% 
