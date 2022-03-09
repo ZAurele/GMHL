@@ -21,6 +21,7 @@ $user = "";
 $passwd = "";
 $db = "";
 
+
 if (is_localhost()) {
 	$host="localhost";
 	$user="";
