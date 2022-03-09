@@ -13,6 +13,7 @@ function validateDate($date){
 
 function get_user_pseudo($id) {
     $user_infos = select_request_s($GLOBALS['link'],'profils',false,'user_id',$id);    
+    if($user_infos==null) return '';
     if ($user_infos['profil_view'] == 'nom-prenom') {        
         return $user_infos['prenom'].' '.$user_infos['nom'];    
     }    

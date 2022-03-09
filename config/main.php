@@ -20,6 +20,7 @@ if( ! ini_get('date.timezone') ){
 
 // Utils
 include "src/functions.php";
+include "config/constants.php";
 include "configuration.php";
 
 // SRC
