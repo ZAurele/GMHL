@@ -70,6 +70,7 @@ if(isset($_SESSION['login_user']) && empty($_POST['logout'])){
         update_request(array('connexions'=>$connexions),$link,'users','id',$row['id']);
     }
     
+    $firstlogin = false;
     if ($row['startTime'] == '0000-00-00 00:00:00') {
         $firstlogin = true;
         update_request(array('startTime'=>date('Y-m-d G:i:s')),$link,'users','id',$row['id']);
@@ -83,49 +84,43 @@ if(isset($_SESSION['login_user']) && empty($_POST['logout'])){
     $logged = true;
     
     // PROFILS
+    $default_profils_infos = array(
+        "user_id" => $user_id_session,
+        "nom" => '',
+        "prenom" => '',
+        "email" => '',
+        "email_enable" => '',
+        "profil_view" => '',
+        "frequence_notifications" => '',
+        "country" => "fr",
+        "description" => '',
+        "messageMail" => '',
+        "notificationMail" => '',
+        "privateMail" => ''
+    );
+
     $sql = "select * from profils where user_id = '$user_id_session'";
     $ses_sql = mysqli_query($link,$sql);
-    $profils_infos = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
+    $PROFILS = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
     
-    $profil_found = $profils_infos != null && sizeof($profils_infos)!=0;
+    if(!($PROFILS != null && sizeof($PROFILS)!=0)) {
+        insert_request($default_profils_infos,$link,'profils');
+        $PROFILS = $default_profils_infos;
+    }
     
     if($_SERVER["REQUEST_METHOD"] == "POST") {
         if (!empty($_POST['action'])){
-    
             if ($_POST['action'] == 'updateProfil'){
-                if (!$profil_found) {
-                    $profils_infos = array(
-                            "user_id" => $user_id_session,
-                            "nom" => '',
-                            "prenom" => '',
-                            "email" => '',
-                            "email_enable" => '',
-                            "profil_view" => '',
-                            "frequence_notifications" => '',
-                            "proprietaire" => false,
-                            "description" => '',
-                            "etage" => $appartement[0],
-                            "syndic" => NULL,
-                    		"messageMail" => '',
-                    		"notificationMail" => '',
-                    		"privateMail" => ''
-                    );
-                }
-                foreach ($profils_infos as $key => $element) {
+                foreach ($PROFILS as $key => $element) {
                     if (isset($_POST[$key])) {
-                        $profils_infos[$key] = $_POST[$key];
+                        $PROFILS[$key] = $_POST[$key];
                     }
                 }
                 
-                if ($profil_found) {
-                    update_request($profils_infos,$link,'profils','user_id',$_SESSION['login_id']);
-                }
-                else {                    
-                    insert_request($profils_infos,$link,'profils');
-                }
+                update_request($PROFILS,$link,'profils','user_id',$_SESSION['login_id']);
             }
         }
-    }
+    } 
 }
 
 if (isset($_GET['nonVu'])) {
@@ -153,4 +148,6 @@ if($logged) {
 }
 
 $USER_ID = isset($_SESSION['login_id']) ? $_SESSION['login_id']: -1;
+
+$PSEUDO = get_user_pseudo($USER_ID)
 ?>

@@ -1,12 +1,7 @@
 <div align="right">
                 <?php 
-                if ($user['syndic'] == '1') {
-                    echo '<span class="icon fa-handshake-o"></span> ';
-                }
                 $user_icon = "user";
-                if ($user['proprietaire']) {
-                    $user_icon = "user-secret";
-                }
+                $country = $user['country']; #TODO: update
                 if (!$author):
                 ?>
                 <a href="?page=message&amp;to=<?=$message['user_id']?>" style="font-size:14px;" class="icon fa-<?=$user_icon?>"> <?=$user_link?> </a>le 

@@ -11,34 +11,28 @@
 
 		<!-- Menu -->
 			<nav id="menu">
+				<ul>
+					<li><a href="?page=main" class="icon fa-home"> Acceuil</a></li>
+				</ul>
+
 				<header class="major">
 					<h2>Questionnaires</h2>
 				</header>
 				<ul>
 					<?php 
 					foreach($QUESTIONS as $category => $cat_cf) {
+
 					?>
 					<li>
-						<span class="opener"><span class="icon fa-bars"> <?=$cat_cf["text"]?></span></span>
+						<span class="opener">
+							<i class="icon fa-<?=$cat_cf["icon"]?>" style="color:<?=$cat_cf["color"]?>"> </i><?=$cat_cf["text"]?>
+						</span>
 						<ul>
 						<?php 
-							foreach($cat_cf["values"] as $type => $cf) {
-								$sql = "select count(*) as nb from questionnaires where category = '".$category."' and type = '".$type."' and user_id = ".$USER_ID." and answer != ''";
-								$req = request($link,$sql,true);
-								$rows = $req->fetch_all(MYSQLI_ASSOC);
-								$nb = $rows[0]['nb'];
-
-								$values = $QUESTIONS[$category]["values"][$type]["values"];
-								$complete =  ''.$nb == ''.count($values);
-
-								$cf['icon'] = $complete ? 'check-square-o' : 'square-o';
-								$color = $complete ? '#27ae60' : '#d35400';
-
-								$icon = 'class="icon fa-'.$cf['icon'].'"';
-					
-								$url = '?page=questions&amp;category='.$category.'&amp;type='.$type;
-								echo '<li><a href="'.$url.'" '.$icon.' style="color:'.$color.' !important; text-transform: none !important;"> '.$cf['text'].'</a></li>';
-							}
+							foreach($cat_cf["values"] as $type => $cf) { ?>
+								<li><a href="<?=$cf['url']?>" style="text-transform: none !important;">
+									<i class="icon fa-<?=$cf['icon']?>" style="color:<?=$cf['color']?>"></i> <?=$cf['text']?></a></li>
+							<?php }
 						?>
 						</ul>
 					</li>
@@ -48,7 +42,7 @@
 				</ul>
 
 				<header class="major">
-					<h2>Résultat</h2>
+					<h2>Résultats</h2>
 				</header>
 				<ul>
 					<?php 
@@ -56,7 +50,7 @@
 						$url = '?page=results&amp;category='.$category;
 					?>
 					<li>
-						<span><a href="<?=$url?>"><span class="icon fa-chart-bar"></span> <?=$cat_cf["text"]?></a></span>
+						<a href="<?=$url?>"><i class="icon fa-bar-chart" style="color:<?=$cf['color']?>"></i> <?=$cat_cf["text"]?></a>
 					</li>
 					<?php
 					}
@@ -82,7 +76,7 @@
 			
 			<section>
 				<form action="" method="post">
-					<input type="submit" value="Logout" name="logout" width="100%" class="button small fit"/>
+					<input type="submit" value="Se déconnecter" name="logout" width="100%" class="button small fit"/>
 				</form>
 			</section>
 			

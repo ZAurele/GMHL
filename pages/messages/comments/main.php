@@ -13,15 +13,7 @@ if ($message['comments'] != '') {
         }
         echo formatO($comment['comment']);
         
-        $sender = select_request_s($link,'profils',false,'user_id',$comment['sender']);
-        $sender_user = select_request_s($link,'users',false,'id',$comment['sender']);
-        
-        if ($sender['profil_view'] == 'nom-prenom') {
-            $user_comment_link = $sender['prenom'] . ' ' . $sender['nom'];
-        }
-        else {
-            $user_comment_link = 'Appartement n°'.$sender_user['appartement'];
-        }
+        $user_comment_link = get_user_pseudo($comment['sender']);
         
         echo '<span style="font-size:14px;color:#000000"><br/>'.$comment['creation_time'].' <a href="?page=message&amp;to='.$comment['sender'].'" class="icon fa-user"> '.$user_comment_link.'</a></span>';
         echo '</blockquote>';

@@ -23,7 +23,7 @@ if($to != NULL) {
     if ($message != '') {
         $message .= '</br></br>';
     }
-    $message .= 'Message à '.get_user_infos($to);   
+    $message .= 'Message à '.get_user_pseudo($to);   
 }
 
 if ($message != ''):

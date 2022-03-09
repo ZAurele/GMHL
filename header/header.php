@@ -1,16 +1,8 @@
 <?php if ($logged) :?>
-     <a href="index.php" class="logo"><strong> <?=$project?> 
-     <?php if (isset($etat_chauffage)):?>
-        (<span style="color:<?=$etat_chauffage['couleur']?>;" class="icon fa-thermometer">  <?=$etat_chauffage['complement']?></span>
-        - <span style="color:<?=$etat_eau['couleur']?>;" class="icon fa-shower">  <?=$etat_eau['complement']?></span> 
-        - <span style="color:<?=$etat_chauffage['couleur']?>;" class="icon fa-bolt">  <?=$etat_chauffage['complement']?></span>
-        - <span style="color:<?=$etat_ascenseur['couleur']?>;" class="icon fa-cogs">  <?=$etat_ascenseur['complement']?></span>
-        )
-    <?php endif;?>
-    :</strong> 
-    <span class="icon fa-building-o"> Appartement <?=$appartement?></span>
-    - 
-    <span class="icon fa-user-circle"> <?=$profils_infos['nom']?></span> <?=$profils_infos['prenom']?></a>
+    <img src="images/GMHL_Logo.png" class="logo-small"/>
+    <a href="index.php?page=profil" class="profil">
+
+    <span class="icon fa-user-circle"> <img src="images/<?=$PROFILS['country']?>.svg" class="flag-small"/> <?=$PSEUDO?></span> </a>
         
     <ul class="icons">
         <li>

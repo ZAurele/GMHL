@@ -109,15 +109,7 @@ foreach ($messages as $message):
 		continue;
 	}
 
-	$user = select_request_s($link,'profils',false,'user_id',$message['user_id']);
-	$user_user = select_request_s($link,'users',false,'id',$message['user_id']);
-
-	if ($user['profil_view'] == 'nom-prenom') {
-		$user_link = $user['prenom'] . ' ' . $user['nom'];
-	}
-	else {
-		$user_link = 'Appartement n°'.$user_user['appartement'];
-	}
+	$user_link = get_user_pseudo($message['user_id']);
 	
 	$prio_style = $message['priority'];
 	
@@ -281,13 +273,8 @@ foreach ($messages as $message):
 			
 			<div align="right">
 				<?php 
-                if ($user['syndic'] == '1') {
-                    echo '<span class="icon fa-users"></span> ';
-                }
 				$user_icon = "user";
-				if ($user['proprietaire']) {
-					$user_icon = "user-secret";
-				}
+				$country = $user['country']; #TODO: update
 				if (!$author):
 				?>
 				<a href="?page=message&amp;to=<?=$message['user_id']?>" style="font-size:14px;" class="icon fa-<?=$user_icon?>"> <?=$user_link?> </a>le 
@@ -361,13 +348,8 @@ foreach ($messages as $message):
 					$sender = select_request_s($link,'profils',false,'user_id',$comment['sender']);
 					$sender_user = select_request_s($link,'users',false,'id',$comment['sender']);
 					
-					if ($sender['profil_view'] == 'nom-prenom') {
-						$user_comment_link = $sender['prenom'] . ' ' . $sender['nom'];
-					}
-					else {
-						$user_comment_link = 'Appartement n°'.$sender_user['appartement'];
-					}
-					
+					$user_comment_link = get_user_pseudo($comment['sender']);
+
 					echo '<span style="font-size:14px;color:#000000"><br/>'.$comment['creation_time'].' <a href="?page=message&amp;to='.$comment['sender'].'" class="icon fa-user"> '.$user_comment_link.'</a></span>';
 					echo '</blockquote>';
 				}

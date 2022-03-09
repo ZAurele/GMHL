@@ -11,6 +11,10 @@
         <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
         <!-- <script src="https://use.fontawesome.com/c22f5a017c.js"></script>-->
         <script src="js/functions.js"></script>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     </head>
     <body>
 
@@ -32,7 +36,7 @@
                                 </div>
                             <?php endif;?>
                                                         
-                            <?php include "pages/".$currentPage;?>
+                            <?php include "pages/".$PAGE;?>
 
                             <div align="center"><a href="#header" class="button"><b class="icon fa-arrow-up"></b></a></div>
                         </div>
@@ -50,6 +54,8 @@
 
             <?php 
             if (isset($_GET['page']) && $_GET['page'] == "results" && isset($_GET['category'])):
+                $title = $QUESTIONS[$_GET["category"]]["text"];
+
                 ?>
                 <script src="https://code.highcharts.com/highcharts.js"></script>
                 <script src="https://code.highcharts.com/highcharts-more.js"></script>
@@ -61,20 +67,11 @@
                     if (data) {
                     Highcharts.chart('chart-container', {
                         chart: {
-                            type: 'dumbbell',
                             inverted: true
                         },
 
-                        legend: {
-                            enabled: false
-                        },
-
-                        subtitle: {
-                            text: '1960 vs 2018'
-                        },
-
                         title: {
-                            text: '<?=$_GET['category']?>'
+                            text: '<?=$title?>'
                         },
 
                         tooltip: {
@@ -82,18 +79,50 @@
                         },
 
                         xAxis: {
-                            type: 'category'
+                            categories: [<?=$CATEGORIES?>]
                         },
 
                         yAxis: {
                             title: {
-                                text: 'Life Expectancy (years)'
-                            }
+                                text: 'Score (%)'
+                            },
+                            min:0,
+                            max:100
                         },
 
                         series: [{
-                            name: 'Life expectancy change',
-                            data: data
+                            type: 'columnrange',
+                            name: 'Différence',
+                            data: data,
+                            pointWidth:5,
+                            opacity:0.8,
+                            showInLegend: false
+                        },
+                        {
+                            type: 'line',
+                            name: 'Vous',
+                            data: dataV,
+                            lineWidth:0,
+                            color: '#3498db',
+                            marker: {
+                                radius:8
+                            },
+                            states: {
+                                hover: {
+                                    lineWidthPlus:0
+                                }
+                            }
+                        },
+                        {
+                            type: 'line',
+                            name: 'Les autres',
+                            data: dataA,
+                            lineWidth:0,
+                            states: {
+                                hover: {
+                                    lineWidthPlus:0
+                                }
+                            }
                         }]
 
                         });

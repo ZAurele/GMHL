@@ -9,13 +9,15 @@ function validateDate($date){
     return $d && $d->format('Y-m-d') === $date;
 }
 
-function get_user_infos($id) {    
-    $user = select_request_s($GLOBALS['link'],'profils',false,'user_id',$id);    
-    if ($user['profil_view'] == 'nom-prenom') {        
-        return $user['prenom'].' - '.$user['nom'];    
+
+
+function get_user_pseudo($id) {
+    $user_infos = select_request_s($GLOBALS['link'],'profils',false,'user_id',$id);    
+    if ($user_infos['profil_view'] == 'nom-prenom') {        
+        return $user_infos['prenom'].' '.$user_infos['nom'];    
     }    
-    $user = select_request_s($GLOBALS['link'],'users',false,'id',$id);   
-    return 'Appartement '.$user['appartement'];
+    $user = select_request_s($GLOBALS['link'],'users',false,'id',$id); 
+    return $user['username'];
 }
 
 function formatO($text) {    
@@ -101,20 +103,6 @@ function debug($text) {
     error_log(date("Y-m-d H:i:s")."> ".$text."\n", 3, "./log/debug.log");
 }
 
-function encrypt($pure_string, $encryption_key) {	
-    $iv_size = mcrypt_get_iv_size(MCRYPT_BLOWFISH, MCRYPT_MODE_ECB);	
-    $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);	
-    $encrypted_string = mcrypt_encrypt(MCRYPT_BLOWFISH, $encryption_key, utf8_encode($pure_string), MCRYPT_MODE_ECB, $iv);
-    return $encrypted_string;
-}
-
-function decrypt($encrypted_string, $encryption_key) {	
-    $iv_size = mcrypt_get_iv_size(MCRYPT_BLOWFISH, MCRYPT_MODE_ECB);	
-    $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
-    $decrypted_string = mcrypt_decrypt(MCRYPT_BLOWFISH, $encryption_key, $encrypted_string, MCRYPT_MODE_ECB, $iv);	
-    return $decrypted_string;
-}
-
 function formatBytes($size, $precision = 2){	$base = log($size, 1024);	$suffixes = array('', 'K', 'M', 'G', 'T');	return round(pow(1024, $base - floor($base)), $precision) .' '. $suffixes[floor($base)];}
 
 function genererPseudo($caracteres=5,$type=1){
@@ -181,5 +169,12 @@ function genererPseudo($caracteres=5,$type=1){
 
 function capitalize($s) {
     return mb_strtoupper( mb_substr( $s, 0, 1 )) . mb_substr( $s, 1 );
+}
+
+function is_localhost() {
+	return true;
+	$whitelist = array( '127.0.0.1', '::1' );
+	if( in_array( $_SERVER['REMOTE_ADDR'], $whitelist) )
+		return true;
 }
 ?>

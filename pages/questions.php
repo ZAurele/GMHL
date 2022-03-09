@@ -15,11 +15,7 @@ if (isset($_POST["update_questions"]) && isset($_POST["category"]) && isset($_PO
                 "user_id" => $USER_ID
             );
             if (''.$value == '') $value = 0;
-            $sql_insert = "insert into questionnaires (category, type, id, answer, user_id)" ;
-            $sql_insert .= " values ('".$_POST["category"]."', '".$_POST["type"]."', '".$key."', ".$value.", ".$USER_ID.")";
-            $sql_insert .= " on duplicate key update answer = ".$value;
-            //$sql_insert .= " where category = '".$_POST["category"]."' and type = '".$_POST["type"]."' and id = '".$key."' and user_id = ".$USER_ID;
-            $req = request($link,$sql_insert);
+            update_answer($link, $_POST["category"], $_POST["type"], $key, $value, $USER_ID);
         }
     }
 }

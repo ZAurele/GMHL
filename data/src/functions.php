@@ -74,4 +74,19 @@ function getNewNotificationsNumber($link,$user_id_session,$private=false) {
 		return $received_messages;
 	}
 }
+
+function array_key_max_value($array)
+{
+    $max = null;
+    $result = null;
+	
+    foreach ($array as $key => $value) {
+        if ($max === null || $value > $max) {
+            $result = $key;
+            $max = $value;
+        }
+    }
+
+    return $result;
+}
 ?>

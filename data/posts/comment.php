@@ -28,6 +28,6 @@ if (!(in_array($_POST['comment_id'], $existing_comments))) {
 
 	set_values_specified_for_all_users($link,'rComments','users',format($_POST['comment_id']),"id",$user_id_session);
     
-    mailForAllUsers($link,$profils_infos,$DATE,$user_id_session,'new_comment');
+    mailForAllUsers($link,$PROFILS,$DATE,$user_id_session,'new_comment');
 }
 ?>

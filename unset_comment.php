@@ -1,7 +1,7 @@
 <?php
 include 'src/functions.php';
 include 'src/database.php';
-include 'utils/constants.php';
+include 'configuration.php';
 
 $link = new mysqli($host,$user,$passwd,$db);
 

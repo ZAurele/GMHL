@@ -42,3 +42,37 @@ h3.profil > :last-child {
 	max-width: 400px;
 	height: auto;
 }
+
+.logo-small{
+	max-width: 200px;
+	height: auto;
+	position: absolute;
+	left:38%;
+	top: 20px;
+}
+
+.flag {
+	height: 25px;
+	width: auto;
+}
+
+.flag-small {
+	height: 15px;
+	width: auto;
+	margin-bottom: -2px;
+}
+
+.home-block {
+	padding: 20px !important;
+    margin: 20px !important;
+    border-radius: 15px;
+}
+
+.home-blocks {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}

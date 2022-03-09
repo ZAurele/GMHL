@@ -183,7 +183,7 @@ function set_values_specified_for_all_users($link,$dbname,$table,$element,$keyUn
 	}
 }
 
-function mailForAllUsers($link,$profils_infos,$date,$user_id_session,$type) {
+function mailForAllUsers($link,$PROFILS,$date,$user_id_session,$type) {
 	$profils = select_request($link,"SELECT * FROM profils where user_id <> $user_id_session");
 	
 	switch($type) {
@@ -214,10 +214,10 @@ function mailForAllUsers($link,$profils_infos,$date,$user_id_session,$type) {
 	}
 	
 	
-	foreach ($profils as $profils_infos) {
+	foreach ($profils as $PROFILS) {
 	
-		if(($profils_infos[$activationName] == 'on')){
-			goMail($link,$profils_infos,$title,$date);
+		if(($PROFILS[$activationName] == 'on')){
+			goMail($link,$PROFILS,$title,$date);
 		}
 	}
 }

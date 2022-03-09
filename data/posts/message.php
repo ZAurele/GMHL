@@ -87,14 +87,14 @@ if ($error_message == '') {
     // MAILS
     if (!$modify) {
 		if (!$posts['private']) {
-			mailForAllUsers($link,$profils_infos,$DATE,$user_id_session,'new_message');
+			mailForAllUsers($link,$PROFILS,$DATE,$user_id_session,'new_message');
 		} else {
             $profil_private = select_request_s($link,'profils',false,'user_id',$posts['private']);
             goMail($link,$profil_private,'Nouveau message privé',$DATE);
 		}
     } else {
 		if (!$posts['private']) {
-			mailForAllUsers($link,$profils_infos,$DATE,$user_id_session,'update_message');
+			mailForAllUsers($link,$PROFILS,$DATE,$user_id_session,'update_message');
 		} else {
             $profil_private = select_request_s($link,'profils',false,'user_id',$posts['private']);
             goMail($link,$profil_private,'Nouveau message privé',$DATE);
