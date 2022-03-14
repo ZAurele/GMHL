@@ -15,16 +15,9 @@ function started($user) {
     $connectedUsers = array();
     
     foreach ($users as $user) {
-        $appartement = $user['appartement'];
-        
-        if (!array_key_exists($appartement,$connectedUsers)) {
-            $connectedUsers[$appartement] = false;
-        }
-        
+                
         if (started($user)) {
             $started++;
-            
-            $connectedUsers[$appartement] = true;
         }
         
         if (started($user)) {

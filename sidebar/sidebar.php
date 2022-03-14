@@ -10,13 +10,26 @@
 			</section>
 
 		<!-- Menu -->
+
 			<nav id="menu">
 				<ul>
-					<li><a href="?page=main" class="icon fa-home"> Acceuil</a></li>
+					<li><a href="?page=accueilducerp" class="icon fa-home"> Accueil</a></li>
 				</ul>
 
 				<header class="major">
-					<h2>Questionnaires</h2>
+					<h2>A propos du CERP</h2>
+				</header>
+				<ul>
+				<li><a href="?page=histoireducerp" class="icon fa-home"> Histoire du CERP</a></li>
+				<li><a href="?page=accueilducerp" class="icon fa-home"> Accueil </a></li>
+				<li><a href="?page=quisommesnous" class="icon fa-home"> Qui sommes nous</a></li>
+				<li><a href="?page=porteursducerp" class="icon fa-home"> Les porteurs du CERP</a></li>
+				<li><a href="?page=correspondantslocaux" class="icon fa-home"> Les correspondants locaux</a></li>
+
+				</ul>
+			
+				<header class="major">
+					<h2>Questionnaire</h2>
 				</header>
 				<ul>
 					<?php 

@@ -35,13 +35,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             }                    
 
             if($count == 1) { 
-                debug("Found user ".implode(",",$row))    ;       
-                if (Password::verify($password,$row['password'])) {
+                debug("Found user ".implode(",",$row))    ;  
+ 
+                if (Password::verify(trim($password),$row['password'])) {
                     //session_register("username");
                     debug("Connected:".$username);
                     $_SESSION['login_user'] = $username;
                     $_SESSION['login_id'] = $row['id'];
-                    $_SESSION['login_appartement'] = $row['appartement'];
                 }
             }
         }
@@ -78,7 +78,6 @@ if(isset($_SESSION['login_user']) && empty($_POST['logout'])){
     
     $updated_time = $row['modificationTime'];
     $user_id_session = $row['id'];
-    $appartement = $row['appartement'];
     $login_session = $row['username'];
     
     $logged = true;

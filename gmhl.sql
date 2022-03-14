@@ -743,24 +743,16 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `username` text NOT NULL,
   `password` text NOT NULL,
-  `appartement` int(11) NOT NULL,
   `startTime` datetime NOT NULL,
   `modificationTime` datetime NOT NULL,
-  `connexions` text NOT NULL,
-  `rMessages` text NOT NULL,
-  `rComments` text NOT NULL
+  `connexions` text,
+  `rMessages` text ,
+  `rComments` text 
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `users`
 --
-
-INSERT INTO `users` (`id`, `username`, `password`, `appartement`, `startTime`, `modificationTime`, `connexions`, `rMessages`, `rComments`) VALUES
-(1, 'Cofae', '6b0c653eceb9194fca965355603080728b2aa8a952776addbf16fbfa9cf7a2a533b7a3c65c938abad28d2b4eef3bafbb0a925ebd9d910c6487ee13c4e3b32640', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', '240', ''),
-(2, 'Fecol', '6b0c653eceb9194fca965355603080728b2aa8a952776addbf16fbfa9cf7a2a533b7a3c65c938abad28d2b4eef3bafbb0a925ebd9d910c6487ee13c4e3b32640', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', '240', ''),
-(3, 'Zeige', '6b0c653eceb9194fca965355603080728b2aa8a952776addbf16fbfa9cf7a2a533b7a3c65c938abad28d2b4eef3bafbb0a925ebd9d910c6487ee13c4e3b32640', 0, '2022-03-05 12:00:34', '2022-03-05 12:00:34', '2022-03-05', '', ''),
-(4, 'Cozie', '6b0c653eceb9194fca965355603080728b2aa8a952776addbf16fbfa9cf7a2a533b7a3c65c938abad28d2b4eef3bafbb0a925ebd9d910c6487ee13c4e3b32640', 0, '2022-03-05 18:43:20', '2022-03-08 10:05:34', '2022-03-05,2022-03-05,2022-03-05,2022-03-05,2022-03-05,2022-03-05,2022-03-06,2022-03-06,2022-03-06,2022-03-06,2022-03-06,2022-03-06,2022-03-06,2022-03-06,2022-03-06,2022-03-06,2022-03-06,2022-03-06,2022-03-07,2022-03-08,2022-03-09', '', '');
-
 --
 -- Index pour les tables déchargées
 --

@@ -10,7 +10,7 @@ function etat_bi($array,$key,$etats,$appartement,$link) {
 			
 		$profil = select_request_s($link,'profils',false,'user_id',$element['user_id'],'DESC');
 
-		$messages .= "Ap. ".$appartement." - ".$profil['prenom']." ".$profil['nom'].": <b style='color:".$etats[$element[$key]][0].";'>".$etats[$element[$key]][1]."</b></br>";
+		$messages .= $profil['prenom']." ".$profil['nom'].": <b style='color:".$etats[$element[$key]][0].";'>".$etats[$element[$key]][1]."</b></br>";
 
 		if ($element[$key] == 0) {
 			$counter_0 += 1;

@@ -44,11 +44,11 @@ h3.profil > :last-child {
 }
 
 .logo-small{
-	max-width: 200px;
-	height: auto;
-	position: absolute;
-	left:38%;
-	top: 20px;
+	max-width: 500px;
+    height: auto;
+    position: absolute;
+    left: 20%;
+    top: 20px;
 }
 
 .flag {

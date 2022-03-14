@@ -95,7 +95,9 @@ foreach($QUESTIONS as $category => $cf_cat) {
             if (!isset($SCORES_MAX[$category][$type]))
                 $SCORES_MAX[$category][$type] = 0;
             if (!isset($SCORES_MAX[$category][$type][$id])) {
+                try {
                 $SCORES_MAX[$category][$type] += $bareme_question["score_max"];
+                } catch(Exception $e) {echo '';}
             }
         }
 

@@ -2,27 +2,26 @@
 
 <h2>Article 1 : Objet</h2>
 
-<p>Les présentes CGU ou Conditions Générales d'Utilisation encadrent juridiquement l'utilisation des services du site lapetiteperle (ci-après dénommé « le site »).
+<p>Les présentes CGU ou Conditions Générales d'Utilisation encadrent juridiquement l'utilisation des services du site projetcerp.
 
-Constituant le contrat entre la société La Petite Perle, l'Utilisateur, l'accès au site doit être précédé de l'acceptation de ces CGU. L'accès à cette plateforme signifie l'acceptation des présentes CGU.
+Constituant le contrat entre les structures porteuses du CERP, l'Utilisateur, l'accès au site doit être précédé de l'acceptation de ces CGU. L'accès à cette plateforme signifie l'acceptation des présentes CGU.
 </p>
 
 <h2>Article 2 : Mentions légales</h2>
 
 <p>
-L'édition du site lapetiteperle est assurée par la société La Petite Perle inscrite au RCS sous le numéro 451 432 228, dont le siège social est localisé au 3 Rue Docteur Joubert, 59110, La Madeleine, France Métropolitaine.
-
-L'hébergeur du site lapetiteperle.fr est la société LHW, sise au 5 Rue Keller, 59100 Roubaix, France.
+L'édition du site projetcerp.com est assurée par les partenaires du projet CERP à savoir : Le Groupe Mammalogique et Herpétologique du Limousin et l'institut Senckenberg.
+L'hébergeur du site projetcerp.com est la société OVH, située au 2 rue Kellermann – BP 80157 59053 ROUBAIX CEDEX 1.
 </p>
 
 <h2>Article 3 : Accès au site</h2>
 
 <p>
-Le site lapetiteperle permet d'accéder gratuitement aux services suivants :
-
-Vente de bijoux (en or, en argent&) ;
-Location de bijoux (en or, en argent&) ;
-Dépôt-vente de bijoux.
+Le site projetcerp.com permet d'accéder gratuitement aux services suivants :
+- Enquête sociale
+- Diagnostic d'exploitation
+- Diagnostic de parcelle 
+- Forum pour les membres 
 Le site est accessible gratuitement depuis n'importe où par tout utilisateur disposant d'un accès à Internet. Tous les frais nécessaires pour l'accès aux services (matériel informatique, connexion Internet&) sont à la charge de l'utilisateur.
 
 L'accès aux services dédiés aux membres s'effectue à l'aide d'un identifiant et d'un mot de passe.
@@ -39,28 +38,32 @@ Suivant la loi Informatique et Libertés en date du 6 janvier 1978, articles 39 
 
 Le formulaire de contact ;
 Son espace client.
+
+Les utilisateurs bénéficient d'identifiants anonymisés à leur inscription. Ils peuvent choisir de lever cet anonymat et afficher leur identité. Les membres fondateurs et partenaires du projet CERP se déchargent de toute responsabilité en cas de problème relatif à la levée volontaire de l'anonymat de l'utilisateur. 
 </p>
 
 <h2>Article 5 : Propriété intellectuelle</h2>
 
 <p>
-Les marques, logos ainsi que les contenus du site lapetiteperle (illustrations graphiques, textes&) sont protégés par le Code de la propriété intellectuelle et par le droit d'auteur.
+Les marques, logos ainsi que les contenus du site projetcerp (illustrations graphiques, textes&) sont protégés par le Code de la propriété intellectuelle et par le droit d'auteur.
 
 La reproduction et la copie des contenus par l'Utilisateur requièrent une autorisation préalable du site. Dans ce cas, toute utilisation à des usages commerciaux ou à des fins publicitaires est proscrite.
+
+Toute utilisation frauduleuse de la plateforme et de son contenu expose à des poursuites judicaires. 
+
 </p>
 
 <h2>Article 6 : Responsabilité</h2>
 
 <p>
-Bien que les informations publiées sur le site soient réputées fiables, le site se réserve la faculté d'une non-garantie de la fiabilité des sources.
+Bien que les informations publiées sur le site soient réputées fiables, le site se réserve la faculté d'une non-garantie de la fiabilité des sources issues de la partie discussion dans le site.
 
-Les informations diffusées sur le site lapetiteperle sont présentées à titre purement informatif et sont sans valeur contractuelle. En dépit des mises à jour régulières, la responsabilité du site ne peut être engagée en cas de modification des dispositions administratives et juridiques apparaissant après la publication. Il en est de même pour l'utilisation et l'interprétation des informations communiquées sur la plateforme.
+Les informations diffusées sur le site projetcerp sont présentées à titre purement informatif et sont sans valeur contractuelle. En dépit des mises à jour régulières, la responsabilité du site ne peut être engagée en cas de modification des dispositions administratives et juridiques apparaissant après la publication. Il en est de même pour l'utilisation et l'interprétation des informations communiquées sur la plateforme.
 
 Le site décline toute responsabilité concernant les éventuels virus pouvant infecter le matériel informatique de l'Utilisateur après l'utilisation ou l'accès à ce site.
 
 Le site ne peut être tenu pour responsable en cas de force majeure ou du fait imprévisible et insurmontable d'un tiers.
 
-La garantie totale de la sécurité et la confidentialité des données n'est pas assurée par le site. Cependant, le site s'engage à mettre en Suvre toutes les méthodes requises pour le faire au mieux.
 </p>
 
 <h2>Article 7 : Liens hypertextes</h2>
@@ -76,17 +79,16 @@ Lors des visites sur le site, l'installation automatique d'un cookie sur le logi
 
 Les cookies correspondent à de petits fichiers déposés temporairement sur le disque dur de l'ordinateur de l'Utilisateur. Ces cookies sont nécessaires pour assurer l'accessibilité et la navigation sur le site. Ces fichiers ne comportent pas d'informations personnelles et ne peuvent pas être utilisés pour l'identification d'une personne.
 
-L'information présente dans les cookies est utilisée pour améliorer les performances de navigation sur le site lapetiteperle.fr.
+L'information présente dans les cookies est utilisée pour améliorer les performances de navigation sur le site projetcerp.
 
-En naviguant sur le site, l'Utilisateur accepte les cookies. Leur désactivation peut s'effectuer via les paramètres du logiciel de navigation.
 </p>
 
 <h2>Article 9 : Publication par l'Utilisateur</h2>
 
 <p>
-Le site lapetiteperle permet aux membres de publier des commentaires.
+Le site projetcerp permet aux membres de publier des commentaires.
 
-Dans ses publications, le membre est tenu de respecter les règles de la Netiquette ainsi que les règles de droit en vigueur.
+Dans ses publications, le membre est tenu de respecter les règles de droit en vigueur.
 
 Le site dispose du droit d'exercer une modération à priori sur les publications et peut refuser leur mise en ligne sans avoir à fournir de justification.
 

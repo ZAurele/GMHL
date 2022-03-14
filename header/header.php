@@ -1,5 +1,5 @@
 <?php if ($logged) :?>
-    <img src="images/GMHL_Logo.png" class="logo-small"/>
+    <img src="images/Banderolle.svg" class="logo-small"/>
     <a href="index.php?page=profil" class="profil">
 
     <span class="icon fa-user-circle"> <img src="images/<?=$PROFILS['country']?>.svg" class="flag-small"/> <?=$PSEUDO?></span> </a>
