@@ -25,7 +25,7 @@ switch ($message['travaux']) {
 		echo '<b style="color:orange">Signalé</b>';
 		break;
 	case '2':
-		echo '<b style="color:blue">En cours</b>';
+		echo '<b style="color:red">En cours</b>';
 		break;
 	case '3':
 		echo '<b style="color:green">Fini</b>';

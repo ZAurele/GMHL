@@ -128,7 +128,7 @@ foreach ($messages as $message):
             <?php 
             if ($message['private']):
             	if(!$message['vue']):?>
-            <a href="<?=get_url(array('view'=>'1-'.$message['id']),NULL)?>" class="icon fa-eye" style="font-size:20px;color:blue;"></a> - 
+            <a href="<?=get_url(array('view'=>'1-'.$message['id']),NULL)?>" class="icon fa-eye" style="font-size:20px;color:red;"></a> - 
 			<?php else:?>
             <a href="<?=get_url(array('view'=>'0-'.$message['id']),NULL)?>" class="icon fa-eye-slash" style="font-size:20px;color:blue;"></a> - 
             <?php 

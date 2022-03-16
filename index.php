@@ -103,7 +103,7 @@
                             name: 'Vous',
                             data: dataV,
                             lineWidth:0,
-                            color: '#3498db',
+                            color: '#f8dba6',
                             marker: {
                                 radius:8
                             },

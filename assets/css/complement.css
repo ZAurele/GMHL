@@ -1,23 +1,23 @@
 header.faible > :last-child {
-	border-bottom: solid 3px #01B0F0;
+	border-bottom: solid 3px #F9B233;
 	display: inline-block;
 	margin: 0 0 2em 0;
 	padding: 0 0.75em 0.5em 0;
 }
 
 .faibleColor {
-	color: #01B0F0;
+	color: #F9B233;
 }
 
 header.normal > :last-child {
-	border-bottom: solid 3px #3498db;
+	border-bottom: solid 3px #F9B233;
 	display: inline-block;
 	margin: 0 0 2em 0;
 	padding: 0 0.75em 0.5em 0;
 }
 
 .normalColor {
-	color: #3498db;
+	color: #F9B233;
 }
 
 header.forte > :last-child {
@@ -32,7 +32,7 @@ header.forte > :last-child {
 }
 
 h3.profil > :last-child {
-	border-bottom: solid 3px #3498db;
+	border-bottom: solid 3px #F9B233;
 	display: inline-block;
 	margin: 0 0 2em 0;
 	padding: 0 0.75em 0.5em 0;
@@ -43,11 +43,19 @@ h3.profil > :last-child {
 	height: auto;
 }
 
-.logo-small{
-	max-width: 500px;
+.logo-large{
+	max-width: 4000px;
     height: auto;
     position: absolute;
-    left: 20%;
+    left: 0%;
+    top: 20px;
+}
+
+.logo-small{
+	max-width: 1000px;
+    height: auto;
+    position: absolute;
+    left: 10%;
     top: 20px;
 }
 

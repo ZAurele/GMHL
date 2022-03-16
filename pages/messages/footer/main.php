@@ -50,7 +50,7 @@
                 <?php endif;?>
                 
                 <?php if (!$author):?>
-                - <a href="<?=get_url(array('favori'=>$user_id_session.'-'.$message['id']),NULL)?>" style="color:#01b0f0" class="icon fa-star<?php if(!in_array($user_id_session,explode(',',$message['favori']))){echo'-o';}?>"> </a> 
+                - <a href="<?=get_url(array('favori'=>$user_id_session.'-'.$message['id']),NULL)?>" style="color:#02b0f0" class="icon fa-star<?php if(!in_array($user_id_session,explode(',',$message['favori']))){echo'-o';}?>"> </a> 
                 - <a href="<?=get_url(array('vues'=>$message['id'].'-'.$user_id_session,'nonVu'=>1),NULL)?>" <?php if(!$messageRead){echo 'style="color:#01b0f0"';}?> class="icon fa-<?php if($messageRead){echo'check-';}?>square-o"> </a> 
                 <?php endif;?>
             </div>

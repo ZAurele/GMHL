@@ -1,9 +1,11 @@
 <?php if ($logged) :?>
-    <img src="images/Banderolle.svg" class="logo-small"/>
-    <a href="index.php?page=profil" class="profil">
+    <img src="images/BANDEROLLE.svg" class="logo-large"/>
+    <p><br></p>
+
+    <a href="index.php?page=profil" class="profil"><p><br></p>
 
     <span class="icon fa-user-circle"> <img src="images/<?=$PROFILS['country']?>.svg" class="flag-small"/> <?=$PSEUDO?></span> </a>
-        
+   
     <ul class="icons">
         <li>
             <b><a href="?page=messages&amp;nonVu=1" class="icon fa-flag" <?php if ($uMessages_counter!=0){echo 'style="color:green"';}?>>

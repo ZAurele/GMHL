@@ -20,14 +20,21 @@
 					<h2>A propos du CERP</h2>
 				</header>
 				<ul>
-				<li><a href="?page=histoireducerp" class="icon fa-home"> Histoire du CERP</a></li>
-				<li><a href="?page=accueilducerp" class="icon fa-home"> Accueil </a></li>
-				<li><a href="?page=quisommesnous" class="icon fa-home"> Qui sommes nous</a></li>
-				<li><a href="?page=porteursducerp" class="icon fa-home"> Les porteurs du CERP</a></li>
-				<li><a href="?page=correspondantslocaux" class="icon fa-home"> Les correspondants locaux</a></li>
+				<li><a href="?page=histoireducerp" span class="icon fa-home"> Histoire du CERP</a></li>
+				<li><a href="?page=methodecerp" span class="icon fa-home"> L'étude</a></li>
 
 				</ul>
-			
+				<header class="major">
+				<h2>Les acteurs</h2>
+				</header>
+				<ul>
+				<li><a href="?page=quisommesnous" class="icon fa-home"> Membres fondateurs</a></li>
+				<li><a href="?page=partenairestechniques" class="icon fa-home"> Partenaires techniques</a></li>
+				<li><a href="?page=partenairesfinanciers" class="icon fa-home"> Partenaires financiers </a></li>
+				<li><a href="?page=correspondantslocaux" class="icon fa-home"> Trombinoscope </a></li>			
+
+				</ul>
+				
 				<header class="major">
 					<h2>Questionnaire</h2>
 				</header>
@@ -71,6 +78,17 @@
 				</ul>
 
 				<header class="major">
+				<h2>Ressources</h2>
+				</header>
+				<ul>
+				<li><a href="?page=facteurschoix" class="icon fa-home"> Pourquoi ces facteurs</a></li>
+				<li><a href="?page=ressources" class="icon fa-home"> Ressources techniques</a></li>
+				<li><a href="?page=ressources" class="icon fa-home"> Mes droits</a></li>
+				
+</ul> 
+
+
+				<header class="major">
 					<h2>Messages</h2>
 				</header>
 				<?php include "sidebar/menu.php";?>
@@ -94,7 +112,7 @@
 			</section>
 			
 			<footer id="footer">
-				<p class="copyright">Site v<?=$version?></br>&copy; GMHL. All rights reserved.</p>
+				<p class="copyright">Site v<?=$version?></br>&copy; Projet CERP. All rights reserved.</p>
 			</footer>
 	</div>
 </div>
