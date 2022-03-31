@@ -97,7 +97,7 @@ foreach($QUESTIONS as $category => $cf_cat) {
             if (!isset($SCORES_MAX[$category][$type][$id])) {
                 try {
                     $SCORES_MAX[$category][$type] += intval($bareme_question["score_max"]);
-                                } catch(Exception $e) {echo '';}
+                                       } catch(Exception $e) {echo '';}
             }
         }
 
@@ -138,6 +138,7 @@ function get_scores_from_database($QUESTIONS, $category, $rows,$max=false) {
 
         $entries = $types[$type]["values"];
         $v = $entries[$id];
+        if (!isset($v["values"][$row["answer"]])) continue;
         $answer_text = $v["values"][$row["answer"]];
 
         if(!isset($scores[$type])) $scores[$type] = array();

@@ -28,7 +28,7 @@
 				<h2>Les acteurs</h2>
 				</header>
 				<ul>
-				<li><a href="?page=quisommesnous" class="icon fa-home"> Membres fondateurs</a></li>
+				<li><a href="?page=quisommesnous" class="icon fa-users"> Membres fondateurs</a></li>
 				<li><a href="?page=partenairestechniques" class="icon fa-home"> Partenaires techniques</a></li>
 				<li><a href="?page=partenairesfinanciers" class="icon fa-home"> Partenaires financiers </a></li>
 				<li><a href="?page=correspondantslocaux" class="icon fa-home"> Trombinoscope </a></li>			
@@ -99,11 +99,11 @@
 				<?php include "sidebar/menu_config.php";?>
 			</nav>
 			
-			<section class="box calendar">
+			<!--<section class="box calendar">
 				<div class="inner">
 				<?php include "sidebar/calendar.php";?>
 				</div>
-			</section>
+			</section>-->
 			
 			<section>
 				<form action="" method="post">
