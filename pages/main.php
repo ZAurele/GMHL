@@ -38,4 +38,4 @@ N'hésitez pas à faire remonter vos questions et vos retours d'expériences à
     <?php } ?>
 </div>
 
-<?php include'pages/messages.php';?>
+<?php include 'pages/messages.php';?>

@@ -1,3 +1,4 @@
 ﻿configuration.php
 *.log
-images/aide/45.png
+log/debug.log
+images/aide/45.PNG
