@@ -40,14 +40,17 @@ if (mysqli_connect_error()) {
 include "config/users.php";
 
 // PAGES
-$PAGE = "login.php";
-if($logged){    
-    if(isset($_GET['page'])){        
-        $PAGE = $_GET['page'].".php";    
-    } else {        
-        $PAGE = "main.php";    
-    }
+//$PAGE = "login.php";
+$users_pages = array();
+if(isset($_GET['page'])){   
+        if(in_array($_GET['page'], $users_pages) && !$logged) {$PAGE="login.php";} 
+        else{
+    $PAGE = $_GET['page'].".php";    }
+} else {        
+    $PAGE = "main.php";    
 }
+
+
 include "data/mail/mail.php";
 include "data/constructs.php";
 include "data/posts.php";

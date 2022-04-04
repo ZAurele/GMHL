@@ -1,4 +1,4 @@
-<?php if($logged):?>
+
 <div id="sidebar">
 	<div class="inner">
 
@@ -34,7 +34,7 @@
 				<li><a href="?page=correspondantslocaux" class="icon fa-home"> Trombinoscope </a></li>			
 
 				</ul>
-				
+				<?php if($logged):?>
 				<header class="major">
 					<h2>Questionnaire</h2>
 				</header>
@@ -76,6 +76,7 @@
 					}
 					?>
 				</ul>
+				<? endif;?>
 
 				<header class="major">
 				<h2>Ressources</h2>
@@ -88,14 +89,18 @@
 </ul> 
 
 
-				<header class="major">
+				<!--<header class="major">
 					<h2>Messages</h2>
 				</header>
 				<?php include "sidebar/menu.php";?>
-				</br>
+				</br>-->
+				
 				<header class="major">
 					<h2>Configuration</h2>
 				</header>
+				
+
+				
 				<?php include "sidebar/menu_config.php";?>
 			</nav>
 			
@@ -104,16 +109,16 @@
 				<?php include "sidebar/calendar.php";?>
 				</div>
 			</section>-->
-			
+			<?php if($logged):?>
 			<section>
 				<form action="" method="post">
 					<input type="submit" value="Se déconnecter" name="logout" width="100%" class="button small fit"/>
 				</form>
 			</section>
+			<?php endif; ?>
 			
 			<footer id="footer">
 				<p class="copyright">Site v<?=$version?></br>&copy; Projet CERP. All rights reserved.</p>
 			</footer>
 	</div>
 </div>
-<?php endif;?>
