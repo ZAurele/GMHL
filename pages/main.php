@@ -24,7 +24,7 @@ Lorsque vous ne pouvez pas répondre à une question, merci de choisir la répon
 </p>
 <p style="text-align:center">
 N'hésitez pas à faire remonter vos questions et vos retours d'expériences à 
- <a href="mailto:info@projetcerp.com">ginfo@projetcerp.com</a></p>
+ <a href="mailto:info@projetcerp.com">info@projetcerp.com</a></p>
 
  <div class="home-block" style="border: orange2px solid;">
     <a href="?page=login"/>Se connecter</a>
