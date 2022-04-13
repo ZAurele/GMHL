@@ -23,6 +23,9 @@
         </li>
     </ul>
 <?php else:?>
-    <img src="images/GMHL_Logo.png" class="logo"/>
+    <div style="text-align: center;">
+   <img src="images/BANDEROLLE.svg" width="1000" />
+</div>
+    
 
 <?php endif;?>

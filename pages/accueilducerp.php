@@ -24,8 +24,8 @@ Il est également possible de s’investir individuellement, enfonction de vos p
 
 
 <p style="text-align:center">
-N'hésitez pas à faire remonter vos questions et vos retours d'expériences à 
- <a href="mailto:info@projetcerp.com">info@projetcerp.com</a></p>
+N'hésitez pas à faire remonter vos questions et vos retours d'expériences à <a href="mailto:info@projetcerp.com" title="HTML color codes" style="color:#17202A"> info@projetcerp.com </a></p>
+
 
 <div class="home-blocks">
     <?php 

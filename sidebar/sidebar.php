@@ -20,8 +20,8 @@
 					<h2>A propos du CERP</h2>
 				</header>
 				<ul>
-				<li><a href="?page=histoireducerp" span class="icon fa-lightbulb-on"> Histoire du CERP</a></li>
-				<li><a href="?page=methodecerp" span class="icon fa-light fa-flask"></i>"> L'étude</a></li>
+				<li><a href="?page=histoireducerp" span class="icon fa-bolt"> Histoire du CERP</a></li>
+				<li><a href="?page=methodecerp" span class="icon fa-flask"> L'étude</a></li>
 
 				</ul>
 				<header class="major">
@@ -29,9 +29,9 @@
 				</header>
 				<ul>
 				<li><a href="?page=quisommesnous" class="icon fa-users"> Membres fondateurs</a></li>
-				<li><a href="?page=partenairestechniques" class="icon fa-earth-europe"> Partenaires techniques</a></li>
-				<li><a href="?page=partenairesfinanciers" class="icon fa-light fa-droplet"> Partenaires financiers </a></li>
-				<li><a href="?page=correspondantslocaux" class="icon fa-handshake"> Trombinoscope </a></li>			
+				<li><a href="?page=partenairestechniques" class="icon fa-user-plus"> Partenaires techniques</a></li>
+				<li><a href="?page=partenairesfinanciers" class="icon fa-child"> Partenaires financiers </a></li>
+				<li><a href="?page=correspondantslocaux" class="icon fa-user"> Trombinoscope </a></li>			
 
 				</ul>
 				<?php if($logged):?>
@@ -82,9 +82,9 @@
 				<h2>Ressources</h2>
 				</header>
 				<ul>
-				<li><a href="?page=facteurschoix" class="icon fa-regular fa-block-question"> Pourquoi ces facteurs</a></li>
-				<li><a href="?page=ressources" class="icon fa-solid fa-book"></i>"> Ressources techniques</a></li>
-				<li><a href="?page=ressources" class="icon fa-solid fa-gavel"> Mes droits</a></li>
+				<li><a href="?page=facteurschoix" class="icon fa-question"> Pourquoi ces facteurs</a></li>
+				<li><a href="?page=ressources" class="icon fa-book"></i> Ressources techniques</a></li>
+				<li><a href="?page=ressources" class="icon fa-gavel"> Mes droits</a></li>
 				
 </ul> 
 
