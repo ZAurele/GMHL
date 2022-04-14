@@ -1,4 +1,4 @@
-<h2>Pourquoi ces facteurs ? </h2>
+<!--<h2>Pourquoi ces facteurs ? </h2>
 <p style="text-align:justify;">Voici l’ensemble des facteurs sur lesquels portent l’évaluation du CERP. Ils sont tous issus soit : de la bibliographie scientifique spécialisée ou des retours d’expériences et des connaissances empiriques venant des éleveurs et spécialistes sur le terrain. 
 L’explication de ces facteurs a pour objectif de vous permettre de mieux comprendre les résultats de votre évaluation et d’identifier les axes d’amélioration et méthode pour y parvenir à votre portée. Ces explications sont des paroles d’éleveurs, d’écologues, de spécialistes et des explications fournies par la bibliographie.</p>
 <h3>Le contexte économique et social </h3> 
@@ -73,6 +73,6 @@ L’explication de ces facteurs a pour objectif de vous permettre de mieux compr
 </p>
 <p style="text-align: justify;"><b> Cercle : </b> Les cercles prévus dans le cadre du PNA Loup et activités d’élevage sont liés à la fréquence des évènements de prédation. Ce classement donne une information reconnue quant au risque de prédation sur une exploitation. Cependant, être dans le Cercle 0 ne signifie pas s'exposer à une attaque imminente, et ne pas être dans l'un des cercles ne signifie pas qu'un évènement de prédation lié au loup est à exclure. </p>
 
-
+-->
 
 
