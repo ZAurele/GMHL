@@ -1,0 +1,180 @@
+Q_ID;Reponse;Score;Score_Max
+ele1;Ne sais pas / Non applicable;NA;8
+ele1;En ZPP;8;8
+ele1;Hors ZPP;1;8
+ele2;Ne sais pas / Non applicable;NA;3
+ele2;Professionnel;1;3
+ele2;Hobbyiste;3;3
+ele3;Ne sais pas / Non applicable;NA;3
+ele3;Principal;1;3
+ele3;Complémentaire;3;3
+ele4;Ne sais pas / Non applicable;NA;3
+ele4;Non;1;3
+ele4;Oui, occasionnellement;2;3
+ele4;Oui, de façon réccurente;3;3
+ele5;Ne sais pas / Non applicable;NA;4
+ele5;Inférieur ou égal à 0,5 Ha;1;4
+ele5;Entre 0.5 et 1 Ha;2;4
+ele5;Entre 1 et 3 Ha;3;4
+ele5;> 3 Ha;4;4
+ele6;Ne sais pas / Non applicable;NA;8
+ele6;0 - 100 m;1;8
+ele6;100 - 500 m;2;8
+ele6;500 m - 1 km;3;8
+ele6;1 km - 10 km;6;8
+ele6;> 10 km;8;8
+ele7;Ne sais pas / Non applicable;NA;5
+ele7;<10;1;5
+ele7;10 à 30 ;2;5
+ele7;30-50;3;5
+ele7;50-100;4;5
+ele7;>100;5;5
+ele8;Ne sais pas / Non applicable;NA;5
+ele8;1;1;5
+ele8;2;2;5
+ele8;3;4;5
+ele8;>3;5;5
+ele9;Ne sais pas / Non applicable;NA;3
+ele9;Oui;1;3
+ele9;Non;3;3
+ele10;Ne sais pas / Non applicable;NA;3
+ele10;Oui, abri imperméable au passage des prédateurs;1;3
+ele10;Oui, mais abri perméable à l'intrusion de prédateurs;2;3
+ele10;Absence d'abri;3;3
+ele11;Ne sais pas / Non applicable;NA;6
+ele11;Non;1;6
+ele11;Oui;6;6
+ele12;Ne sais pas / Non applicable;NA;6
+ele12;Non;1;6
+ele12;Oui;6;6
+ele13;Ne sais pas / Non applicable;NA;3
+ele13;6 mois (printemps - été);1;3
+ele13;9 mois (rentré l'hiver en bergerie);2;3
+ele13;Toute l'année dehors;3;3
+ele14;Ne sais pas / Non applicable;NA;3
+ele14;Moins d'1 mois;1;3
+ele14;Entre 1 et 3 mois;2;3
+ele14;Plus de 3 mois;3;3
+ele15;Ne sais pas / Non applicable;NA;5
+ele15;Equins;1;5
+ele15;Bovins;2;5
+ele15;Caprins;4;5
+ele15;Ovins;5;5
+ele16;Ne sais pas / Non applicable;NA;3
+ele16;Oui;1;3
+ele16;Non;3;3
+stru1;Ne sais pas / Non applicable;NA;5
+stru1;Treillis 200 cm non électrifié ET enterré;1;5
+stru1;Treillis 160 cm électrifié avec 1 fil au-dessus et un fil en dessous;1;5
+stru1;Treillis 120 cm électrifié (2 fils au-dessus ET 1 fil en-dessous);1;5
+stru1;Filet mobile électrifié 120 cm (type flexinet);1;5
+stru1;Clôture 5 à 6 fils électriques;1;5
+stru1;Treillis > 180 cm de haut non électrifié, mais non enterré;2;5
+stru1;Treillis 90 cm<H<120 cm (2 fils au-dessus ET 1 fil en-dessous);1;5
+stru1;Treillis < 100 cm avec min. 1 fil au-dessus ET 1 fil en dessous;2;5
+stru1;Filet mobile électrifié 90 - 120 cm (type flexinet);2;5
+stru1;Haie défensive et imperméable sur tout le périmètre;2;5
+stru1;Clôture 4 fils électriques;3;5
+stru1;Treillis 120 cm <H<180 cm non électrique;4;5
+stru1;Treillis 100 cm<H<120 cm non électrique;4;5
+stru1;Treillis < 100 cm non électrique;5;5
+stru1;Clôture moins de 4 fils non électriques;5;5
+stru2;Ne sais pas / Non applicable;NA;6
+stru2;Bon (clôture récente et en bon état);1;6
+stru2;Moyen;3;6
+stru2;Mauvais (ancienne clôture dégradée);6;6
+stru3;Ne sais pas / Non applicable;NA;5
+stru3;Non;1;5
+stru3;Oui;5;5
+stru4;Ne sais pas / Non applicable;NA;5
+stru4;Oui;1;5
+stru4;Non;5;5
+stru5;Ne sais pas / Non applicable;NA;5
+stru5;Non;1;5
+stru5;Oui;5;5
+stru6;Ne sais pas / Non applicable;NA;5
+stru6;Oui;1;5
+stru6;Non;5;5
+stru7;Ne sais pas / Non applicable;NA;3
+stru7;Oui;1;3
+stru7;Non;3;3
+viv1;Ne sais pas / Non applicable;NA;20
+viv1;Chien de protection de troupeau;1;20
+viv1;âne, lama;6;20
+viv1;Autre animal de protection (Bouc, chien de compagnie, oies…etc);12;20
+viv1;absence;20;20
+viv2;Ne sais pas / Non applicable;NA;4
+viv2;Bonne;1;4
+viv2;Moyenne;2;4
+viv2;Mauvaise;4;4
+viv3;Ne sais pas / Non applicable;NA;5
+viv3;> 6 mois;1;5
+viv3;Entre 3 et 6 mois;2;5
+viv3;Entre 1 et 3 mois;3;5
+viv3;< 1 mois;4;5
+viv3;Aucune;5;5
+viv4;Ne sais pas / Non applicable;NA;4
+viv4;Non;1;4
+viv4;Oui, sans explication;2;4
+viv4;Oui, suite à un traumatisme mais pas en lien avec un prédateur;3;4
+viv4;Oui, suite à un affrontement avec un prédateur;4;4
+viv5;Ne sais pas / Non applicable;NA;2
+viv5;Oui;1;2
+viv5;Non;2;2
+viv6;Ne sais pas / Non applicable;NA;2
+viv6;Oui;1;2
+viv6;Non;2;2
+viv7;Ne sais pas / Non applicable;NA;5
+viv7;3 à 7 ans;1;5
+viv7;1 à 3 ans;3;5
+viv7;> 7 ans;4;5
+viv7;< 1 an;5;5
+viv8;Ne sais pas / Non applicable;NA;6
+viv8;Amical;1;6
+viv8;Tolérant;3;6
+viv8;Agressif;6;6
+viv9;Ne sais pas / Non applicable;NA;3
+viv9;Non;1;3
+viv9;Oui;3;3
+viv10;Ne sais pas / Non applicable;NA;3
+viv10;Oui, par des professionnels des chiens de protections;1;3
+viv10;Oui, lors de la mise en place ou de l'achat seulement (2 ou 3 visites);2;3
+viv10;Non;3;3
+viv11;Ne sais pas / Non applicable;NA;3
+viv11;Oui, par des professionnels des chiens de protections;1;3
+viv11;Oui, lors de la mise en place ou de l'achat seulement (2 ou 3 visites);2;3
+viv11;Non;3;3
+env1;Ne sais pas / Non applicable;NA;2
+env1;Non;1;2
+env1;Oui;2;2
+env2;Ne sais pas / Non applicable;NA;3
+env2;Non;1;3
+env2;Oui;3;3
+env3;Ne sais pas / Non applicable;NA;4
+env3;à plus de 10 km;1;4
+env3;à moins de 10 km;2;4
+env3;à moins de 100 m;3;4
+env3;à moins de 50 m;4;4
+env4;Ne sais pas / Non applicable;NA;2
+env4;Non;1;2
+env4;Oui;2;2
+env5;Ne sais pas / Non applicable;NA;3
+env5;Faible;1;3
+env5;Moyen;2;3
+env5;Dense;3;3
+env6;Ne sais pas / Non applicable;NA;3
+env6;Oui;1;3
+env6;Non;3;3
+env7;Ne sais pas / Non applicable;NA;5
+env7;Non;1;5
+env7;Oui;5;5
+env8;Ne sais pas / Non applicable;NA;5
+env8;Bonne visibilité grâce au relief : l'ensemble du pâturage ou de l'exploitation est visible;1;5
+env8;Visibilité moyenne : certains élements du relief empêchent de voir l'ensemble de l'exploitation ou du pâturage à moins de se deplacer;3;5
+env8;Visibilité mauvaise : le relief ne permet pas de bien voir l'exploitation ou le pâturage;5;5
+env9;Ne sais pas / Non applicable;NA;5
+env9;<10%;1;5
+env9;<20%;2;5
+env9;<40%;3;5
+env9;<50%;4;5
+env9;>50%;5;5

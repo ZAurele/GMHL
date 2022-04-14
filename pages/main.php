@@ -1,8 +1,8 @@
-<h2><p style="text-align:center"> Bienvenue sur le CERP, l’outil Collaboratif pour l’Estimation du Risque de Prédation.
+<h2><p style="text-align:center"> Bienvenue sur le CERP, l’outil Collaboratif pour l’Evaluation du Risque de Prédation.
 </p></h2>
 
 <p style="text-align:center">
-Le <b>CERP</b> est un outil diagnostic <u>entièrement gratuit</u> et anonymisé dont l’objectif est de vous permettre d’identifier les forces et les différents axes d’améliorations de votre exploitation ou de vos parcelles exposées à un risque de prédation, en particulier vis-à-vis du loup. Pour cette raison, le questionnaire technique est précédé d’une enquête d’évaluation permettant de mieux adapter le CERP à votre contexte et votre situation. L’évaluation se base sur plusieurs domaines identifiés comme pouvant avoir une influence sur la prédation : le contexte socio-économique, les pratiques d’élevage, les moyens de protection et enfin, la biologie des prédateurs. 
+Le <b>CERP</b> est un outil diagnostic <u>entièrement gratuit</u> et anonymisé dont l’objectif est de vous permettre d’identifier les forces et les différents axes d’améliorations de votre exploitation ou de vos parcelles exposées à un risque de prédation, en particulier vis-à-vis du Loup gris <i>Canis lupus</i>. Pour cette raison, le questionnaire technique est précédé d’une enquête d’évaluation permettant de mieux adapter le CERP à votre contexte et votre situation. L’évaluation se base sur plusieurs domaines identifiés comme pouvant avoir une influence sur la prédation : le contexte socio-économique, les pratiques d’élevage, les moyens de protection et enfin, la biologie des prédateurs. 
 </p>
 <p>
 L’outil vous donnera la possibilité de vous autoévaluer et de comparer vos résultats à certains de vos résultats antérieurs ou avec ceux d’autres éleveurs.
@@ -23,11 +23,10 @@ Une seule réponse est possible pour chaque facteur. C'est le facteur le plus vu
 Lorsque vous ne pouvez pas répondre à une question, merci de choisir la réponse 'Ne sais pas / non-applicable'
 </p>
 <p style="text-align:center">
-N'hésitez pas à faire remonter vos questions et vos retours d'expériences à 
- <a href="mailto:info@projetcerp.com">info@projetcerp.com</a></p>
+N'hésitez pas à faire remonter vos questions et vos retours d'expériences à <a href="mailto:info@projetcerp.com" title="info@projetcerp.com" style="color:#17202A"> info@projetcerp.com </a></p>
 
- <div class="home-block" style="border: orange2px solid;">
-    <a href="?page=login"/>Se connecter</a>
+<div class="home-block" style="border: orange2px solid;">
+    <a href="?page=login"/><p style="text-align:center">Se connecter</p></a>
 </div>
 
 <?php if($logged):?>

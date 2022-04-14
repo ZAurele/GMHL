@@ -17,6 +17,13 @@
 				</ul>
 
 				<header class="major">
+<h2>Espace personnel</h2>
+</header>
+<ul>
+<li><a href="?page=connexion" class="icon fa-eye"> Connexion</a></li></ul>
+
+				</ul>
+				<header class="major">
 					<h2>A propos du CERP</h2>
 				</header>
 				<ul>
@@ -34,6 +41,7 @@
 				<li><a href="?page=correspondantslocaux" class="icon fa-user"> Trombinoscope </a></li>			
 
 				</ul>
+
 				<?php if($logged):?>
 				<header class="major">
 					<h2>Questionnaire</h2>
@@ -83,24 +91,23 @@
 				</header>
 				<ul>
 				<li><a href="?page=facteurschoix" class="icon fa-question"> Pourquoi ces facteurs</a></li>
-				<li><a href="?page=ressources" class="icon fa-book"></i> Ressources techniques</a></li>
-				<li><a href="?page=ressources" class="icon fa-gavel"> Mes droits</a></li>
+				<li><a href="?page=ressources" class="icon fa-book"></i> Ressources utiles</a></li>
+				<li><a href="?page=mesdroits" class="icon fa-gavel"> Connaître mes droits</a></li>
 				
 </ul> 
 
 
-				<!--<header class="major">
+<!--<header class="major">
 					<h2>Messages</h2>
 				</header>
 				<?php include "sidebar/menu.php";?>
 				</br>-->
 				
 				<header class="major">
-					<h2>Configuration</h2>
+				<h2>Configuration</h2>
 				</header>
-				
-
-				
+			
+				<ul>	
 				<?php include "sidebar/menu_config.php";?>
 			</nav>
 			

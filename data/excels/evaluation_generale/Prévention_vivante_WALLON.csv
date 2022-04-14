@@ -1,0 +1,12 @@
+Q_ID;Question;R1;R2 ;R3;R4;R5;R6
+viv1;Possédez vous un animal pour garder votre troupeau ?;Ne sais pas / Non applicable;Chien de protection de troupeau;âne, lama;Autre animal de protection (Bouc, chien de compagnie, oies…etc);absence;NA
+viv2;En quelle santé sont vos animaux gardiens ?;Ne sais pas / Non applicable;Bonne;Moyenne;Mauvaise;NA;NA
+viv3;Depuis combien de temps votre ou vos animaux gardiens ont-ils été intégrés au troupeau ?;Ne sais pas / Non applicable;> 6 mois;Entre 3 et 6 mois;Entre 1 et 3 mois;< 1 mois;Aucune
+viv4;Le comportement de votre animal gardien s'est il altéré ou son efficacité a-t-elle diminué subitement sans explication ou suite à un traumatisme ?;Ne sais pas / Non applicable;Non;Oui, sans explication;Oui, suite à un traumatisme mais pas en lien avec un prédateur;Oui, suite à un affrontement avec un prédateur;NA
+viv5;Votre ou vos animaux gardiens est/sont ils réactif(s) dans la protection ?;Ne sais pas / Non applicable;Oui;Non;NA;NA;NA
+viv6;Votre ou vos animaux gardiens est/sont ils attaché(s) au troupeau ?;Ne sais pas / Non applicable;Oui;Non;NA;NA;NA
+viv7;Quel âge à votre chien de protection le plus efficace ?;Ne sais pas / Non applicable;3 à 7 ans;1 à 3 ans;> 7 ans;< 1 an;NA
+viv8;Quel est le comportement de vos animaux gardiens envers l'Homme ?;Ne sais pas / Non applicable;Amical;Tolérant;Agressif;NA;NA
+viv9;Votre ou vos chiens de protection s'éloignent t-ils parfois du troupeau au point de ne plus le voir ?;Ne sais pas / Non applicable;Non;Oui;NA;NA;NA
+viv10;Si vous avez mis en place des chiens de protection, avec vous été accompagné ?;Ne sais pas / Non applicable;Oui, par des professionnels des chiens de protections;Oui, lors de la mise en place ou de l'achat seulement (2 ou 3 visites);Non;NA;NA
+viv11;Si vous souhaitez mettre en place des chiens de protection, serez vous accompagné ?;Ne sais pas / Non applicable;Oui, par des professionnels des chiens de protections;Oui, lors de la mise en place ou de l'achat seulement (2 ou 3 visites);Non;NA;NA

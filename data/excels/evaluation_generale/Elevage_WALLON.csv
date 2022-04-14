@@ -1,0 +1,17 @@
+Q_ID;Question;R1;R2 ;R3;R4;R5;R6;;;;;;;;;;
+ele1;Parcelles en ZPP ou hors ZPP;Ne sais pas / Non applicable;En ZPP;Hors ZPP;NA;NA;NA;;;;;;;;;;
+ele2;Eleveur professionnel ou hobyiste ?;Ne sais pas / Non applicable;Professionnel;Hobbyiste ;NA;NA;NA;;;;;;;;;;
+ele3;Si professionnel, à titre principal ou complémentaire;Ne sais pas / Non applicable;Principale;Complémentaire;NA;NA;NA;;;;;;;;;;
+ele4;Antécédent prédation (chien ou loup) ?;Ne sais pas / Non applicable;Non;Oui, occasionnellement;Oui, de façon réccurente;NA;NA;;;;;;;;;;
+ele5;Taille de la parcelle;Ne sais pas / Non applicable;Inférieur ou égal à 0,5 Ha;Entre 0.5 et 1 Ha;Entre 1 et 3 Ha;> 3 Ha;NA;;;;;;;;;;
+ele6;A quelle distance en moyenne se situe les parcs à votre exploitation ou habitation ?;Ne sais pas / Non applicable;0 - 100 m;100 - 500 m;500 m - 1 km;1 km - 10 km;> 10 km;;;;;;;;;;
+ele7;Combien de bêtes se trouvent sur votre exploitation ?;Ne sais pas / Non applicable;<10;10 à 30;30-50;50-100;>100;;;;;;;;;;
+ele8;Combien de lots avez-vous au pâturage en même temps ?;Ne sais pas / Non applicable;1;2;3;>3;NA;;;;;;;;;;
+ele9;Regroupez vous vos bêtes la nuit ?;Ne sais pas / Non applicable;Oui ;Non ;;NA;NA;;;;;;;;;;
+ele10;Confinement dans un abri ?;Ne sais pas / Non applicable;Oui, abri imperméable au passage des prédateurs;Oui, mais abri perméable à l'intrusion de prédateurs;Absence d'abri;NA;NA;;;;;;;;;;
+ele11;Les naissances s'effectuent-elles à l'exterieur ?;Ne sais pas / Non applicable;Non;Oui;NA;NA;NA;;;;;;;;;;
+ele12;De jeunes animaux sont ils présents dans la parcelle ?;Ne sais pas / Non applicable;Non;Oui;NA;NA;NA;;;;;;;;;;
+ele13;Combien de temps vos animaux sont-ils en pâturage à l'extérieur ?;Ne sais pas / Non applicable;6 mois (printemps - été);9 mois (rentré l'hiver en bergerie);Toute l'année dehors;NA;NA;;;;;;;;;;
+ele14;Temps de présence des animaux dans la parcelle étudiée ?;Ne sais pas / Non applicable;Moins d'1 mois;Entre 1 et 3 mois;Plus de 3 mois;NA;NA;;;;;;;;;;
+ele15;Quelle(s) espèce(s) élevez-vous ?;Ne sais pas / Non applicable;Equins;Bovins;Caprins;Ovins;NA;;;;;;;;;;
+ele16;Rusticité de l'animal : utilisez-vous une race capable de se défendre ?;Ne sais pas / Non applicable;Oui;Non ;NA;NA;NA;;;;;;;;;;

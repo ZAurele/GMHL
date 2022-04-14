@@ -22,10 +22,10 @@
 </div>
 <h3><p style="text-align: center;">Meuse Nature Environnement (MNE) </p></h3>
 <p style="text-align: justify;"> Meuse Nature Environnement est une association agréée pour la protection de la nature et de l’environnement, qui porte un projet associatif autour de 4 axes de travail : 
-- Axe 1 : le développement de la connaissance et d'expertises ;
-- Axe 2 : la sensibilisation et l'information de tous les publics ;
-- Axe 3 : l'accompagnement et la réalisation d'actions sur le terrain ;
-- Axe 4 : la défense et la représentation de la nature dans le débat public. 
+Axe 1 : le développement de la connaissance et d'expertises ;
+Axe 2 : la sensibilisation et l'information de tous les publics ;
+Axe 3 : l'accompagnement et la réalisation d'actions sur le terrain ;
+Axe 4 : la défense et la représentation de la nature dans le débat public. 
 Dans le cadre de son projet associatif, MNE est active depuis 2014 pour mieux comprendre la problématique du retour du loup en plaine lorraine. Elle agit afin d’initier et de développer des expérimentations de mesures de protection des troupeaux, et d’acquérir des connaissances suffisantes pour communiquer auprès du public. Depuis février 2019, l’association Encore Eleveurs Demain (EED) et MNE travaillent officiellement en partenariat et en concertation dans l’objectif de proposer des actions spécifiques aux élevages de plaine, notamment par l’expérimentation de suivis et de techniques alternatives pour la protection des troupeaux confrontés à la prédation.
 </p>
 <p></p>

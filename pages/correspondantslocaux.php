@@ -1,4 +1,5 @@
-<p><i>Vous pouvez contacter vos correspondants locaux si vous êtes compris dans l'une des zones affichées sur la carte. Si votre zone ne semble pas couverte par les correspondants locaux, vous pouvez contacter le GMHL en Limousin.
+<p><i>Vous pouvez contacter vos correspondants locaux si vous êtes compris dans l'une des zones affichées sur la carte. 
+    Si votre zone ne semble pas couverte par les correspondants locaux, vous pouvez nous contacter à info@projetcerp.com
 </i></p>
 
 <p>
@@ -30,7 +31,7 @@
 <p><h5>Association de Vulgarisation et Initiatives en Ethologie (VIE)</p></h5>
 <p>Camille Fraissard
  - Co-présidente et éthologue</p>
-<p>dassociationdevie@gmail.com</p>
+<p>associationdevie@gmail.com</p>
 
 <p>
 <h4>Belgique</h4></p>
