@@ -69,7 +69,7 @@
                         chart: {
                             inverted: true
                         },
-
+                        credits: false,
                         title: {
                             text: '<?=$title?>'
                         },
@@ -79,7 +79,7 @@
                         },
 
                         xAxis: {
-                            categories: [<?=$CATEGORIES?>]
+                            categories: [<?=$CATEGORIES_STRING?>]
                         },
 
                         yAxis: {
@@ -100,7 +100,7 @@
                         },
                         {
                             type: 'line',
-                            name: 'Vous',
+                            name: 'Votre score',
                             data: dataV,
                             lineWidth:0,
                             color: '#f8dba6',
@@ -115,7 +115,7 @@
                         },
                         {
                             type: 'line',
-                            name: 'Les autres',
+                            name: 'Moyenne générale',
                             data: dataA,
                             lineWidth:0,
                             states: {

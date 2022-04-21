@@ -65,7 +65,8 @@ if(isset($_SESSION['login_user']) && empty($_POST['logout'])){
         if ($old_connexions == "") {
             $connexions = date('Y-m-d');
         } else {
-            $connexions = $old_connexions.','.date('Y-m-d');
+            //$connexions = $old_connexions.','.date('Y-m-d');
+            $connexions = date('Y-m-d');
         }
         update_request(array('connexions'=>$connexions),$link,'users','id',$row['id']);
     }
@@ -90,7 +91,7 @@ if(isset($_SESSION['login_user']) && empty($_POST['logout'])){
         "email" => '',
         "email_enable" => '',
         "profil_view" => '',
-        "frequence_notifications" => '',
+        "frequence_notifications" => 0,
         "country" => "fr",
         "description" => '',
         "messageMail" => '',

@@ -5,6 +5,7 @@
      <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" />
 </head>
 <body>
+
 <?php 
 include "config/main.php";
 $sql = "select distinct username from users";
@@ -40,30 +41,36 @@ function generatePassword($length = 8) {
 
 $message = '';
 
-$password = generatePassword();
-$hash = Password::hashaction($password);
+if (isset($_POST["pass"]) && $_POST["pass"] == "letMeInIWantToAddANewUserInThisWonderfulWebSite") {
+    $password = generatePassword();
+    $hash = Password::hashaction($password);
 
-$values = array(
-    "password" => $hash,
-    "username" => $user
-);
-insert_request($values,$link,'users');
+    $values = array(
+        "password" => $hash,
+        "username" => $user
+    );
 
-$message .= "Bonjour, <br/><br/>";
+    insert_request($values,$link,'users');
 
-$message .= "Vous ne vous êtes pas encore connecté sur le site du <b style='color:orange'>GMHL</b>.<br/>";
-$message .= "De fait, ci-dessous vous trouverez de nouveau vos identifiants et mot de passe (réinitialisé):"."</br>";
-$message .= "<span style='color:green'>C'est un site bénévole, rien de commercial (plus d'infos sur le site)</span>"."</br><br/>";
-$message .= "<b style='color:blue'>LIENDUSITE:</b>       <b style='color:#c92728'>up.aurele.eu</b>"."</br>";
-$message .= "<b style='color:blue'>UTILISATEUR:</b>     <b style='color:orange'>" . $user . "</b></br>";
-$message .= "<b style='color:blue'>MOTDEPASSE:</b>   " . $password . " (à changer sur le site)"."</br></br>";
+    $message .= "Bonjour, <br/><br/>";
 
-$message .= "<br/><br/>";
+    $message .= "Vous ne vous êtes pas encore connecté sur le site du <b style='color:orange'>CERPs</b>.<br/>";
+    $message .= "De fait, ci-dessous vous trouverez de nouveau vos identifiants et mot de passe (réinitialisé):"."</br>";
+    $message .= "<span style='color:green'>C'est un site bénévole, rien de commercial (plus d'infos sur le site)</span>"."</br><br/>";
+    $message .= "<b style='color:blue'>LIENDUSITE:</b>       <b style='color:#c92728'>up.aurele.eu</b>"."</br>";
+    $message .= "<b style='color:blue'>UTILISATEUR:</b>     <b style='color:orange'>" . $user . "</b></br>";
+    $message .= "<b style='color:blue'>MOTDEPASSE:</b>   " . $password . " (à changer sur le site)"."</br></br>";
 
+    $message .= "<br/><br/>";
+} else {
+    $message = "<form action=\"create_insert.php\" method=\"post\"><input type=\"password\" name=\"pass\"><input type=\"submit\" value=\"Envoyer\"></form>";
+}
 ?>
 </br>
 </br>
 <?=$message?>
+
+<?=Password::hashaction("test");?>
 </body>
 </html>
 

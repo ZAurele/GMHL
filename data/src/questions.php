@@ -46,6 +46,7 @@ $QUESTIONS = array(
         "color" => "",
         "b-color" => "#27ae60",
         "complete" => false,
+        "multi" => "Parcelle",
 		"values" => 
 		array(
 			"Contexte_Socioeco_Parcelle" => array("text" => "Contexte socioéco parcelle", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
@@ -56,7 +57,15 @@ $QUESTIONS = array(
 	)
 );
 
+$CATEGORIES = array();
+$SELECTED_NB = array();
+$SELECTED_VERSION = array();
+
 foreach($QUESTIONS as $category => $cat_cf) {
+    array_push($CATEGORIES, $category);
+    $SELECTED_NB[$category] = "1";
+    $SELECTED_VERSION[$category] = 0;
+
 	foreach ($cat_cf["values"] as $type => $cf) {
 		$path = $category."/".$type;
 		$raw_values = readCsv($path);
@@ -75,7 +84,29 @@ foreach($QUESTIONS as $category => $cat_cf) {
 	}
 }
 
+if(isset($_GET["selected"]) && isset($_GET["category"])) {
+    $_SESSION[$_GET["category"]."multi"] = $_GET["selected"];
+    $SELECTED_NB[$_GET["category"]] = $_GET["selected"];
+}
 
+if(isset($_GET["selected_version"]) && isset($_GET["category"])) {
+    $_SESSION[$_GET["category"]."version"] = $_GET["selected_version"];
+    $SELECTED_VERSION[$_GET["category"]] = $_GET["selected_version"];
+}
+
+if(isset($_POST["new_date"]) && isset($_POST["category"])) {
+    $_SESSION[$_POST["category"]."version"] = $_POST["new_date"];
+    $SELECTED_VERSION[$_POST["category"]] = $_POST["new_date"];
+}
+
+foreach ($CATEGORIES as $cat) {
+    if(isset($_SESSION[$cat."multi"])){
+        $SELECTED_NB[$cat] = $_SESSION[$cat."multi"];
+    }
+    if(isset($_SESSION[$cat."version"])){
+        $SELECTED_VERSION[$cat] = $_SESSION[$cat."version"];
+    }
+}
 
 $SCORES_MAX = array();
 
@@ -101,13 +132,15 @@ foreach($QUESTIONS as $category => $cf_cat) {
             }
         }
 
-        $sql = "select count(*) as nb from questionnaires where category = '".$category."' and type = '".$type."' and user_id = ".$USER_ID." and answer != ''";
+        $sql = "select count(*) as nb from questionnaires where category = '".$category."' and type = '".$type."' and user_id = ".$USER_ID." and answer != '' and number = ".$SELECTED_NB[$category]." and version = ".$SELECTED_VERSION[$category];
+
         $req = request($link,$sql,true);
         $rows = $req->fetch_all(MYSQLI_ASSOC);
         $nb = $rows[0]['nb'];
 
         $values = $QUESTIONS[$category]["values"][$type]["values"];
         $complete =  ''.$nb == ''.count($values);
+
         if (!$first_invalid_type && $first_invalid_type == null && !$complete)
             $first_invalid_type  = $type;
 
@@ -118,6 +151,7 @@ foreach($QUESTIONS as $category => $cf_cat) {
     }
 
     $complete = $first_invalid_type == null;
+    
     $QUESTIONS[$category]['icon'] = $complete ? 'check-square-o' : 'square-o';
     $QUESTIONS[$category]['complete'] = $complete;
     $QUESTIONS[$category]['color'] = $complete ? '#27ae60' : '#d35400';
@@ -190,11 +224,12 @@ function get_bareme($path) {
     return $bareme;
 }
 
-function update_answer($link, $category, $type, $key, $value, $user_id) {
-    $sql_insert = "insert into questionnaires (category, type, id, answer, user_id)" ;
-    $sql_insert .= " values ('$category', '$type', '".$key."', ".$value.", ".$user_id.")";
+function update_answer($link, $category, $type, $key, $value, $user_id, $number, $version) {
+    $sql_insert = "insert into questionnaires (category, type, id, answer, user_id, number, version)" ;
+    $sql_insert .= " values ('$category', '$type', '".$key."', ".$value.", ".$user_id.", ".$number.", ".$version.")";
     $sql_insert .= " on duplicate key update answer = ".$value;
-    return request($link,$sql_insert, true);
+
+    return request($link,$sql_insert, false);
 }
 
 ?>

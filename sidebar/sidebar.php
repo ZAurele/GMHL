@@ -3,7 +3,7 @@
 	<div class="inner">
 
 		<!-- Search -->
-			<section id="search" class="alt">
+			<section id="search" class="alt" style="display:none">
 				<form method="post" action="?page=messages">
 					<input type="text" name="search" id="search" placeholder="Search" />
 				</form>
@@ -21,7 +21,7 @@
 				</header>
 				<ul>
 				<li><a href="?page=histoireducerp" span class="icon fa-lightbulb-on"> Histoire du CERP</a></li>
-				<li><a href="?page=methodecerp" span class="icon fa-light fa-flask"></i>"> L'étude</a></li>
+				<li><a href="?page=methodecerp" span class="icon fa-light fa-flask"></i> L'étude</a></li>
 
 				</ul>
 				<header class="major">
@@ -36,33 +36,7 @@
 				</ul>
 				<?php if($logged):?>
 				<header class="major">
-					<h2>Questionnaire</h2>
-				</header>
-				<ul>
-					<?php 
-					foreach($QUESTIONS as $category => $cat_cf) {
-
-					?>
-					<li>
-						<span class="opener">
-							<i class="icon fa-<?=$cat_cf["icon"]?>" style="color:<?=$cat_cf["color"]?>"> </i><?=$cat_cf["text"]?>
-						</span>
-						<ul>
-						<?php 
-							foreach($cat_cf["values"] as $type => $cf) { ?>
-								<li><a href="<?=$cf['url']?>" style="text-transform: none !important;">
-									<i class="icon fa-<?=$cf['icon']?>" style="color:<?=$cf['color']?>"></i> <?=$cf['text']?></a></li>
-							<?php }
-						?>
-						</ul>
-					</li>
-					<?php
-					}
-					?>
-				</ul>
-
-				<header class="major">
-					<h2>Résultats</h2>
+					<h2>Enquètes</h2>
 				</header>
 				<ul>
 					<?php 
@@ -70,7 +44,7 @@
 						$url = '?page=results&amp;category='.$category;
 					?>
 					<li>
-						<a href="<?=$url?>"><i class="icon fa-bar-chart" style="color:<?=$cf['color']?>"></i> <?=$cat_cf["text"]?></a>
+					<a href="<?=$url?>"><i class="icon fa-bar-chart" style="color:<?=$cat_cf['color']?>"></i> <?=$cat_cf["text"]?></a>
 					</li>
 					<?php
 					}
@@ -79,14 +53,14 @@
 				<? endif;?>
 
 				<header class="major">
-				<h2>Ressources</h2>
+					<h2>Ressources</h2>
 				</header>
+
 				<ul>
-				<li><a href="?page=facteurschoix" class="icon fa-regular fa-block-question"> Pourquoi ces facteurs</a></li>
-				<li><a href="?page=ressources" class="icon fa-solid fa-book"></i>"> Ressources techniques</a></li>
-				<li><a href="?page=ressources" class="icon fa-solid fa-gavel"> Mes droits</a></li>
-				
-</ul> 
+					<li><a href="?page=facteurschoix" class="icon fa-regular fa-block-question"> Pourquoi ces facteurs</a></li>
+					<li><a href="?page=ressources" class="icon fa-solid fa-book"></i>"> Ressources techniques</a></li>
+					<li><a href="?page=ressources" class="icon fa-solid fa-gavel"> Mes droits</a></li>
+				</ul>
 
 
 				<!--<header class="major">
@@ -109,16 +83,10 @@
 				<?php include "sidebar/calendar.php";?>
 				</div>
 			</section>-->
-			<?php if($logged):?>
-			<section>
-				<form action="" method="post">
-					<input type="submit" value="Se déconnecter" name="logout" width="100%" class="button small fit"/>
-				</form>
-			</section>
-			<?php endif; ?>
+			
 			
 			<footer id="footer">
-				<p class="copyright">Site v<?=$version?></br>&copy; Projet CERP. All rights reserved.</p>
+				<p class="copyright">Site v<?=$VERSION_SITE?></br><?=date("Y")?> &copy; Projet CERP. All rights reserved.</p>
 			</footer>
 	</div>
 </div>

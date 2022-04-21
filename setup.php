@@ -9,7 +9,7 @@ for($i = 1; $i < 5; $i++) {
 
                 //if ($i == 4) $a = count($c["values"]) - 1;
 
-                update_answer($link, $category, $type, $id, $a, $i);
+                update_answer($link, $category, $type, $id, $a, $i, $SELECTED_NB[$category],$SELECTED_VERSION[$category]);
 
                 echo "User $i set choice ".$c["values"][$a]." ($a) for $id<br>";
             }

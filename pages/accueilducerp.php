@@ -31,7 +31,7 @@ N'hésitez pas à faire remonter vos questions et vos retours d'expériences à
     <?php 
         foreach($QUESTIONS as $category => $cat_cf) {
     ?>
-    <div class="home-block" style="border: <?=$cat_cf["b-color"]?> 2px solid;">
+    <div class="home-block" style="border: <?=$cat_cf["b-color"]?> 4px solid;">
         <a href="<?=$cat_cf['url']?>" style="color:<?=$cat_cf["b-color"]?>">
             <span style="color:<?=$cat_cf['color']?> !important" class="icon fa-<?=$cat_cf['icon']?>"></span> 
         <?=$cat_cf['text']?></a>
