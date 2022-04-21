@@ -20,7 +20,7 @@
 					<h2>A propos du CERP</h2>
 				</header>
 				<ul>
-				<li><a href="?page=histoireducerp" span class="icon fa-lightbulb-on"> Histoire du CERP</a></li>
+				<li><a href="?page=histoireducerp" span class="icon fa-lightbulb"> Histoire du CERP</a></li>
 				<li><a href="?page=methodecerp" span class="icon fa-light fa-flask"></i> L'étude</a></li>
 
 				</ul>
@@ -41,12 +41,13 @@
 				<ul>
 					<?php 
 					foreach($QUESTIONS as $category => $cat_cf) {
+						if (isset($cat_cf["disabled"]) && $cat_cf["disabled"]) continue;
 						$url = '?page=results&amp;category='.$category;
-					?>
-					<li>
-					<a href="<?=$url?>"><i class="icon fa-bar-chart" style="color:<?=$cat_cf['color']?>"></i> <?=$cat_cf["text"]?></a>
-					</li>
-					<?php
+						?>
+						<li>
+						<a href="<?=$url?>"><i class="icon fa-bar-chart" style="color:<?=$cat_cf['color']?>"></i> <?=$cat_cf["text"]?></a>
+						</li>
+						<?php
 					}
 					?>
 				</ul>
@@ -57,9 +58,9 @@
 				</header>
 
 				<ul>
-					<li><a href="?page=facteurschoix" class="icon fa-regular fa-block-question"> Pourquoi ces facteurs</a></li>
-					<li><a href="?page=ressources" class="icon fa-solid fa-book"></i>"> Ressources techniques</a></li>
-					<li><a href="?page=ressources" class="icon fa-solid fa-gavel"> Mes droits</a></li>
+					<li><a href="?page=facteurschoix" class="icon fa-question"> Pourquoi ces facteurs</a></li>
+					<li><a href="?page=ressources" class="icon fa-book"> Ressources techniques</a></li>
+					<li><a href="?page=ressources" class="icon fa-gavel"> Mes droits</a></li>
 				</ul>
 
 

@@ -11,6 +11,7 @@ $QUESTIONS = array(
         "color" => "",
         "b-color" => "#8e44ad",
         "complete" => false,
+        "disabled" => true,
 		"values" => 
 		array(
 			
