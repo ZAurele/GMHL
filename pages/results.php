@@ -1,30 +1,49 @@
 <?php 
 
 if (isset($_GET['category'])) {
-    
     $category = $_GET['category'];
-
+    $sql = "SELECT distinct `version`, `update_date` FROM questionnaires where user_id = ".$USER_ID." and category = '".$category."'  order by `update_date`";
+    $rows = select_request($link,$sql,true);
+    
+    $versions = array();
+    foreach($rows as $row) {
+        if(!array_key_exists($row["version"], $versions)) {
+            $versions[$row["version"]] = array();
+        }
+        if(!in_array($row["update_date"], $versions[$row["version"]])) {
+            array_push($versions[$row["version"]], $row["update_date"]);
+        }
+    }
+    $current_version = $SELECTED_VERSION[$category];
+    if (!in_array($current_version, $versions)) {
+        $versions[$current_version] = array(date("Y-m-d H:i:s"));
+    }
+    
     $sql = "SELECT * FROM questionnaires where user_id != ".$USER_ID." and category = '".$category."' order by id DESC";
     $rows = select_request($link,$sql,true);
 
     $scores = get_scores_from_database($QUESTIONS, $category, $rows);  
 
-    $sql = "SELECT * FROM questionnaires where user_id = ".$USER_ID." and category = '".$category."' and number = '".$SELECTED_NB[$category]."' and version = ".$SELECTED_VERSION[$category]." order by id DESC";
-    $rows = select_request($link,$sql,true);
-
-    $scores_user = get_scores_from_database($QUESTIONS, $category, $rows);
-
     $scores_all = array();
-    foreach($scores as $type => $scores_ids) {
-        if (!isset($scores_all[$type])) $scores_all[$type] = array("low"=>0, "high"=>0, "name" =>$type);
+    foreach($versions as $version => $dates) {
+        $scores_all[$version] = array();
 
-        $score = array_sum(array_values($scores_ids));
-        $scores_all[$type]["high"] = round(($score / $SCORES_MAX[$category][$type])*100);
-    }
-    foreach($scores_user as $type => $scores_ids) {
-        if (!isset($scores_all[$type])) $scores_all[$type] = array("low"=>0, "high"=>0, "name" =>$type);
-        $score = array_sum(array_values($scores_ids));
-        $scores_all[$type]["low"] = round(($score / $SCORES_MAX[$category][$type])*100);
+        $sql = "SELECT * FROM questionnaires where user_id = ".$USER_ID." and category = '".$category."' and number = '".$SELECTED_NB[$category]."' and version = ".$version." order by id DESC";
+        $rows = select_request($link,$sql,true);
+
+        $scores_user = get_scores_from_database($QUESTIONS, $category, $rows);
+
+        foreach($scores as $type => $scores_ids) {
+            if (!isset($scores_all[$version][$type])) $scores_all[$version][$type] = array("low"=>0, "high"=>0, "name" =>$type);
+
+            $score = array_sum(array_values($scores_ids));
+            $scores_all[$version][$type]["high"] = round(($score / $SCORES_MAX[$category][$type])*100);
+        }
+        foreach($scores_user as $type => $scores_ids) {
+            if (!isset($scores_all[$version][$type])) $scores_all[$version][$type] = array("low"=>0, "high"=>0, "name" =>$type);
+            $score = array_sum(array_values($scores_ids));
+            $scores_all[$version][$type]["low"] = round(($score / $SCORES_MAX[$category][$type])*100);
+        }
     }
 
     $error = '';
@@ -136,19 +155,6 @@ if (isset($_GET['category'])) {
         <div>
             <h3>Version:</h3>
             <?php 
-                $sql = "SELECT distinct `version`, `update_date` FROM questionnaires where user_id = ".$USER_ID." and category = '".$category."'  order by `update_date`";
-                $rows = select_request($link,$sql,true);
-
-                $versions = array();
-                foreach($rows as $row) {
-                    if(!array_key_exists($row["version"], $versions)) {
-                        $versions[$row["version"]] = array();
-                    }
-                    if(!in_array($row["update_date"], $versions[$row["version"]])) {
-                        array_push($versions[$row["version"]], $row["update_date"]);
-                    }
-                }
-
                 $i = 0;
                 foreach($versions as $version) {
                     $versions[$i] = $version[0].' - '.$version[count($version) - 1];
@@ -159,19 +165,11 @@ if (isset($_GET['category'])) {
             <div style="display:flex;flex-direction:column;align-items:end;">
                 <select onChange="changedVersion(this.value)" name="version-<?=$category?>" style="margin-right:10px">
                     <?php 
-                    $version_i=0;
-                    foreach($versions as $version):
+                    foreach($versions as $version => $dates):
                         ?>
-                        <option value="<?=$version_i?>" <?php echo $SELECTED_VERSION[$category]==$version_i ? "selected":""?>><?=$version_i?> - <?=$version?></option>
+                        <option value="<?=$version?>" <?php echo $current_version==$version ? "selected":""?>><?=$version?> - <?=$dates?></option>
                         <?php 
-                        $version_i++;
                     endforeach;
-
-                    if ($SELECTED_VERSION[$category] == $version_i) {
-                        ?>
-                        <option value="<?=($version_i)?>" selected><?=$version_i?> - <?=date("Y-m-d H:i:s")?></option>
-                        <?php
-                    }
                     ?>
                 </select>
                                 
@@ -198,16 +196,27 @@ if (isset($_GET['category'])) {
         $data = [];
         $dataA = [];
         $dataV = [];
-        foreach($QUESTIONS[$category]["values"] as $type => $cf) {
-            // $scores_all as $type => $scores
-            $scores = $scores_all[$type];
-            $type_title = $QUESTIONS[$category]["values"][$type]["text"];
-            $low = str_replace(',','.',''.$scores['low']);
-            $high = str_replace(',','.',''.$scores['high']);
-            $color = ($scores['low'] > $scores['high']) ? "#27ae60" : "#c0392b";
-            array_push($data, "{low:$low, high:$high,color:'$color'}");
-            array_push($dataV, "$low");
-            array_push($dataA, "$high");
+        $dataVersions = array();
+        
+        foreach($versions as $version => $dates) {
+            if ($version != $current_version) {
+                $dataVersions[$version] = array();
+            }
+            foreach($QUESTIONS[$category]["values"] as $type => $cf) {
+                $scores = $scores_all[$version][$type];
+
+                if ($version == $current_version) {
+                    $type_title = $QUESTIONS[$category]["values"][$type]["text"];
+                    $low = str_replace(',','.',''.$scores['low']);
+                    $high = str_replace(',','.',''.$scores['high']);
+                    $color = ($scores['low'] > $scores['high']) ? "#27ae60" : "#c0392b";
+                    array_push($data, "{low:$low, high:$high,color:'$color'}");
+                    array_push($dataV, "$low");
+                    array_push($dataA, "$high");
+                } else {
+                    array_push($dataVersions[$version], str_replace(',','.',''.$scores['low']));
+                }
+            }
         }
         $CATEGORIES_STRING = implode(",",$CATEGORIES_TEXT);
     ?>

@@ -16,6 +16,8 @@ if (isset($_POST["update_questions"]) && isset($_POST["category"]) && isset($_PO
             );
             if (''.$value == '') $value = 0;
             update_answer($link, $_POST["category"], $_POST["type"], $key, $value, $USER_ID, $SELECTED_NB[$_POST["category"]],$SELECTED_VERSION[$_POST["category"]]);
+            
+            header('Location: ?page=results&category='.$_POST["category"]);
         }
     }
 }

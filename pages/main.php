@@ -30,6 +30,7 @@ N'hésitez pas à faire remonter vos questions et vos retours d'expériences à
 <div class="home-blocks">
     <?php 
         foreach($QUESTIONS as $category => $cat_cf) {
+            if (isset($cat_cf["disabled"]) && $cat_cf["disabled"]) continue;
     ?>
     <div class="home-block" style="border: <?=$cat_cf["b-color"]?> 2px solid;">
         <a href="<?=$cat_cf['url']?>" style="color:<?=$cat_cf["b-color"]?>">
