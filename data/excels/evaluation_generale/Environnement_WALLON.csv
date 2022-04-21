@@ -1,0 +1,10 @@
+Q_ID;Question;R1;R2 ;R3;R4;R5;R6
+env1;Fréquentation du gibier sauvage (sangliers, cerfs);Ne sais pas / Non applicable;Non;Oui;NA;NA;NA
+env2;Parcelle enclavée/isolée dans un massif forestier ?;Ne sais pas / Non applicable;Non;Oui;NA;NA;NA
+env3;Proximité de la forêt;Ne sais pas / Non applicable;à plus de 10 km;à moins de 10 km;à moins de 100 m;à moins de 50 m;NA
+env4;Chemin le long de la parcelle ?;Ne sais pas / Non applicable;Non;Oui;NA;NA;NA
+env5;Présence d'un réseau de haies;Ne sais pas / Non applicable;Faible;Moyen;Dense;NA;NA
+env6;Présence d'habitation à proximité directe de la parcelle;Ne sais pas / Non applicable;Oui;Non;NA;NA;NA
+env7;Présence d'un cours d'eau qui longe ou traverse la parcelle;Ne sais pas / Non applicable;Non;Oui;NA;NA;NA
+env8;Relief et topographie de la parcelle;Ne sais pas / Non applicable;Bonne visibilité grâce au relief : l'ensemble du pâturage ou de l'exploitation est visible;Visibilité moyenne : certains élements du relief empêchent de voir l'ensemble de l'exploitation ou du pâturage à moins de se deplacer;Visibilité mauvaise : le relief ne permet pas de bien voir l'exploitation ou le pâturage;NA;NA
+env9;Embroussaillement de la parcelle par des arbustes;Ne sais pas / Non applicable;<10%;<20%;<40%;<50%;>50%
