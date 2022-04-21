@@ -1,7 +1,5 @@
 <?php 
-
-
-$QUESTIONS = array(
+$QUESTIONS_GROUPS = array("fr" => array(
 	"enquete_social" => array(
 		"text" => "Enquête sociale",
         "description" => "",
@@ -56,7 +54,65 @@ $QUESTIONS = array(
 			"Environnement_Parcelle" => array("text" => "Environnement parcelle", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
 		)
 	)
-);
+),
+"be" => 
+array(
+	"enquete_social" => array(
+		"text" => "Enquête sociale",
+        "description" => "",
+        "bareme" => get_bareme("Bareme_Parcelle"),
+        "icon" => "",
+        "url" => "",
+        "color" => "",
+        "b-color" => "#8e44ad",
+        "complete" => false,
+        "disabled" => true,
+		"values" => 
+		array(
+			
+		)
+        ),
+    "evaluation_generale" => array(
+		"text"=> "Évaluation générale",
+        "description" => "",
+        "bareme" => get_bareme("Bareme_General_WALLON"),
+        "icon" => "",
+        "url" => "",
+        "color" => "",
+        "b-color" => "#f39c12",
+        "complete" => false,
+		"values" =>
+		array(
+			"Elevage_WALLON"=> array("text" => "Élevage", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Prevention_Structurelle_WALLON"=> array("text" => "Prévention structurelle général", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Prevention_Vivante_WALLON"=> array("text" => "Prévention vivante général", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Environnement_WALLON"=> array("text" => "Environnement", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Environnement_General_WALLON"=> array("text" => "Environnement général", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array())
+		)
+	),
+	"evaluation_parcelle" => array(
+		"text" => "Évalution parcelle",
+        "description" => "",
+        "bareme" => get_bareme("Bareme_Parcelle"),
+        "icon" => "",
+        "url" => "",
+        "color" => "",
+        "b-color" => "#27ae60",
+        "complete" => false,
+        "multi" => "Parcelle",
+		"values" => 
+		array(
+			"Contexte_Socioeco_Parcelle" => array("text" => "Contexte socioéco parcelle", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Elevage_Parcelle" => array("text" => "Élevage parcelle", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Protection_Parcelle" => array("text" => "Protection parcelle", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Environnement_Parcelle" => array("text" => "Environnement parcelle", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+		)
+	)
+)
+        );
+
+$ENV = isset($PROFILS["country"]) ? $PROFILS["country"] : "fr";
+$QUESTIONS = $QUESTIONS_GROUPS[$ENV];
 
 $CATEGORIES = array();
 $SELECTED_NB = array();
@@ -76,9 +132,9 @@ foreach($QUESTIONS as $category => $cat_cf) {
             $raw_answers = array_slice($qu,2);
             $answers = array();
             foreach($raw_answers as $k=>$v) {
-                if($v != "NA") $answers[$k] = $v;
+                if($v != "NA" && $v != '') $answers[$k] = $v;
             }
-            
+            if($qu[0] != "") 
             $values[$qu[0]] = array("id"=>$qu[0], "title"=> capitalize($qu[1]), "values"=>$answers);
         }
 		$QUESTIONS[$category]["values"][$type]["values"] = $values;
@@ -129,11 +185,11 @@ foreach($QUESTIONS as $category => $cf_cat) {
             if (!isset($SCORES_MAX[$category][$type][$id])) {
                 try {
                     $SCORES_MAX[$category][$type] += intval($bareme_question["score_max"]);
-                                       } catch(Exception $e) {echo '';}
+                } catch(Exception $e) {echo '';}
             }
         }
 
-        $sql = "select count(*) as nb from questionnaires where category = '".$category."' and type = '".$type."' and user_id = ".$USER_ID." and answer != '' and number = ".$SELECTED_NB[$category]." and version = ".$SELECTED_VERSION[$category];
+        $sql = "select count(*) as nb from questionnaires where category = '".$category."' and type = '".$type."' and user_id = ".$USER_ID." and answer != '' and number = ".$SELECTED_NB[$category]." and version = ".$SELECTED_VERSION[$category]." and env = '".$ENV."'";
 
         $req = request($link,$sql,true);
         $rows = $req->fetch_all(MYSQLI_ASSOC);
@@ -220,14 +276,15 @@ function get_bareme($path) {
         if (!isset($bareme[$row[0]])) {
             $bareme[$row[0]] = array("values"=> array(),"score_max"=>$row[3]);
         }
+        if ($row[0] != '')
         $bareme[$row[0]]["values"][$row[1]] = $row[2];
     }
     return $bareme;
 }
 
-function update_answer($link, $category, $type, $key, $value, $user_id, $number, $version) {
-    $sql_insert = "insert into questionnaires (category, type, id, answer, user_id, number, version)" ;
-    $sql_insert .= " values ('$category', '$type', '".$key."', ".$value.", ".$user_id.", ".$number.", ".$version.")";
+function update_answer($link, $category, $type, $key, $value, $user_id, $number, $version, $env) {
+    $sql_insert = "insert into questionnaires (category, type, id, answer, user_id, number, version, env)" ;
+    $sql_insert .= " values ('$category', '$type', '".$key."', ".$value.", ".$user_id.", ".$number.", ".$version.",'".$env."')";
     $sql_insert .= " on duplicate key update answer = ".$value;
 
     return request($link,$sql_insert, false);

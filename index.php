@@ -1,10 +1,49 @@
-<?php include "config/main.php";?>
+<?php include "config/main.php";
+$description = "";
+
+?>
 <!DOCTYPE HTML>
 <html>
     <head>
         <title><?=$project?></title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="<?=$description?>" />
+        <script type="application/ld+json">
+            {
+            "@context" : "http://schema.org",
+                "@type" : "Organization",  
+                "name" : "GMHL",
+                "url" : "https://projetcerp.com", 
+                "logo": "http://projetcerp.com.com/images/logo.png",
+                "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "",
+                "email": "",
+                "contactType": "Customer service"
+                },
+                "founders": [
+                {
+                "@type": "Person",
+                "name": ""
+                }
+            ],
+                "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "51 rue des Berges",
+                "addressLocality": "Grenoble",
+                "addressRegion": "Isère",
+                "postalCode": "38000",
+                "addressCountry": "FRANCE"
+                }
+            }
+            </script>
+        <meta name="keywords" content=""/>
+        <meta charset="utf-8" />
+        <meta property="og:image" content="http://adnskis.com/images/logo.png" />
+        <meta property="og:title" content="CERP" />
+        <meta property="og:description" content="<?=$description?>" />
+        
         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
         <link rel="stylesheet" href="assets/css/main.css?<?php echo time(); ?>" />
         <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->

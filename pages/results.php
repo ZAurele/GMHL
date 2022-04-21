@@ -2,7 +2,7 @@
 
 if (isset($_GET['category'])) {
     $category = $_GET['category'];
-    $sql = "SELECT distinct `version`, `update_date` FROM questionnaires where user_id = ".$USER_ID." and category = '".$category."'  order by `update_date`";
+    $sql = "SELECT distinct `version`, `update_date` FROM questionnaires where user_id = ".$USER_ID." and category = '".$category."' and env = '".$ENV."' order by `update_date`";
     $rows = select_request($link,$sql,true);
     
     $versions = array();
@@ -19,28 +19,29 @@ if (isset($_GET['category'])) {
         $versions[$current_version] = array(date("Y-m-d H:i:s"));
     }
     
-    $sql = "SELECT * FROM questionnaires where user_id != ".$USER_ID." and category = '".$category."' order by id DESC";
+    $sql = "SELECT * FROM questionnaires where user_id != ".$USER_ID." and category = '".$category."' and env = '".$ENV."' order by id DESC";
     $rows = select_request($link,$sql,true);
 
     $scores = get_scores_from_database($QUESTIONS, $category, $rows);  
 
     $scores_all = array();
+    
     foreach($versions as $version => $dates) {
         $scores_all[$version] = array();
+        foreach($QUESTIONS[$category]["values"] as $type => $cf) {
+            $scores_all[$version][$type] = array("low"=>0, "high"=>0, "name" =>$type);
+        }
 
-        $sql = "SELECT * FROM questionnaires where user_id = ".$USER_ID." and category = '".$category."' and number = '".$SELECTED_NB[$category]."' and version = ".$version." order by id DESC";
+        $sql = "SELECT * FROM questionnaires where user_id = ".$USER_ID." and category = '".$category."' and number = '".$SELECTED_NB[$category]."' and version = ".$version." and env = '".$ENV."' order by id DESC";
         $rows = select_request($link,$sql,true);
 
         $scores_user = get_scores_from_database($QUESTIONS, $category, $rows);
 
         foreach($scores as $type => $scores_ids) {
-            if (!isset($scores_all[$version][$type])) $scores_all[$version][$type] = array("low"=>0, "high"=>0, "name" =>$type);
-
             $score = array_sum(array_values($scores_ids));
             $scores_all[$version][$type]["high"] = round(($score / $SCORES_MAX[$category][$type])*100);
         }
         foreach($scores_user as $type => $scores_ids) {
-            if (!isset($scores_all[$version][$type])) $scores_all[$version][$type] = array("low"=>0, "high"=>0, "name" =>$type);
             $score = array_sum(array_values($scores_ids));
             $scores_all[$version][$type]["low"] = round(($score / $SCORES_MAX[$category][$type])*100);
         }
@@ -178,7 +179,7 @@ if (isset($_GET['category'])) {
                     <form method="post" action="#">
                         <input type="hidden" name="new_date" value="<?=$version_i?>"/>
                         <input type="hidden" name="category" value="<?=$category?>"/>
-                        <input type="submit" value="Saisir une nouvelle version" style="width:200px" class="button small fit"/>
+                        <input type="submit" value="Saisir une nouvelle version" style="width:250px" class="button small fit"/>
                     </form>
                 <?php endif; ?>
             </div>
