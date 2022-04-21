@@ -64,6 +64,11 @@
                 <script src="https://code.highcharts.com/modules/export-data.js"></script>
                 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
                 <script>
+                    function pickColor(version) {
+                        return ["#1abc9c","#2ecc71","#3498db","#9b59b6","#34495e","#f1c40f","#e67e22","#e74c3c","#95a5a6",
+                        "#16a085","#27ae60","#2980b9", "#8e44ad", "#2c3e50", "#f39c12", "#d35400", "#c0392b", "#7f8c8d"][version];
+                    }
+
                     if (data) {
                     Highcharts.chart('chart-container', {
                         chart: {
@@ -100,7 +105,7 @@
                         },
                         {
                             type: 'line',
-                            name: 'Votre score',
+                            name: 'Votre score - version <?=$SELECTED_VERSION[$_GET['category']]?>',
                             data: dataV,
                             lineWidth:0,
                             color: '#f8dba6',
@@ -113,6 +118,23 @@
                                 }
                             }
                         },
+                        <?php foreach ($dataVersions as $version => $da):?>
+                            {
+                                type: 'line',
+                                name: 'Votre score - version <?=$version?>',
+                                data: [<?=implode(",",$da)?>],
+                                lineWidth:0,
+                                color: pickColor(<?=$version?>),
+                                marker: {
+                                    radius:6
+                                },
+                                states: {
+                                    hover: {
+                                        lineWidthPlus:0
+                                    }
+                                }
+                            },
+                        <?php endforeach; ?>
                         {
                             type: 'line',
                             name: 'Moyenne générale',
