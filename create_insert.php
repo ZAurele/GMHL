@@ -51,7 +51,7 @@ insert_request($values,$link,'users');
 
 $message .= "Bonjour, <br/><br/>";
 
-$message .= "Vous ne vous êtes pas encore connecté sur le site du <b style='color:orange'>GMHL</b>.<br/>";
+$message .= "Vous ne vous êtes pas encore connecté sur le site du <b style='color:orange'>CERP</b>.<br/>";
 $message .= "De fait, ci-dessous vous trouverez de nouveau vos identifiants et mot de passe (réinitialisé):"."</br>";
 $message .= "<span style='color:green'>C'est un site bénévole, rien de commercial (plus d'infos sur le site)</span>"."</br><br/>";
 $message .= "<b style='color:blue'>LIENDUSITE:</b>       <b style='color:#c92728'>up.aurele.eu</b>"."</br>";

@@ -41,6 +41,17 @@
 				<li><a href="?page=correspondantslocaux" class="icon fa-user"> Trombinoscope </a></li>			
 
 				</ul>
+				<header class="major">
+				<h2>Ressources</h2>
+				</header>
+				<ul>
+				<li><a href="?page=mesdroits" class="icon fa-gavel"> Connaître mes droits</a></li>
+				<li><a href="?page=facteurschoix" class="icon fa-question"> Pourquoi ces facteurs</a></li>
+				<li><a href="?page=ressources" class="icon fa-book"></i> Ressources utiles</a></li>
+				<!--<li><a href="?page=ressources" class="icon fa-circle"></i> Références bibliographiques</a></li>-->
+				
+				
+</ul> 
 
 				<?php if($logged):?>
 				<header class="major">
@@ -69,7 +80,7 @@
 					?>
 				</ul>
 
-				<header class="major">
+				<!--<header class="major">
 					<h2>Résultats</h2>
 				</header>
 				<ul>
@@ -84,17 +95,9 @@
 					}
 					?>
 				</ul>
-				<? endif;?>
+				<? endif;?>-->
 
-				<header class="major">
-				<h2>Ressources</h2>
-				</header>
-				<ul>
-				<li><a href="?page=facteurschoix" class="icon fa-question"> Pourquoi ces facteurs</a></li>
-				<li><a href="?page=ressources" class="icon fa-book"></i> Ressources utiles</a></li>
-				<li><a href="?page=mesdroits" class="icon fa-gavel"> Connaître mes droits</a></li>
 				
-</ul> 
 
 
 <!--<header class="major">
