@@ -12,7 +12,7 @@ function validateDate($date){
 
 
 function get_user_pseudo($id) {
-    $user_infos = select_request_s($GLOBALS['link'],'profils',false,'user_id',$id);    
+    $user_infos = select_request_s($GLOBALS['link'],'profils',false,'user_id',$id);   
     if($user_infos==null) return '';
     if ($user_infos['profil_view'] == 'nom-prenom') {        
         return $user_infos['prenom'].' '.$user_infos['nom'];    
@@ -173,9 +173,10 @@ function capitalize($s) {
 }
 
 function is_localhost() {
-	return true;
+    var_dump($_SERVER['REMOTE_ADDR']);
 	$whitelist = array( '127.0.0.1', '::1' );
 	if( in_array( $_SERVER['REMOTE_ADDR'], $whitelist) )
 		return true;
+    return false;
 }
 ?>

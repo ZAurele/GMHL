@@ -55,9 +55,10 @@ N'hésitez pas à faire remonter vos questions et vos retours d'expériences à 
 <div class="home-blocks">
     <?php 
         foreach($QUESTIONS as $category => $cat_cf) {
+            if (isset($cat_cf["disabled"]) && $cat_cf["disabled"]) continue;
     ?>
-    <div class="home-block" style="border: <?=$cat_cf["b-color"]?> 2px solid;">
-        <a href="<?=$cat_cf['url']?>" style="color:<?=$cat_cf["b-color"]?>">
+    <div class="home-block" style="border: <?=$cat_cf["b-color"]?> 4px solid;">
+        <a href="?page=results&category=<?=$category?>" style="color:<?=$cat_cf["b-color"]?>">
             <span style="color:<?=$cat_cf['color']?> !important" class="icon fa-<?=$cat_cf['icon']?>"></span> 
         <?=$cat_cf['text']?></a>
     </div>

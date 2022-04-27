@@ -47,14 +47,11 @@ De cette façon, <b>nous garantissons la protection totale de vos données, de v
 <p style="text-align:center">
 N'hésitez pas à faire remonter vos questions et vos retours d'expériences à <a href="mailto:info@projetcerp.com" title="info@projetcerp.com" style="color:#17202A"> info@projetcerp.com </a></p>
 
-<div class="home-block" style="border: orange2px solid;">
-    <a href="?page=login"/><p style="text-align:center">Se connecter</p></a>
-</div>
-
 <?php if($logged):?>
 <div class="home-blocks">
     <?php 
         foreach($QUESTIONS as $category => $cat_cf) {
+            if (isset($cat_cf["disabled"]) && $cat_cf["disabled"]) continue;
     ?>
     <div class="home-block" style="border: <?=$cat_cf["b-color"]?> 2px solid;">
         <a href="<?=$cat_cf['url']?>" style="color:<?=$cat_cf["b-color"]?>">

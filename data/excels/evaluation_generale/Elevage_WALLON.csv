@@ -1,17 +1,17 @@
-Q_ID;Question;R1;R2 ;R3;R4;R5;R6;;;;;;;;;;
-ele1;Parcelles en ZPP ou hors ZPP;Ne sais pas / Non applicable;En ZPP;Hors ZPP;NA;NA;NA;;;;;;;;;;
-ele2;Eleveur professionnel ou hobyiste ?;Ne sais pas / Non applicable;Professionnel;Hobbyiste ;NA;NA;NA;;;;;;;;;;
-ele3;Si professionnel, ‡ titre principal ou complÈmentaire;Ne sais pas / Non applicable;Principale;ComplÈmentaire;NA;NA;NA;;;;;;;;;;
-ele4;AntÈcÈdent prÈdation (chien ou loup) ?;Ne sais pas / Non applicable;Non;Oui, occasionnellement;Oui, de faÁon rÈccurente;NA;NA;;;;;;;;;;
-ele5;Taille de la parcelle;Ne sais pas / Non applicable;InfÈrieur ou Ègal ‡ 0,5 Ha;Entre 0.5 et 1 Ha;Entre 1 et 3 Ha;> 3 Ha;NA;;;;;;;;;;
-ele6;A quelle distance en moyenne se situe les parcs ‡ votre exploitation ou habitation ?;Ne sais pas / Non applicable;0 - 100 m;100 - 500 m;500 m - 1 km;1 km - 10 km;> 10 km;;;;;;;;;;
-ele7;Combien de bÍtes se trouvent sur votre exploitation ?;Ne sais pas / Non applicable;<10;10 ‡ 30;30-50;50-100;>100;;;;;;;;;;
-ele8;Combien de lots avez-vous au p‚turage en mÍme temps ?;Ne sais pas / Non applicable;1;2;3;>3;NA;;;;;;;;;;
-ele9;Regroupez vous vos bÍtes la nuit ?;Ne sais pas / Non applicable;Oui ;Non ;;NA;NA;;;;;;;;;;
-ele10;Confinement dans un abri ?;Ne sais pas / Non applicable;Oui, abri impermÈable au passage des prÈdateurs;Oui, mais abri permÈable ‡ l'intrusion de prÈdateurs;Absence d'abri;NA;NA;;;;;;;;;;
-ele11;Les naissances s'effectuent-elles ‡ l'exterieur ?;Ne sais pas / Non applicable;Non;Oui;NA;NA;NA;;;;;;;;;;
-ele12;De jeunes animaux sont ils prÈsents dans la parcelle ?;Ne sais pas / Non applicable;Non;Oui;NA;NA;NA;;;;;;;;;;
-ele13;Combien de temps vos animaux sont-ils en p‚turage ‡ l'extÈrieur ?;Ne sais pas / Non applicable;6 mois (printemps - ÈtÈ);9 mois (rentrÈ l'hiver en bergerie);Toute l'annÈe dehors;NA;NA;;;;;;;;;;
-ele14;Temps de prÈsence des animaux dans la parcelle ÈtudiÈe ?;Ne sais pas / Non applicable;Moins d'1 mois;Entre 1 et 3 mois;Plus de 3 mois;NA;NA;;;;;;;;;;
-ele15;Quelle(s) espËce(s) Èlevez-vous ?;Ne sais pas / Non applicable;Equins;Bovins;Caprins;Ovins;NA;;;;;;;;;;
-ele16;RusticitÈ de l'animal : utilisez-vous une race capable de se dÈfendre ?;Ne sais pas / Non applicable;Oui;Non ;NA;NA;NA;;;;;;;;;;
+Q_ID;Question;R1;R2 ;R3;R4;R5;R6
+ele1;Parcelles en ZPP ou hors ZPP;Ne sais pas / Non applicable;En ZPP;Hors ZPP;NA;NA;NA
+ele2;Eleveur professionnel ou hobyiste ?;Ne sais pas / Non applicable;Professionnel;Hobbyiste ;NA;NA;NA
+ele3;Si professionnel, √† titre principal ou compl√©mentaire;Ne sais pas / Non applicable;Principale;Compl√©mentaire;NA;NA;NA
+ele4;Ant√©c√©dent pr√©dation (chien ou loup) ?;Ne sais pas / Non applicable;Non;Oui, occasionnellement;Oui, de fa√ßon r√©ccurente;NA;NA
+ele5;Taille de la parcelle;Ne sais pas / Non applicable;Inf√©rieur ou √©gal √† 0,5 Ha;Entre 0.5 et 1 Ha;Entre 1 et 3 Ha;> 3 Ha;NA
+ele6;A quelle distance en moyenne se situe les parcs √† votre exploitation ou habitation ?;Ne sais pas / Non applicable;0 - 100 m;100 - 500 m;500 m - 1 km;1 km - 10 km;> 10 km
+ele7;Combien de b√™tes se trouvent sur votre exploitation ?;Ne sais pas / Non applicable;<10;10 √† 30;30-50;50-100;>100
+ele8;Combien de lots avez-vous au p√¢turage en m√™me temps ?;Ne sais pas / Non applicable;1;2;3;>3;NA
+ele9;Regroupez vous vos b√™tes la nuit ?;Ne sais pas / Non applicable;Oui ;Non ;;NA;NA
+ele10;Confinement dans un abri ?;Ne sais pas / Non applicable;Oui, abri imperm√©able au passage des pr√©dateurs;Oui, mais abri perm√©able √† l'intrusion de pr√©dateurs;Absence d'abri;NA;NA
+ele11;Les naissances s'effectuent-elles √† l'exterieur ?;Ne sais pas / Non applicable;Non;Oui;NA;NA;NA
+ele12;De jeunes animaux sont ils pr√©sents dans la parcelle ?;Ne sais pas / Non applicable;Non;Oui;NA;NA;NA
+ele13;Combien de temps vos animaux sont-ils en p√¢turage √† l'ext√©rieur ?;Ne sais pas / Non applicable;6 mois (printemps - √©t√©);9 mois (rentr√© l'hiver en bergerie);Toute l'ann√©e dehors;NA;NA
+ele14;Temps de pr√©sence des animaux dans la parcelle √©tudi√©e ?;Ne sais pas / Non applicable;Moins d'1 mois;Entre 1 et 3 mois;Plus de 3 mois;NA;NA
+ele15;Quelle(s) esp√®ce(s) √©levez-vous ?;Ne sais pas / Non applicable;Equins;Bovins;Caprins;Ovins;NA
+ele16;Rusticit√© de l'animal : utilisez-vous une race capable de se d√©fendre ?;Ne sais pas / Non applicable;Oui;Non ;NA;NA;NA

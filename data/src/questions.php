@@ -1,7 +1,5 @@
 <?php 
-
-
-$QUESTIONS = array(
+$QUESTIONS_GROUPS = array("fr" => array(
 	"enquete_social" => array(
 		"text" => "Enquête sociale",
         "description" => "",
@@ -11,6 +9,7 @@ $QUESTIONS = array(
         "color" => "",
         "b-color" => "#8e44ad",
         "complete" => false,
+        "disabled" => true,
 		"values" => 
 		array(
 			
@@ -46,6 +45,7 @@ $QUESTIONS = array(
         "color" => "",
         "b-color" => "#27ae60",
         "complete" => false,
+        "multi" => "Parcelle",
 		"values" => 
 		array(
 			"Contexte_Socioeco_Parcelle" => array("text" => "Contexte socioéco parcelle", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
@@ -54,9 +54,75 @@ $QUESTIONS = array(
 			"Environnement_Parcelle" => array("text" => "Environnement parcelle", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
 		)
 	)
-);
+),
+"be" => 
+array(
+	"enquete_social" => array(
+		"text" => "Enquête sociale",
+        "description" => "",
+        "bareme" => get_bareme("Bareme_Parcelle"),
+        "icon" => "",
+        "url" => "",
+        "color" => "",
+        "b-color" => "#8e44ad",
+        "complete" => false,
+        "disabled" => true,
+		"values" => 
+		array(
+			
+		)
+        ),
+    "evaluation_generale" => array(
+		"text"=> "Évaluation générale",
+        "description" => "",
+        "bareme" => get_bareme("Bareme_General_WALLON"),
+        "icon" => "",
+        "url" => "",
+        "color" => "",
+        "b-color" => "#f39c12",
+        "complete" => false,
+		"values" =>
+		array(
+			"Elevage_WALLON"=> array("text" => "Élevage", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Prevention_Structurelle_WALLON"=> array("text" => "Prévention structurelle général", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Prevention_Vivante_WALLON"=> array("text" => "Prévention vivante général", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Environnement_WALLON"=> array("text" => "Environnement", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Environnement_General_WALLON"=> array("text" => "Environnement général", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array())
+		)
+	),
+	"evaluation_parcelle" => array(
+		"text" => "Évalution parcelle",
+        "description" => "",
+        "bareme" => get_bareme("Bareme_Parcelle"),
+        "icon" => "",
+        "url" => "",
+        "color" => "",
+        "b-color" => "#27ae60",
+        "complete" => false,
+        "multi" => "Parcelle",
+		"values" => 
+		array(
+			"Contexte_Socioeco_Parcelle" => array("text" => "Contexte socioéco parcelle", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Elevage_Parcelle" => array("text" => "Élevage parcelle", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Protection_Parcelle" => array("text" => "Protection parcelle", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Environnement_Parcelle" => array("text" => "Environnement parcelle", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+		)
+	)
+)
+        );
+
+$ENV = isset($PROFILS["country"]) ? $PROFILS["country"] : "fr";
+$QUESTIONS = $QUESTIONS_GROUPS[$ENV];
+
+$CATEGORIES = array();
+$SELECTED_NB = array();
+$SELECTED_VERSION = array();
 
 foreach($QUESTIONS as $category => $cat_cf) {
+    array_push($CATEGORIES, $category);
+    $SELECTED_NB[$category] = "1";
+    $SELECTED_VERSION[$category] = 0;
+
 	foreach ($cat_cf["values"] as $type => $cf) {
 		$path = $category."/".$type;
 		$raw_values = readCsv($path);
@@ -66,16 +132,38 @@ foreach($QUESTIONS as $category => $cat_cf) {
             $raw_answers = array_slice($qu,2);
             $answers = array();
             foreach($raw_answers as $k=>$v) {
-                if($v != "NA") $answers[$k] = $v;
+                if($v != "NA" && $v != '') $answers[$k] = $v;
             }
-            
+            if($qu[0] != "") 
             $values[$qu[0]] = array("id"=>$qu[0], "title"=> capitalize($qu[1]), "values"=>$answers);
         }
 		$QUESTIONS[$category]["values"][$type]["values"] = $values;
 	}
 }
 
+if(isset($_GET["selected"]) && isset($_GET["category"])) {
+    $_SESSION[$_GET["category"]."multi"] = $_GET["selected"];
+    $SELECTED_NB[$_GET["category"]] = $_GET["selected"];
+}
 
+if(isset($_GET["selected_version"]) && isset($_GET["category"])) {
+    $_SESSION[$_GET["category"]."version"] = $_GET["selected_version"];
+    $SELECTED_VERSION[$_GET["category"]] = $_GET["selected_version"];
+}
+
+if(isset($_POST["new_date"]) && isset($_POST["category"])) {
+    $_SESSION[$_POST["category"]."version"] = $_POST["new_date"];
+    $SELECTED_VERSION[$_POST["category"]] = $_POST["new_date"];
+}
+
+foreach ($CATEGORIES as $cat) {
+    if(isset($_SESSION[$cat."multi"])){
+        $SELECTED_NB[$cat] = $_SESSION[$cat."multi"];
+    }
+    if(isset($_SESSION[$cat."version"])){
+        $SELECTED_VERSION[$cat] = $_SESSION[$cat."version"];
+    }
+}
 
 $SCORES_MAX = array();
 
@@ -97,17 +185,19 @@ foreach($QUESTIONS as $category => $cf_cat) {
             if (!isset($SCORES_MAX[$category][$type][$id])) {
                 try {
                     $SCORES_MAX[$category][$type] += intval($bareme_question["score_max"]);
-                                       } catch(Exception $e) {echo '';}
+                } catch(Exception $e) {echo '';}
             }
         }
 
-        $sql = "select count(*) as nb from questionnaires where category = '".$category."' and type = '".$type."' and user_id = ".$USER_ID." and answer != ''";
+        $sql = "select count(*) as nb from questionnaires where category = '".$category."' and type = '".$type."' and user_id = ".$USER_ID." and answer != '' and number = ".$SELECTED_NB[$category]." and version = ".$SELECTED_VERSION[$category]." and env = '".$ENV."'";
+
         $req = request($link,$sql,true);
         $rows = $req->fetch_all(MYSQLI_ASSOC);
         $nb = $rows[0]['nb'];
 
         $values = $QUESTIONS[$category]["values"][$type]["values"];
         $complete =  ''.$nb == ''.count($values);
+
         if (!$first_invalid_type && $first_invalid_type == null && !$complete)
             $first_invalid_type  = $type;
 
@@ -118,6 +208,7 @@ foreach($QUESTIONS as $category => $cf_cat) {
     }
 
     $complete = $first_invalid_type == null;
+    
     $QUESTIONS[$category]['icon'] = $complete ? 'check-square-o' : 'square-o';
     $QUESTIONS[$category]['complete'] = $complete;
     $QUESTIONS[$category]['color'] = $complete ? '#27ae60' : '#d35400';
@@ -185,16 +276,18 @@ function get_bareme($path) {
         if (!isset($bareme[$row[0]])) {
             $bareme[$row[0]] = array("values"=> array(),"score_max"=>$row[3]);
         }
+        if ($row[0] != '')
         $bareme[$row[0]]["values"][$row[1]] = $row[2];
     }
     return $bareme;
 }
 
-function update_answer($link, $category, $type, $key, $value, $user_id) {
-    $sql_insert = "insert into questionnaires (category, type, id, answer, user_id)" ;
-    $sql_insert .= " values ('$category', '$type', '".$key."', ".$value.", ".$user_id.")";
+function update_answer($link, $category, $type, $key, $value, $user_id, $number, $version, $env) {
+    $sql_insert = "insert into questionnaires (category, type, id, answer, user_id, number, version, env)" ;
+    $sql_insert .= " values ('$category', '$type', '".$key."', ".$value.", ".$user_id.", ".$number.", ".$version.",'".$env."')";
     $sql_insert .= " on duplicate key update answer = ".$value;
-    return request($link,$sql_insert, true);
+
+    return request($link,$sql_insert, false);
 }
 
 ?>

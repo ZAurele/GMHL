@@ -15,7 +15,9 @@ if (isset($_POST["update_questions"]) && isset($_POST["category"]) && isset($_PO
                 "user_id" => $USER_ID
             );
             if (''.$value == '') $value = 0;
-            update_answer($link, $_POST["category"], $_POST["type"], $key, $value, $USER_ID);
+            update_answer($link, $_POST["category"], $_POST["type"], $key, $value, $USER_ID, $SELECTED_NB[$_POST["category"]],$SELECTED_VERSION[$_POST["category"]], $ENV);
+            
+            header('Location: ?page=results&category='.$_POST["category"]);
         }
     }
 }
@@ -26,7 +28,7 @@ if ($valid_q) {
     $category = $_GET['category'];
     $type = $_GET['type'];
 
-    $sql = "SELECT * FROM questionnaires where user_id = '".$USER_ID."' and category = '".$category."' and type = '".$type."' order by id DESC";
+    $sql = "SELECT * FROM questionnaires where user_id = '".$USER_ID."' and category = '".$category."' and type = '".$type."' and number = ".$SELECTED_NB[$category]." and version = ".$SELECTED_VERSION[$category]." and env = '".$ENV."' order by id DESC";
     $rows = select_request($link,$sql);
 
     $saved_answers = array();
@@ -38,7 +40,7 @@ if ($valid_q) {
 
     ?>
         <form method="post" action="index.php?page=questions&category=<?=$category?>&type=<?=$type?>">
-            <div class="row uniform">:
+            <div class="row uniform">
                 <?php
                     foreach($values as $id => $qu) {
                         ?>

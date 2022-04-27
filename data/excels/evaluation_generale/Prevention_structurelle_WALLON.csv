@@ -1,0 +1,8 @@
+Q_ID;Question;R1;R2 ;R3;R4;R5;R6;R7;R8;R9;R10;R11;R12;R13;R14;R15;R16
+stru1;Type de clôture utilisée sur la parcelle ?;Ne sais pas / Non applicable;Treillis 200 cm non électrifié ET enterré;Treillis 160 cm électrifié avec 1 fil au-dessus et un fil en dessous;Treillis 120 cm électrifié (2 fils au-dessus ET 1 fil en-dessous);Filet mobile électrifié 120 cm (type flexinet);Clôture 5 à 6 fils électriques;Treillis > 180 cm de haut non électrifié, mais non enterré;Treillis 90 cm<H<120 cm (2 fils au-dessus ET 1 fil en-dessous);Treillis < 100 cm avec min. 1 fil au-dessus ET 1 fil en dessous;Filet mobile électrifié 90 - 120 cm (type flexinet);Haie défensive et imperméable sur tout le périmètre;Clôture 4 fils électriques;Treillis 120 cm <H<180 cm non électrique;Treillis 100 cm<H<120 cm non électrique;Treillis < 100 cm non électrique;Clôture moins de 4 fils non électriques
+stru2;Quel est l'état global de vos clôtures ?;Ne sais pas / Non applicable;Bon (clôture récente et en bon état);Moyen;Mauvais (ancienne clôture dégradée);NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA
+stru3;Y a-t-il des points de faiblesses dans vos clôtures ?;Ne sais pas / Non applicable;Non;Oui;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA
+stru4;Vos accès (entrées, barrières) sont-ils sécurisés ou électrifiés ?;Ne sais pas / Non applicable;Oui;Non;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA
+stru5;Présence d'un talus qui faciliterait le franchissement ?;Ne sais pas / Non applicable;Non;Oui;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA
+stru6;Souhaitez vous mettre en place des moyens de protection ?;Ne sais pas / Non applicable;Oui;Non;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA
+stru7;Des dispositif d'effarouchement sont-ils mis en place ?;Ne sais pas / Non applicable;Oui;Non;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA;NA

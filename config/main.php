@@ -43,9 +43,15 @@ include "config/users.php";
 //$PAGE = "login.php";
 $users_pages = array();
 if(isset($_GET['page'])){   
-        if(in_array($_GET['page'], $users_pages) && !$logged) {$PAGE="login.php";} 
-        else{
-    $PAGE = $_GET['page'].".php";    }
+    if(in_array($_GET['page'], $users_pages) && !$logged) {
+        $PAGE="login.php";
+    } 
+    elseif($logged && $_GET["page"] == "login") {
+        $PAGE = "main.php";
+    } else
+    {
+        $PAGE = $_GET['page'].".php";    
+    }
 } else {        
     $PAGE = "main.php";    
 }

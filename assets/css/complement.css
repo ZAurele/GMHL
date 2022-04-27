@@ -74,6 +74,7 @@ h3.profil > :last-child {
 	padding: 20px !important;
     margin: 20px !important;
     border-radius: 15px;
+	font-weight: bold;
 }
 
 .home-blocks {
@@ -83,4 +84,31 @@ h3.profil > :last-child {
     justify-content: center;
     align-items: center;
     align-content: space-around;
+}
+
+#login {
+	position: absolute;
+    top: 20px;
+    right: 0px;
+    border: solid 4px #f8dba6;
+    padding: 8px;
+    border-radius: 15px;
+    font-weight: bold;
+	font-size:1.2em;
+}
+
+#login i {
+	margin-right: 5px;
+	color: #f8dba6;
+}
+
+#login:hover {
+	border: solid 4px #84a138;
+	color: #84a138 !important;
+}
+
+#logout {
+	position: absolute;
+    top: 20px;
+    right: 0px;
 }
