@@ -55,72 +55,75 @@ if(isset($_SESSION['login_user']) && empty($_POST['logout'])){
     $sql = "select * from users where username = '$user_check'";
     $ses_sql = mysqli_query($link,$sql);
     $row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
-    
-    $DATE = explode(' ',$row['modificationTime'])[0];
-        
-    if ($DATE != date('Y-m-d') || $row['connexions'] == "") {
-        
-        $old_connexions = $row['connexions'];
-        
-        if ($old_connexions == "") {
-            $connexions = date('Y-m-d');
-        } else {
-            //$connexions = $old_connexions.','.date('Y-m-d');
-            $connexions = date('Y-m-d');
-        }
-        update_request(array('connexions'=>$connexions),$link,'users','id',$row['id']);
-    }
-    
-    $firstlogin = false;
-    if ($row['startTime'] == '0000-00-00 00:00:00') {
-        $firstlogin = true;
-        update_request(array('startTime'=>date('Y-m-d G:i:s')),$link,'users','id',$row['id']);
-    } 
-    
-    $updated_time = $row['modificationTime'];
-    $user_id_session = $row['id'];
-    $login_session = $row['username'];
-    
-    $logged = true;
-    
-    // PROFILS
-    $default_profils_infos = array(
-        "user_id" => $user_id_session,
-        "nom" => '',
-        "prenom" => '',
-        "email" => '',
-        "email_enable" => '',
-        "profil_view" => '',
-        "frequence_notifications" => 0,
-        "country" => "fr",
-        "description" => '',
-        "messageMail" => '',
-        "notificationMail" => '',
-        "privateMail" => ''
-    );
 
-    $sql = "select * from profils where user_id = '$user_id_session'";
-    $ses_sql = mysqli_query($link,$sql);
-    $PROFILS = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
+    if ($row != null) {
     
-    if(!($PROFILS != null && sizeof($PROFILS)!=0)) {
-        insert_request($default_profils_infos,$link,'profils');
-        $PROFILS = $default_profils_infos;
-    }
-    
-    if($_SERVER["REQUEST_METHOD"] == "POST") {
-        if (!empty($_POST['action'])){
-            if ($_POST['action'] == 'updateProfil'){
-                foreach ($PROFILS as $key => $element) {
-                    if (isset($_POST[$key])) {
-                        $PROFILS[$key] = $_POST[$key];
-                    }
-                }
-                
-                update_request($PROFILS,$link,'profils','user_id',$_SESSION['login_id']);
+        $DATE = explode(' ',$row['modificationTime'])[0];
+            
+        if ($DATE != date('Y-m-d') || $row['connexions'] == "") {
+            
+            $old_connexions = $row['connexions'];
+            
+            if ($old_connexions == "") {
+                $connexions = date('Y-m-d');
+            } else {
+                //$connexions = $old_connexions.','.date('Y-m-d');
+                $connexions = date('Y-m-d');
             }
+            update_request(array('connexions'=>$connexions),$link,'users','id',$row['id']);
         }
-    } 
+        
+        $firstlogin = false;
+        if ($row['startTime'] == '0000-00-00 00:00:00') {
+            $firstlogin = true;
+            update_request(array('startTime'=>date('Y-m-d G:i:s')),$link,'users','id',$row['id']);
+        } 
+        
+        $updated_time = $row['modificationTime'];
+        $user_id_session = $row['id'];
+        $login_session = $row['username'];
+        
+        $logged = true;
+        
+        // PROFILS
+        $default_profils_infos = array(
+            "user_id" => $user_id_session,
+            "nom" => '',
+            "prenom" => '',
+            "email" => '',
+            "email_enable" => '',
+            "profil_view" => '',
+            "frequence_notifications" => 0,
+            "country" => "fr",
+            "description" => '',
+            "messageMail" => '',
+            "notificationMail" => '',
+            "privateMail" => ''
+        );
+
+        $sql = "select * from profils where user_id = '$user_id_session'";
+        $ses_sql = mysqli_query($link,$sql);
+        $PROFILS = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
+        
+        if(!($PROFILS != null && sizeof($PROFILS)!=0)) {
+            insert_request($default_profils_infos,$link,'profils');
+            $PROFILS = $default_profils_infos;
+        }
+        
+        if($_SERVER["REQUEST_METHOD"] == "POST") {
+            if (!empty($_POST['action'])){
+                if ($_POST['action'] == 'updateProfil'){
+                    foreach ($PROFILS as $key => $element) {
+                        if (isset($_POST[$key])) {
+                            $PROFILS[$key] = $_POST[$key];
+                        }
+                    }
+                    
+                    update_request($PROFILS,$link,'profils','user_id',$_SESSION['login_id']);
+                }
+            }
+        } 
+    }
 }
 
 if (isset($_GET['nonVu'])) {

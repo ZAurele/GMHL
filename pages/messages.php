@@ -156,6 +156,6 @@ foreach ($messages as $message):
     </div>
     </br>
     
-	<?php include 'messages/pagesScroller.php';?>
+	<?php /*include 'messages/pagesScroller.php';*/?>
 </section>
 <?php endif;?>
