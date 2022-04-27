@@ -16,42 +16,39 @@
 					<li><a href="?page=accueilducerp" class="icon fa-home"> Accueil</a></li>
 				</ul>
 
-				<header class="major">
-<h2>Espace personnel</h2>
-</header>
-<ul>
-<li><a href="?page=connexion" class="icon fa-eye"> Connexion</a></li></ul>
-
 				</ul>
 				<header class="major">
 					<h2>A propos du CERP</h2>
 				</header>
-				<ul>
-				<li><a href="?page=histoireducerp" span class="icon fa-lightbulb"> Histoire du CERP</a></li>
-				<li><a href="?page=methodecerp" span class="icon fa-light fa-flask"></i> L'étude</a></li>
 
-				</ul>
-				<header class="major">
-				<h2>Les acteurs</h2>
-				</header>
 				<ul>
-				<li><a href="?page=quisommesnous" class="icon fa-users"> Membres fondateurs</a></li>
-				<li><a href="?page=partenairestechniques" class="icon fa-user-plus"> Partenaires techniques</a></li>
-				<li><a href="?page=partenairesfinanciers" class="icon fa-child"> Partenaires financiers </a></li>
-				<li><a href="?page=correspondantslocaux" class="icon fa-user"> Trombinoscope </a></li>			
+					<li><a href="?page=histoireducerp" span class="icon fa-lightbulb"> Histoire du CERP</a></li>
+					<li><a href="?page=methodecerp" span class="icon fa-light fa-flask"></i> L'étude</a></li>
+				</ul>
 
-				</ul>
-				<header class="major">
-				<h2>Ressources</h2>
-				</header>
 				<ul>
-				<li><a href="?page=mesdroits" class="icon fa-gavel"> Connaître mes droits</a></li>
-				<li><a href="?page=facteurschoix" class="icon fa-question"> Pourquoi ces facteurs</a></li>
-				<li><a href="?page=ressources" class="icon fa-book"></i> Ressources utiles</a></li>
-				<!--<li><a href="?page=ressources" class="icon fa-circle"></i> Références bibliographiques</a></li>-->
-				
-				
-</ul> 
+					<li>
+						<span class="opener"><span class="icon fa-users"> Les acteurs</span></span>
+						<ul>
+							<li><a href="?page=quisommesnous" class="icon fa-users"> Membres fondateurs</a></li>
+							<li><a href="?page=partenairestechniques" class="icon fa-user-plus"> Partenaires techniques</a></li>
+							<li><a href="?page=partenairesfinanciers" class="icon fa-child"> Partenaires financiers </a></li>
+							<li><a href="?page=correspondantslocaux" class="icon fa-user"> Trombinoscope </a></li>			
+						</ul>
+					<li>
+				</ul>
+
+				<ul>
+					<li>
+						<span class="opener"><span class="icon fa-book"> Les Ressources</span></span>
+						<ul>
+						<li><a href="?page=mesdroits" class="icon fa-gavel"> Connaître mes droits</a></li>
+						<li><a href="?page=facteurschoix" class="icon fa-question"> Pourquoi ces facteurs</a></li>
+						<li><a href="?page=ressources" class="icon fa-book"></i> Ressources utiles</a></li>
+						<!--<li><a href="?page=ressources" class="icon fa-circle"></i> Références bibliographiques</a></li>-->
+						</ul> 
+					</li>
+				</ul>
 
 				<?php if($logged):?>
 				<header class="major">
@@ -72,22 +69,7 @@
 				</ul>
 				<? endif;?>
 
-				<header class="major">
-					<h2>Ressources</h2>
-				</header>
-
-				<ul>
-					<li><a href="?page=facteurschoix" class="icon fa-question"> Pourquoi ces facteurs</a></li>
-					<li><a href="?page=ressources" class="icon fa-book"> Ressources techniques</a></li>
-					<li><a href="?page=ressources" class="icon fa-gavel"> Mes droits</a></li>
-				</ul>
-
-
-<!--<header class="major">
-					<h2>Messages</h2>
-				</header>
-				<?php include "sidebar/menu.php";?>
-				</br>-->
+				<?php /*include "sidebar/menu.php";*/?>
 				
 				<header class="major">
 				<h2>Configuration</h2>

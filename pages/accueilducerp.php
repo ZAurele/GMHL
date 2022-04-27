@@ -47,10 +47,6 @@ De cette façon, <b>nous garantissons la protection totale de vos données, de v
 <p style="text-align:center">
 N'hésitez pas à faire remonter vos questions et vos retours d'expériences à <a href="mailto:info@projetcerp.com" title="info@projetcerp.com" style="color:#17202A"> info@projetcerp.com </a></p>
 
-<div class="home-block" style="border: orange2px solid;">
-    <a href="?page=login"/><p style="text-align:center">Se connecter</p></a>
-</div>
-
 <?php if($logged):?>
 <div class="home-blocks">
     <?php 
