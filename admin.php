@@ -130,7 +130,7 @@ if ($access && isset($_GET["add_user"])) {
 } else {
     ?>
 
-    <form action="create_insert.php" method="post"><input type="password" name="pass"><input type="submit" value="Envoyer">
+    <form action="admin.php" method="post"><input type="password" name="pass"><input type="submit" value="Envoyer">
     </form>
 
     <?php

@@ -70,7 +70,7 @@
 					}
 					?>
 				</ul>
-				<? endif;?>-->
+				<? endif;?>
 
 				<header class="major">
 					<h2>Ressources</h2>

@@ -25,6 +25,6 @@ if (is_localhost()) {
 	$host="localhost";
 	$user="root";
 	$passwd="root";
-	$db = "gmhl";
+	$db = "cerp";
 }
 ?>
