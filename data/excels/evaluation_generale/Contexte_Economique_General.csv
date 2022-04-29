@@ -1,11 +1,11 @@
 Q_ID;Question;R1;R2 ;R3;R4;R5;R6;;
-eco1;Quel est le schéma de votre exploitation ? ;Ne sait pas /Non applicable;O, un seul tenant ;L, T, U;Dispersé;NA;NA;;
-eco2;A quelle distance en moyenne se situent les parcs de votre exploitation ? ;Ne sait pas /Non applicable;<100m;<1km ;<10km ;<20km ;>20km;;
-eco3;Etes-vous autonome en fourrage ? ;Ne sait pas /Non applicable;Oui ;Non;NA;NA;NA;;
-eco4;Etes-vous autonome en céréales? ;Ne sait pas /Non applicable;Oui ;Non ;NA;NA;NA;;
-eco5;Quelle est la situation financière de votre exploitation ? ;Ne sait pas /Non applicable;Bonne ;Moyenne;Mauvaise ;NA;NA;;
-eco6;Avez-vous une activité économique/ professionnelle en plus de votre métier d'éleveur/de berger ? ;Ne sait pas /Non applicable;Non ;Oui, <10 heures par semaine ;Oui, >10 heures par semaine ;NA;NA;;
-eco7;A combien d'année vous projetez-vous ? ;Ne sait pas /Non applicable;10 ans et plus ;Entre 1 et 10 ans ;Moins d'un an ;NA;NA;;
-eco8;Pouvez-vous bénéficier d'un accompagnement financier dans le cadre de la prédation par le Loup ? ;Ne sait pas /Non applicable;Cerle 0;Cercle 1 ;Cercle 2 ;Cercle 3;Aucun ;;
-eco9;Pouvez-vous vous appuyer sur une main d'œuvre si vous avez besoin de soutien sur l'exploitation ? ;Ne sait pas /Non applicable;Oui, mais d'œuvre compétente et efficace ;Oui, mais d'œuvre moyennement compétente et efficace ;Oui, main d'œuvre non compétente ou efficace ;Non;NA ;;
+ecoG1;Quel est le schéma de votre exploitation ? ;Ne sait pas /Non applicable;O, un seul tenant ;L, T, U;Dispersé;NA;NA;;
+ecoG2;A quelle distance en moyenne se situent les parcs de votre exploitation ? ;Ne sait pas /Non applicable;<100m;<1km ;<10km ;<20km ;>20km;;
+ecoG3;Etes-vous autonome en fourrage ? ;Ne sait pas /Non applicable;Oui ;Non;NA;NA;NA;;
+ecoG4;Etes-vous autonome en céréales? ;Ne sait pas /Non applicable;Oui ;Non ;NA;NA;NA;;
+ecoG5;Quelle est la situation financière de votre exploitation ? ;Ne sait pas /Non applicable;Bonne ;Moyenne;Mauvaise ;NA;NA;;
+ecoG6;Avez-vous une activité économique/ professionnelle en plus de votre métier d'éleveur/de berger ? ;Ne sait pas /Non applicable;Non ;Oui, <10 heures par semaine ;Oui, >10 heures par semaine ;NA;NA;;
+ecoG7;A combien d'année vous projetez-vous ? ;Ne sait pas /Non applicable;10 ans et plus ;Entre 1 et 10 ans ;Moins d'un an ;NA;NA;;
+ecoG8;Pouvez-vous bénéficier d'un accompagnement financier dans le cadre de la prédation par le Loup ? ;Ne sait pas /Non applicable;Cerle 0;Cercle 1 ;Cercle 2 ;Cercle 3;Aucun ;;
+ecoG9;Pouvez-vous vous appuyer sur une main d'œuvre si vous avez besoin de soutien sur l'exploitation ? ;Ne sait pas /Non applicable;Oui, mais d'œuvre compétente et efficace ;Oui, mais d'œuvre moyennement compétente et efficace ;Oui, main d'œuvre non compétente ou efficace ;Non;NA ;;
 

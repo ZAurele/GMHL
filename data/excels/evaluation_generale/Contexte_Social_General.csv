@@ -1,9 +1,9 @@
 Q_ID;Question;R1;R2 ;R3;R4;R5;R6;R7
-Socio1;Quelle est votre expérience (années passées dans l'élevage) ? ;Ne sait pas /Non applicable;>10 ans ;entre 5 et 10 ans ;<5 ans ;<2ans ;NA;NA
-Socio2;Depuis combien de temps êtes-vous sur votre ferme ? ;Ne sait pas /Non applicable;>10 ans ;entre 5 et 10 ans ;<5 ans ;<2 ans ;NA;NA
-Socio3;Avez-vous déjà fait personnellement l'expérience de situations de prédation? ;Ne sait pas /Non applicable;Oui, de façon réccurente ;Oui, occasionnellement ;Non ;NA;NA;NA
-Socio4;Avez-vous bénéficier de formation(s) à la prédation ? ;Ne sait pas /Non applicable;Oui, formations ;Oui, autoformations;Non ;NA;NA;NA
-Socio5;Que pourriez/mobilisez-vous comme soutien technique dans le cadre de mise en place de stratégie antiprédatrices (ex: DDT, Chambre d'agri, Association de protection de la nature, etc.) ? ;Ne sait pas /Non applicable;Pluridisciplinaire sans conflits entre les accompagnants ;Pluridisciplinaire avec conflits entre les accompagnants ;Monodisciplinaire ;Aucun ;NA;NA
-Socio6;Bénéficiez-vous d'un soutien moral ? ;Ne sait pas /Non applicable;Association, spécialistes, etc. ;Famille, amis;Aucun ;NA;NA;NA
-Socio7;Avez-vous des problèmes de santé (douleurs, maladies, handicapts) qui vous limitent dans votre travail ? Sur une échelle de 1 à 10, évaluer le problème le plus limitant. O = pas de douleur ;Ne sait pas /Non applicable;0;1 à 2;3 à 4;5 à 6;7 à 8;9 à 10
-Socio8;Dans le cadre de l'élevage, le climat personnel peut avoir une influence sur la vie professionnelle. Comment définiriez-vous votre situation ? ;Ne sait pas /Non applicable;Apaisé, pas ou peu de conflits et difficultés ;Quelques conflits et difficultés soutenables ;Conflits et difficultés majeurs ;Situation insoutenable avec nécessité de faire appel à un accompagnement ;NA ;NA
+Soc1;Quelle est votre expérience (années passées dans l'élevage) ? ;Ne sait pas /Non applicable;>10 ans ;entre 5 et 10 ans ;<5 ans ;<2ans ;NA;NA
+Soc2;Depuis combien de temps êtes-vous sur votre ferme ? ;Ne sait pas /Non applicable;>10 ans ;entre 5 et 10 ans ;<5 ans ;<2 ans ;NA;NA
+Soc3;Avez-vous déjà fait personnellement l'expérience de situations de prédation? ;Ne sait pas /Non applicable;Oui, de façon réccurente ;Oui, occasionnellement ;Non ;NA;NA;NA
+Soc4;Avez-vous bénéficier de formation(s) à la prédation ? ;Ne sait pas /Non applicable;Oui, formations ;Oui, autoformations;Non ;NA;NA;NA
+Soc5;Que pourriez/mobilisez-vous comme soutien technique dans le cadre de mise en place de stratégie antiprédatrices (ex: DDT, Chambre d'agri, Association de protection de la nature, etc.) ? ;Ne sait pas /Non applicable;Pluridisciplinaire sans conflits entre les accompagnants ;Pluridisciplinaire avec conflits entre les accompagnants ;Monodisciplinaire ;Aucun ;NA;NA
+Soc6;Bénéficiez-vous d'un soutien moral ? ;Ne sait pas /Non applicable;Association, spécialistes, etc. ;Famille, amis;Aucun ;NA;NA;NA
+Soc7;Avez-vous des problèmes de santé (douleurs, maladies, handicapts) qui vous limitent dans votre travail ? Sur une échelle de 1 à 10, évaluer le problème le plus limitant. O = pas de douleur ;Ne sait pas /Non applicable;0;1 à 2;3 à 4;5 à 6;7 à 8;9 à 10
+Soc8;Dans le cadre de l'élevage, le climat personnel peut avoir une influence sur la vie professionnelle. Comment définiriez-vous votre situation ? ;Ne sait pas /Non applicable;Apaisé, pas ou peu de conflits et difficultés ;Quelques conflits et difficultés soutenables ;Conflits et difficultés majeurs ;Situation insoutenable avec nécessité de faire appel à un accompagnement ;NA ;NA
