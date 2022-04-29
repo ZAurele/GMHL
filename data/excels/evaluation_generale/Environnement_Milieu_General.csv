@@ -1,3 +1,6 @@
-Q_ID;Question;R1;R2;R3;R4;R5;R6
-mil1;Y-a t-il la présence de tourisme/loisir dérangeant autour de votre exploitation ?;Ne sais pas / Non applicable;Proximité d'un GR, route ou sentiers frequemment empruntés;Non;NA;NA;NA
-mil2;Quelle est la météorologie dominante à l'année / à la période évaluée ?;Ne sais pas / Non applicable;Bonne visibilité, temps clair (>3kms);Bonne visibilité, temps gris (<3kms );Visibilité moyenne (<1km);Visibilité mauvaise (<500m);Visibilité très mauvaise (<50m)
+Q_ID;Question;R1;R2 ;R3;R4;R5;R6
+env1;Y a-t-il la présence de tourisme/loisir dérangeant autour de votre exploitation/parc ? ;Ne sait pas /Non applicable;Proximité d'un GR, route ou sentier fréquemment empruntés;Non;NA;NA;NA
+env2;Quelle est la météorologie dominante à l'année/ à la période évaluée ? ;Ne sait pas /Non applicable;Bonne visibilité, temps clair (>3kms) ;Bonne visibilité, temps gris (<3kms) ;Visibilité moyenne (<1km);Visibilité mauvaise (<500m);Visibilité très mauvaise (<50m)
+env3;Dans quel type de relief vos bêtes sont-elles en pâturage ?;Ne sait pas /Non applicable;Bonne visibilité grâce au relief : l'ensemble du pâturage ou de l'exploitation est visible;Visibilité moyenne : certains élements du relief empêchent de voir l'ensemble de l'exploitation ou du pâturage à moins de se deplacer;Visibilité mauvaise : le relief ne permet pas de bien voir l'exploitation ou le pâturage;NA;NA
+env4;Quel est le niveau d'embroussaillement des pâturages que vous exploitez en moyenne ? ;Ne sait pas /Non applicable;<10%;<20%;<40%;<50%;>50%
+env5;Quelle est la hauteur de la végétation attenante à la parcelle (la végétation la plus haute est celle prise dans l'évaluation) ? ;Ne sait pas /Non applicable;Végétation très basse : <30%;Végétation basse : 30 cm à 1 mètre ;Végétation moyenne : 1 à 2 mètres ;Végétation haute : 2 à 7 mètres ;Végétation très haute : >8 mètres 
