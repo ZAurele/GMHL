@@ -84,8 +84,8 @@ array(
 		"values" =>
 		array(
 			"Elevage_WALLON"=> array("text" => "Élevage", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
-			"Prevention_Structurelle_WALLON"=> array("text" => "Prévention structurelle général", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
-			"Prevention_Vivante_WALLON"=> array("text" => "Prévention vivante général", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Prevention_structurelle_WALLON"=> array("text" => "Prévention structurelle général", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
+			"Prevention_vivante_WALLON"=> array("text" => "Prévention vivante général", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
 			"Environnement_WALLON"=> array("text" => "Environnement", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array()),
 			"Environnement_General_WALLON"=> array("text" => "Environnement général", "icon" => "", "complete" => false, "color" => "", "url" => "",  "values" => array())
 		)
