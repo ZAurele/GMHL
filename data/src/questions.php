@@ -176,16 +176,18 @@ foreach($QUESTIONS as $category => $cf_cat) {
         if ($first_type == null) $first_type = $type;
 
         foreach ($cf["values"] as $id => $v) {
-            $bareme_question = $bareme[$id];
+            if (isset($bareme[$id])) {
+                $bareme_question = $bareme[$id];
 
-            if (!isset($SCORES_MAX[$category]))
-                $SCORES_MAX[$category] = array();
-            if (!isset($SCORES_MAX[$category][$type]))
-                $SCORES_MAX[$category][$type] = 0;
-            if (!isset($SCORES_MAX[$category][$type][$id])) {
-                try {
-                    $SCORES_MAX[$category][$type] += intval($bareme_question["score_max"]);
-                } catch(Exception $e) {echo '';}
+                if (!isset($SCORES_MAX[$category]))
+                    $SCORES_MAX[$category] = array();
+                if (!isset($SCORES_MAX[$category][$type]))
+                    $SCORES_MAX[$category][$type] = 0;
+                if (!isset($SCORES_MAX[$category][$type][$id])) {
+                    try {
+                        $SCORES_MAX[$category][$type] += intval($bareme_question["score_max"]);
+                    } catch(Exception $e) {echo '';}
+                }
             }
         }
 
@@ -234,25 +236,26 @@ function get_scores_from_database($QUESTIONS, $category, $rows,$max=false) {
 
         if(!isset($scores[$type])) $scores[$type] = array();
         if(!isset($scores[$type][$id])) $scores[$type][$id] = array();
+        if(isset($bareme[$id])) {
+            $bareme_question = $bareme[$id];
 
-        $bareme_question = $bareme[$id];
-
-        if ($max) {
-            $bareme_values = array();
-            foreach ($bareme_question["values"] as $key => $value) {
-                if($value != "NA") $bareme_values[$key] = $value;
+            if ($max) {
+                $bareme_values = array();
+                foreach ($bareme_question["values"] as $key => $value) {
+                    if($value != "NA") $bareme_values[$key] = $value;
+                }
+                $answer_text = array_key_max_value($bareme_values);
             }
-            $answer_text = array_key_max_value($bareme_values);
-        }
 
-        //if($debug)echo "<br>$id : $answer_text<br>";
-        if (isset($bareme_question["values"][$answer_text])) {
-            //if($debug) var_dump($bareme_question["values"]);
-            $score = $bareme_question["values"][$answer_text];
-            array_push($scores[$type][$id],$score);
-            //if($debug)echo "<br>$id $score<br>";
-        } else if ($answer_text != "NA") {
-            debug("Missing answer $answer_text in bareme for category $category, type $type and question $id");
+            //if($debug)echo "<br>$id : $answer_text<br>";
+            if (isset($bareme_question["values"][$answer_text])) {
+                //if($debug) var_dump($bareme_question["values"]);
+                $score = $bareme_question["values"][$answer_text];
+                array_push($scores[$type][$id],$score);
+                //if($debug)echo "<br>$id $score<br>";
+            } else if ($answer_text != "NA") {
+                debug("Missing answer $answer_text in bareme for category $category, type $type and question $id");
+            }
         }
     }  
 

@@ -39,11 +39,15 @@ if (isset($_GET['category'])) {
 
         foreach($scores as $type => $scores_ids) {
             $score = array_sum(array_values($scores_ids));
+            if(isset($SCORES_MAX[$category][$type])) {
             $scores_all[$version][$type]["high"] = round(($score / $SCORES_MAX[$category][$type])*100);
+            }
         }
         foreach($scores_user as $type => $scores_ids) {
             $score = array_sum(array_values($scores_ids));
+            if(isset($SCORES_MAX[$category][$type])) {
             $scores_all[$version][$type]["low"] = round(($score / $SCORES_MAX[$category][$type])*100);
+            }
         }
     }
 

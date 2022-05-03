@@ -31,7 +31,7 @@
     <?php endif; ?>
 
 <?php elseif (!isset($_GET["page"]) || $_GET["page"] != "login"):?>
-    <img src="images/GMHL_Logo.png" class="logo"/>
+    <img src="images/BANDEROLLE.svg" class="logo-large"/>
 
     <div id="login">
         <i class="icon fa-user"></i><a href="?page=login">Se connecter</a>
