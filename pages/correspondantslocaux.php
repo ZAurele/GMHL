@@ -6,7 +6,7 @@
 <ul><p><h5>Groupe Mammalogique et Herpétologique du Limousin (GMHL)</h5></p></ul>
 <ul>
     <dt>
-        Marie ABEL  - Chargée de missions mammalogiques et prédation
+        Marie Abel  - Chargée de missions mammalogiques et prédation (Coordination)
     </dt> <dt>
         m.abel@gmhl.asso.fr
     </dt> <dt>
