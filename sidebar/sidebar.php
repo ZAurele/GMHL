@@ -40,7 +40,7 @@
 							<li><a href="?page=mesdroits" class="icon fa-gavel"> Connaître mes droits</a></li>
 							<li><a href="?page=facteurschoix" class="icon fa-question"> Pourquoi ces facteurs</a></li>
 							<li><a href="?page=ressources" class="icon fa-book"></i> Ressources utiles</a></li>
-							<!--<li><a href="?page=ressources" class="icon fa-circle"></i> Références bibliographiques</a></li>-->
+							<li><a href="?page=bibliographie" class="icon fa-circle"></i> Références bibliographiques</a></li>
 						</ul> 
 					</li>
 				</ul>
