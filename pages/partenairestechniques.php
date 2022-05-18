@@ -10,3 +10,12 @@
 </p>
 <p></p>
 
+<div style="text-align: center;">
+   <img src="images/APML.png" width="200" />
+</div>
+<p></p>
+<h3><p style="text-align: center;">L'Association pour le Pastoralisme de la Montagne Limousine (APML)  </p></h3>
+<p style="text-align: justify;"> 
+L'APML est le résultat concerté entre le PNR de Millevaches, les groupements pastoraux et éleveurs du territoire et quelques structures oeuvrant pour le pastoralisme. Elle s’est constituée le 13 février 2019 et s’est donné pour objectifs de coordonner, promouvoir et réaliser toutes actions visant à la gestion pastorale sur le territoire de la Montagne Limousine. Elle se veut représentative des différents acteurs locaux engagés dans le pastoralisme en étant constituée de 4 collèges : éleveurs ; bergers ; propriétaires et institutionnels. 
+</p>
+<p></p>
