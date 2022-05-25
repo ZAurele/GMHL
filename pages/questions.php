@@ -54,7 +54,7 @@ if ($valid_q) {
                                     <?php
                                     $i = 1;
                                     foreach($qu["values"] as $answer) {
-                                        if ($answer == "NA") continue;
+                                        if (trim($answer) == "NA") continue;
 
                                         $option = '<option value="'.$i.'" ';
                                         if(array_key_exists($id,$saved_answers) && ''.$saved_answers[$id] == ''.$i){
