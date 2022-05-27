@@ -1,3 +1,3 @@
 <?php
-echo readfile("./debug.log");
+echo readfile("./debug.log").replace('\n','<br/>');
 ?>

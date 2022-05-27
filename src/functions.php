@@ -100,8 +100,33 @@ function get_url2($gets,$page) {
     return get_url($gets,null).$page;
 }
 
+function getLines($file)
+{
+    $f = fopen($file, 'rb');
+    $lines = 0;
+
+    while (!feof($f)) {
+        $lines += substr_count(fread($f, 8192), "\n");
+    }
+
+    fclose($f);
+
+    return $lines;
+}
+
 function debug($text) {	
-    error_log(date("Y-m-d H:i:s")."> ".$text."\n", 3, "./log/debug.log");
+    $LOG_FILE = "./log/debug.log";
+
+    $fz = getLines($LOG_FILE);
+    echo $fz;
+    if($fz > 3000) {
+        $content = file_get_contents($LOG_FILE);
+        $content = explode("\n", $content);
+        array_splice($content, 0, 2000);
+        $newcontent = implode("\n", $content);
+        file_put_contents($LOG_FILE, $newcontent);
+    }
+    error_log(date("Y-m-d H:i:s")."> ".$text."\n", 3, $LOG_FILE);
 }
 
 function formatBytes($size, $precision = 2){	$base = log($size, 1024);	$suffixes = array('', 'K', 'M', 'G', 'T');	return round(pow(1024, $base - floor($base)), $precision) .' '. $suffixes[floor($base)];}

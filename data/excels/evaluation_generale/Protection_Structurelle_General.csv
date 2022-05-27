@@ -1,7 +1,7 @@
 Q_ID;Question;R1;R2 ;R3;R4;R5;R6;
-stru1;Quel type de parc avez-vous ? ;Ne sait pas /Non applicable  ;Parc électrique avec combinaison clotûres fixes et mobiles ou semi mobiles;Parc électrique fixe ;Parc mobile ou semi mobile ;Par mobile non électrifié;Parc fixe non électrifié ;;;;;;;;;;
-stru2;Quel est l'état global de vos clôtures ?;Ne sait pas /Non applicable  ;Bon (clôture récente et en bon état);Moyen;Mauvais (ancienne clôture dégradée);NA;NA;;;;;;;;;;
-stru3;Souhaitez vous mettre en place des moyens de protection ?;Ne sait pas /Non applicable  ;Oui;Non;NA;NA;NA;;;;;;;;;;
-stru4;Des protections d'urgence sont-elles disponibles (Lumineuses, olfactives, sonores, physiques) en cas de risque accru d'exposition à la prédation ? ;Ne sait pas /Non applicable  ;>3 de types différents ;>2 de types différents;>1;Aucune ;NA;;;;;;;;;;
-stru5;Un système d'alarme localisé est-il disponible pour prévenir de faits de prédations (Maploup, ProxyLoup, Groupes whatsapp, etc.) ?;Ne sait pas /Non applicable  ;Oui, MapLoup ou ProxyLoup ;Oui, Groupes Whatsapp ou autre ;Non;NA;NA;;;;;;;;;;
-stru6;Des tirs ont-ils été mis en place dans le cas de prédation par le Loup gris? ;Ne sait pas /Non applicable  ;Létal sélectif (tirs de défense simple)  ;Non létal (tir d'effarouchement) ;Létal non sélectif;NA;NA;;;;;;;;;;
+stru1;Quel type de parc avez-vous ? ;Ne sait pas / Non applicable  ;Parc électrique avec combinaison clotûres fixes et mobiles ou semi mobiles;Parc électrique fixe ;Parc mobile ou semi mobile ;Par mobile non électrifié;Parc fixe non électrifié ;;;;;;;;;;
+stru2;Quel est l'état global de vos clôtures ?;Ne sait pas / Non applicable  ;Bon (clôture récente et en bon état);Moyen;Mauvais (ancienne clôture dégradée);NA;NA;;;;;;;;;;
+stru3;Souhaitez vous mettre en place des moyens de protection ?;Ne sait pas / Non applicable  ;Oui;Non;NA;NA;NA;;;;;;;;;;
+stru4;Des protections d'urgence sont-elles disponibles (Lumineuses, olfactives, sonores, physiques) en cas de risque accru d'exposition à la prédation ? ;Ne sait pas / Non applicable  ;>3 de types différents ;>2 de types différents;>1;Aucune ;NA;;;;;;;;;;
+stru5;Un système d'alarme localisé est-il disponible pour prévenir de faits de prédations (Maploup, ProxyLoup, Groupes whatsapp, etc.) ?;Ne sait pas / Non applicable  ;Oui, MapLoup ou ProxyLoup ;Oui, Groupes Whatsapp ou autre ;Non;NA;NA;;;;;;;;;;
+stru6;Des tirs ont-ils été mis en place dans le cas de prédation par le Loup gris? ;Ne sait pas / Non applicable  ;Létal sélectif (tirs de défense simple)  ;Non létal (tir d'effarouchement) ;Létal non sélectif;NA;NA;;;;;;;;;;

@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 21, 2022 at 08:42 PM
+-- Generation Time: May 27, 2022 at 12:59 PM
 -- Server version: 5.7.24
 -- PHP Version: 8.0.1
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `gmhl`
+-- Database: `cerp`
 --
 
 -- --------------------------------------------------------
@@ -181,10 +181,13 @@ CREATE TABLE `questionnaires` (
 --
 
 CREATE TABLE `questionnaires_names` (
+  `env` varchar(10) NOT NULL,
   `category` varchar(100) NOT NULL,
   `number` int(11) NOT NULL,
+  `version` int(11) NOT NULL DEFAULT '0',
   `user_id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL
+  `name` varchar(100) NOT NULL,
+  `update_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -212,7 +215,8 @@ CREATE TABLE `users` (
   `modificationTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `connexions` text,
   `rMessages` text,
-  `rComments` text
+  `rComments` text,
+  `mean` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -283,7 +287,7 @@ ALTER TABLE `questionnaires`
 -- Indexes for table `questionnaires_names`
 --
 ALTER TABLE `questionnaires_names`
-  ADD PRIMARY KEY (`category`,`number`,`user_id`);
+  ADD PRIMARY KEY (`env`,`category`,`number`,`version`,`user_id`);
 
 --
 -- Indexes for table `test`

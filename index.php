@@ -113,6 +113,7 @@ $description = "";
 
                     if (data) {
                     Highcharts.chart('chart-container', {
+                        
                         chart: {
                             inverted: true
                         },
@@ -147,7 +148,7 @@ $description = "";
                         },
                         {
                             type: 'line',
-                            name: 'Votre score - version <?=$SELECTED_VERSION[$_GET['category']]?>',
+                            name: 'Votre score - version <?=get_selected_version($_GET['category'])?>',
                             data: dataV,
                             lineWidth:0,
                             color: '#f8dba6',

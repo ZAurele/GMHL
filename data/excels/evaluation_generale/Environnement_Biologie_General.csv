@@ -1,7 +1,7 @@
 Q_ID;Question;R1;R2 ;R3;R4;R5;R6
-bio1;A quelle période de l'année vos parcelles sont-elles pâturées ? ;Ne sait pas /Non applicable;Novembre/décembre ;Janvier/février ;Octobre;Mars à mai ;Juin à septembre 
-bio2;A quelle distance de votre exploitation ou de vos pâturage est intervenu le dernier évènement de prédation ? ;Ne sait pas /Non applicable;>40km;>20km;>10km;>5km;<5km
-bio3;Combien de temps s'est écoulé depuis la dernière attaque ? ;Ne sait pas /Non applicable;>1 an ;>1 mois;<1 mois ;<1 semaine ;NA
-bio4;Si vous avez vu le prédateur, a-t-il pris la fuite en vous voyant ? ;Ne sait pas /Non applicable;Oui;Non;NA;NA;NA
-bio5;Dans quel cercle lié à la prédation vous situez-vous ? ;Ne sait pas /Non applicable;Pas de cercle ;Cerle 3 ;Cercle 2 ;Cercle 1 ;Cercle 0 
-bio6;Quelle est la présence du Loup gris sur votre territoire ? ;Ne sait pas /Non applicable;Présence occasionnelle de loups solitaires;Zone de Présence Permanente Non meutes;Zone de Présence Permanente meutes ;Zone de Présence Permanente meute avec foyers de prédation ;NA
+bio1;A quelle période de l'année vos parcelles sont-elles pâturées ? ;Ne sait pas / Non applicable;Novembre/décembre ;Janvier/février ;Octobre;Mars à mai ;Juin à septembre 
+bio2;A quelle distance de votre exploitation ou de vos pâturage est intervenu le dernier évènement de prédation ? ;Ne sait pas / Non applicable;>40km;>20km;>10km;>5km;<5km
+bio3;Combien de temps s'est écoulé depuis la dernière attaque ? ;Ne sait pas / Non applicable;>1 an ;>1 mois;<1 mois ;<1 semaine ;NA
+bio4;Si vous avez vu le prédateur, a-t-il pris la fuite en vous voyant ? ;Ne sait pas / Non applicable;Oui;Non;NA;NA;NA
+bio5;Dans quel cercle lié à la prédation vous situez-vous ? ;Ne sait pas / Non applicable;Pas de cercle ;Cerle 3 ;Cercle 2 ;Cercle 1 ;Cercle 0 
+bio6;Quelle est la présence du Loup gris sur votre territoire ? ;Ne sait pas / Non applicable;Présence occasionnelle de loups solitaires;Zone de Présence Permanente Non meutes;Zone de Présence Permanente meutes ;Zone de Présence Permanente meute avec foyers de prédation ;NA

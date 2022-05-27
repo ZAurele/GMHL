@@ -15,7 +15,7 @@ if (isset($_POST["update_questions"]) && isset($_POST["category"]) && isset($_PO
                 "user_id" => $USER_ID
             );
             if (''.$value == '') $value = 0;
-            update_answer($link, $_POST["category"], $_POST["type"], $key, $value, $USER_ID, $SELECTED_NB[$_POST["category"]],$SELECTED_VERSION[$_POST["category"]], $ENV);
+            update_answer($link, $_POST["category"], $_POST["type"], $key, $value, $USER_ID, get_selected_nb($_POST["category"]),get_selected_version($_POST["category"]), $ENV);
             
             header('Location: ?page=results&category='.$_POST["category"]);
         }
@@ -28,12 +28,12 @@ if ($valid_q) {
     $category = $_GET['category'];
     $type = $_GET['type'];
 
-    $sql = "SELECT * FROM questionnaires where user_id = '".$USER_ID."' and category = '".$category."' and type = '".$type."' and number = ".$SELECTED_NB[$category]." and version = ".$SELECTED_VERSION[$category]." and env = '".$ENV."' order by id DESC";
+    $sql = "SELECT * FROM questionnaires where user_id = '".$USER_ID."' and category = '".$category."' and type = '".$type."' and number = ".get_selected_nb($category)." and version = ".get_selected_version($category)." and `env` = '".$ENV."' order by id DESC";
     $rows = select_request($link,$sql);
 
     $saved_answers = array();
     foreach ($rows as $row) {
-        $saved_answers[$row["id"]] = $row["answer"];
+        $saved_answers[strtolower($row["id"])] = $row["answer"];
     }
 
     $values = $QUESTIONS[$category]["values"][$type]["values"];
@@ -43,6 +43,8 @@ if ($valid_q) {
             <div class="row uniform">
                 <?php
                     foreach($values as $id => $qu) {
+                        $id = strtolower($id);
+
                         ?>
                             <div class="12u">
                                 <h3 class="" style="text-decoration: underline;"><?=$qu["title"]?></h3>

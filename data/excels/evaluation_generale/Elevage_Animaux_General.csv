@@ -1,9 +1,9 @@
 Q_ID;Question;R1;R2 ;R3;R4;R5;R6
-ani1;Quelle(s) espèce(s) élevez-vous ? ;Ne sait pas /Non applicable;Equins;Bovins;Caprins;Ovins ;NA
-ani2;Quel est votre objectif de production ? ;Ne sait pas /Non applicable;Lait;Génétique, viande, autre ;NA;NA;NA
-ani3;Combien de jeunes par mère avez-vous en moyenne? ;Ne sait pas /Non applicable;1;2;3;>3;NA
-ani4;Vos animaux émettent-ils des sons ? ;Ne sait pas /Non applicable;"Troupeau ""bavard"" ou qui prévient en cas d'événement inhabituel, troupeau équipé de sonnaille ";Troupeau silencieux ou qui ne prévient pas ;NA;NA;NA
-ani5;Comment réagissent vos bêtes face à une perturbation ? ;Ne sait pas /Non applicable;Regroupement ;Dispersion ;NA;NA;NA
-ani6;Quelle est l'attitude de vos bêtes lorsque vous venez à leur rencontre ? ;Ne sait pas /Non applicable;Les bêtes viennent spontanément au contact de l'éleveur dès qu'elles le voient ;Les bêtes viennent au contact de l'éleveur lorsqu'il les appelle ;Les bêtes sont indifférentes/ne bougent pas lorsque les éleveurs les appellent, mais elles restent calmes lorsqu'il vient les voir ;Les bêtes s'éloignent ou ne bougent pas lorsque l'éleveur les appelle et partent lorsqu'il vient à leur contact ;Les bêtes s'éloignent à la vue de l'éleveur 
-ani7;Comment définiriez-vous le comportement de vos bêtes ? ;Ne sait pas /Non applicable;Troupeau apaisé, mange correctement, prise de poids bonne ;Difficultés à prendre du poids;Signes de stress;Signes de stress importants, prostration ;NA
-ani8;Quel est le pourcentage d'animaux pouvant avoir des difficultés à se déplacer dans votre troupeau ? ;Ne sait pas /Non applicable;<1%;<5%;5 à 10 % ;10 à 20 %;>20%
+ani1;Quelle(s) espèce(s) élevez-vous ? ;Ne sait pas / Non applicable;Equins;Bovins;Caprins;Ovins ;NA
+ani2;Quel est votre objectif de production ? ;Ne sait pas / Non applicable;Lait;Génétique, viande, autre ;NA;NA;NA
+ani3;Combien de jeunes par mère avez-vous en moyenne? ;Ne sait pas / Non applicable;1;2;3;>3;NA
+ani4;Vos animaux émettent-ils des sons ? ;Ne sait pas / Non applicable;"Troupeau ""bavard"" ou qui prévient en cas d'événement inhabituel, troupeau équipé de sonnaille ";Troupeau silencieux ou qui ne prévient pas ;NA;NA;NA
+ani5;Comment réagissent vos bêtes face à une perturbation ? ;Ne sait pas / Non applicable;Regroupement ;Dispersion ;NA;NA;NA
+ani6;Quelle est l'attitude de vos bêtes lorsque vous venez à leur rencontre ? ;Ne sait pas / Non applicable;Les bêtes viennent spontanément au contact de l'éleveur dès qu'elles le voient ;Les bêtes viennent au contact de l'éleveur lorsqu'il les appelle ;Les bêtes sont indifférentes/ne bougent pas lorsque les éleveurs les appellent, mais elles restent calmes lorsqu'il vient les voir ;Les bêtes s'éloignent ou ne bougent pas lorsque l'éleveur les appelle et partent lorsqu'il vient à leur contact ;Les bêtes s'éloignent à la vue de l'éleveur 
+ani7;Comment définiriez-vous le comportement de vos bêtes ? ;Ne sait pas / Non applicable;Troupeau apaisé, mange correctement, prise de poids bonne ;Difficultés à prendre du poids;Signes de stress;Signes de stress importants, prostration ;NA
+ani8;Quel est le pourcentage d'animaux pouvant avoir des difficultés à se déplacer dans votre troupeau ? ;Ne sait pas / Non applicable;<1%;<5%;5 à 10 % ;10 à 20 %;>20%

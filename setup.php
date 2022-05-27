@@ -8,8 +8,8 @@ for($i = 1; $i < 5; $i++) {
                 $a = rand(1, count($c["values"]) - 1);
 
                 //if ($i == 4) $a = count($c["values"]) - 1;
-
-                update_answer($link, $category, $type, $id, $a, $i, $SELECTED_NB[$category],$SELECTED_VERSION[$category],$ENV);
+                $id = strtolower($id);
+                update_answer($link, $category, $type, $id, $a, $i, $SELECTED_NB[$category],get_selected_version($category),$ENV);
 
                 echo "User $i set choice ".$c["values"][$a]." ($a) for $id<br>";
             }

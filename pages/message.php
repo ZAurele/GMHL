@@ -55,12 +55,12 @@ if(!$message_envoye):?>
 	                        
 	                        foreach ($categories as $categorie) {
 	                        	$checked = "";
-	                        	$id = $categorie['id']; 
+	                        	$cat_id = $categorie['id']; 
 	                        	
-                        		if (intval($posts['categorie']) == $id) {
-                        			echo "<option value=$id selected>";
+                        		if (intval($posts['categorie']) == $cat_id) {
+                        			echo "<option value=$cat_id selected>";
                         		} else {
-	                        		echo "<option value=$id>";
+	                        		echo "<option value=$cat_id>";
                         		}
 	                        	echo $categorie['categorie'];
 	                            echo "</option>";
