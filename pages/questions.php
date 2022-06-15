@@ -1,4 +1,5 @@
 
+
 <?php
 $valid_q = isset($_GET["category"]) && isset($_GET["type"]);
 
@@ -86,5 +87,6 @@ if ($valid_q) {
     <?php
 }
 ?>
+
 
 

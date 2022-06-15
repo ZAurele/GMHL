@@ -118,7 +118,7 @@ function debug($text) {
     $LOG_FILE = "./log/debug.log";
 
     $fz = getLines($LOG_FILE);
-    echo $fz;
+    
     if($fz > 3000) {
         $content = file_get_contents($LOG_FILE);
         $content = explode("\n", $content);

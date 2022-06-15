@@ -1,3 +1,4 @@
+
 <?php 
 $QUESTIONS_GROUPS = array("fr" => array(
 	"enquete_social" => array(
@@ -247,7 +248,7 @@ if (isset($_GET['category'])) {
         }
     }
 
-    if (!array_key_exists(get_selected_version($_GET['category']), $VERSIONS)) {
+    if (count(array_keys($VERSIONS)) !=  0 and !array_key_exists(get_selected_version($_GET['category']), $VERSIONS)) {
         set_selected_version($_GET['category'], max(array_keys($VERSIONS)));
     }
 }
@@ -438,3 +439,4 @@ function update_answer($link, $category, $type, $key, $value, $user_id, $number,
 }
 
 ?>
+

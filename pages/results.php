@@ -1,3 +1,12 @@
+<p style="text-align:center"> <i>Cette évaluation vous fournit <b> un premier regard </b>sur les principaux axes d’amélioration de votre exploitation dans un 
+contexte de prédation et donc des pistes de réflexions pour vous protéger au mieux. L’outil du CERP est porté par plusieurs 
+structures qui peuvent venir vous aider (conseils chiens de protections, clôtures, etc.) que vous pourrez trouver sur l’onglet 
+à gauche <b>«Les acteurs »</b> puis <b>«Trombinoscope »</b>.</i> </p>
+
+<p style="text-align:justify">
+
+Vous avez la possibilité de bénéficier d’aides financières pour mettre en place les moyens de protections. Afin de connaitre les aides auxquelles vous êtes éligibles, vous pouvez vous rendre sur la barre à gauche, sur « Ressources » puis « Connaître mes droits ».  
+</p>
 <?php 
 
 $sql = "SELECT id FROM users where mean != 1";
@@ -386,3 +395,42 @@ function changedVersion(value) {
     
 }
 </script>
+
+<p style="text-align:justify"> <b><h4>Ce graphique indique les résultats de votre évaluation. </h4> </b>
+</p><p style="text-align:justify">
+<b>Le cercle </b> indique votre pourcentage quant à l’axe évalué :<b> plus son score est élevé, plus cet axe accroît l’exposition à la prédation</b>. <b>Le carré noir</b> correspond à la moyenne des autres éleveur.euse.s ayant utilisé le CERP. Cela vous permet donc de situer la vulnérabilité de votre exploitation par rapport aux autres éleveur.euse.s.  
+</p><p style="text-align:justify">
+Les pourcentages attribués à chacun des axes permettent d’identifier les principaux axes d’améliorations de votre exploitation face à la prédation.  
+</p><p style="text-align:justify">
+<h3><b>Explication du graphique </b>:</h3>  
+</p><p style="text-align:justify">
+Les explications qui vont suivre seront très générales. 
+Si vous souhaitez comprendre précisément les différents facteurs appartenant à chacun des axes, veuillez cliquer sur l’onglet <b>« Les ressources »</b> puis <b>
+    « Pourquoi ces facteurs ? »</b> dans la barre de gauche. La justification de ces facteurs vous permet de cerner les axes d’amélioration de votre exploitation.  
+    </p><p style="text-align:justify">
+<b>« Contexte économique » :</b> Cet axe correspond à l’influence de la forme de votre exploitation ainsi que sa situation économique sur l’exposition face à la prédation. Cet axe peut être à la fois une force (si le score est bas) ou une faiblesse (si le score est haut). Il apparait important d’avoir conscience de l’influence de ces facteurs sur la prédation. Il est par exemple plus facile d'équiper et d'être vigilant sur une exploitation avec un schéma en O (avec l'exploitation au milieu) que sur une exploitation en T ou L où l'exploitation ne donne pas sur tout le troupeau ou l’ensemble des parcelles. De même, les plus grands parcs sont plus difficiles à garder et présentent plus de risque d’oublier une bête quelque part. Un grand parc favorise la dispersion des animaux et accroît le risque de prédation. Par ailleurs, plus la situation financière de l’exploitation sera fragile, plus il sera compliqué pour vous de couvrir le montant investi dans les moyens de protection et à la charge de l’éleveur.euse.  
+</p><p style="text-align:justify">
+<b>« Contexte social » : </b>Cet axe permet de saisir des facteurs d’ordre <b>moral et psychologique</b>. 
+    Souvent sous-considérés, ils peuvent avoir une influence importante sur la prédation. 
+    Les situations de crises peuvent être générées ou renforcées par la prédation. 
+    Les périodes de détresse psychologiques sont donc à prendre très au sérieux. Cela est d'autant plus vrai que dans un contexte de prédation, le phénomène d'isolement est renforcé et la vulnérabilité des personnes comme des exploitations est accentuée. L'intervention de professionnels, bénévoles ou proches bienveillants peut vous aider à résister aux crises. Pareillement, des difficultés vécues dans la vie personnelle perturbent l'équilibre avec la vie professionnelle. Cet équilibre lorsqu'il est rompu, favorise les situations de crise et réduisent les capacités à détecter, agir, etc. Si votre score est élevé concernant ce facteur, il semblerait que vous ayez peut-être besoin d’une aide ou d’un soutien moral. Pour cela, vous pouvez vous rendre dans l’onglet « Les ressources » puis « Ressources utiles » vous indiquant qui contacter en cas de besoin d’accompagnement moral et psychologique.  
+    </p><p style="text-align:justify">
+<b>« Elevage pasto » :</b> Ce domaine concerne vos pratiques pastorales (fréquence des visites de lot, nombres de lots, type de pâturage, type de naissance,
+ points d’eau, etc.). Si votre score est élevé dans cette partie, c’est qu’il apparait important de vous questionner 
+ sur vos méthodes pastorales afin de rendre votre élevage plus résilient face à la prédation. Par exemple, plus il y a de lots, 
+ plus il est difficile de tout protéger. Cela accroît notamment la charge mentale et contribue à réduire la vigilance de l’éleveureur.euse.s 
+ ou berger.ère.s. Cette caractéristique peut apparaitre difficile à faire changer sur un temps cours, car elle nécessite une réelle réorganisation. 
+ Il est à noter qu’il existe des éléments plus simples et basiques à changer directement pour réduire la vulnérabilité en lien avec ce facteur. Par exemple, 
+ vous pourriez déplacer vos points d’eau afin de les rendre davantage visibles et moins attirants pour des prédateurs, ou encore veiller à bien vérifier qu’il 
+ n’y ait pas de carcasses/placentas ou autres déchets organiques sur votre parc.  
+ </p><p style="text-align:justify">
+<b>« Elevage animaux » : </b>Cet axe se concentre spécifiquement sur vos animaux d’élevage et leurs caractéristiques pouvant influencer le phénomène de prédation. Ainsi, si votre score est élevé dans ce domaine, cela signifie que vos animaux sont particulièrement vulnérables à la prédation par leurs caractéristiques propres. Tout d’abord, les sensibilités entre les espèces peuvent réduire ou accroître le risque de prédation. Globalement, les petits ruminants sont les plus exposés à la prédation ce qui n'écarte par la vulnérabilité d'autres types d'élevage (bovin, équin, etc.). Pareillement, des bêtes farouches et éparpillées dans une parcelle s'exposent plus à la prédation. Les troupeaux grégaires ayant le réflexe de se regrouper en cas de perturbation sont plus faciles à protéger et plus difficiles à attaquer pour un prédateur. Par ailleurs, la relation entre vous-même et vos animaux peut s’avérer décisive pour faire face à la prédation. Une relation dégradée entre un.e éleveur.euse ou un.e berger.ère et ses animaux favorise des comportements et situations inhabituelles et délétères. Une relation saine encourage le retour au calme du troupeau après un évènement inhabituel/stressant. La détérioration brutale de l'attitude du troupeau à l'égard de son/sa gardien.ne est un indicateur de perturbation à prendre en compte, notamment dans un contexte de prédation. Ainsi, bien connaitre vos animaux et travailler dans un climat de confiance avec ces derniers peut contribuer à réduire le risque de prédation sur votre troupeau. 
+</p><p style="text-align:justify">
+<b>« Protection structurelle » :</b> Cet axe concerne principalement l’influence de vos clôtures sur la prédation. Les clôtures, comme le type de parc, ont une influence sur l'accès des prédateurs au troupeau. Plus la clôture est difficile à passer, plus le risque de traverser la clôture diminue. Ainsi, une clôture haute et électrifiée réduit l'exposition à la prédation alors que l'absence de clôture ou des clôtures très basses l'augmente et renforce le comportement du prédateur. Ce même, l'état des clôtures du parc est déterminant quant à son efficacité. Pour connaitre les formats de clôtures les plus efficaces contre la prédation lupine, vous pouvez vous rendre sur la barre à gauche dans l’onglet « Les ressources » puis « Ressources utiles » pour enfin cliquer sur « Clôtures de protection contre le loup » 
+</p><p style="text-align:justify">
+<b>« Protection vivante » :</b> Cet axe concerne l’influence de votre type de gardiennage (humain et non humain) sur votre troupeau. L’absence totale de gardiennage sur votre troupeau augmente considérablement la vulnérabilité de votre exploitation face à la prédation. L’un des meilleurs moyens de protection face à la prédation reste le chien de protection. Si vous ne connaissez pas ce mode de protection, il existe une fiche explicative sur les chiens, vous pouvez vous rendre dans la barre à gauche dans l’onglet « Les ressources » puis « Ressources utiles » pour enfin cliquer sur « Chiens de travail en agriculture ». Vous pouvez également contacter l’Association de Vulgarisation et Initiatives en Ethologie (VIE), partenaire du projet disponible pour répondre à vos questions : Camille Fraissard - Co-présidente et éthologue / associationdevie@gmail.com ou l’institut de l’élevage en région https://idele.fr/fileadmin/medias/Documents/Carte_referents_chiens_de_protection_2021.pdf.  
+</p><p style="text-align:justify">
+<b>« Environnement milieu » : </b>Cet axe concerne l’environnement physique de votre exploitation. Si vous avez un score élevé sur cet axe, c’est que l’une des principales failles de l’exploitation est l’environnement de votre exploitation. Par exemple, un cours d'eau proche de l’exploitation apparait difficile à clôturer. Les bandes enherbées attenantes aux petits cours d'eau sont des couloirs de circulation et potentiellement un garde-manger lorsqu'elles sont pâturées. Les cours d'eau à sec en été sont des corridors privilégiés alors même que les grands cours d'eau sont peu voir infranchissables et réduisent l'exposition du troupeau à la prédation. Afin de réduire cette vulnérabilité, il faudrait par exemple éviter de mettre le troupeau (surtout suité) dans la parcelle proche du cours d’eau. Un autre exemple comme peut se traduire à travers la présence d’objet remarquables dans le pâturage (objets imposants, rochers, tas de bois, etc.) et niveau d’embroussaillement. Les prédateurs peuvent les utiliser pour se dissimuler. Plus le nombre d'objets remarquables augmente, plus le risque d'exposition augmente. Ainsi, enlever les potentiels objets remarquables comme des tas de bois peut réduire la vulnérabilité du troupeau.  
+</p><p style="text-align:justify">
+<b>« Environnement biologie » : </b>Cet axe se centre sur le prédateur en lui-même. Par exemple, certaines périodes sont plus propices à la prédation (juin à septembre). Ainsi, si votre troupeau pâture pendant cette période sur une parcelle non protégée, les risques de prédation augmentent plus que sur une autre période. Par ailleurs, les cercles prévus dans le cadre du PNA Loup et activités d’élevage sont liés à la fréquence des évènements de prédation. Ce classement donne une information reconnue quant au risque de prédation sur une exploitation. Cependant, être dans le Cercle 0 ne signifie pas s'exposer à une attaque imminente, et ne pas être dans l'un des cercles ne signifie pas qu'un évènement de prédation lié au loup est à exclure. 
+</p><p style="text-align:justify">
