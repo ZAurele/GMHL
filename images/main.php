@@ -8,7 +8,7 @@ par les Mammifères prédateurs, en particulier le Loup gris <i>Canis lupus</i>.
 </p>
 <p style="text-align:center"> Le CERP a été construit par 7 structures principales <i>(appelées aussi "Membres fondateurs")</i> en partenariat avec de nombreux acteurs issus du monde agricole, 
 de la recherche scientifique en écologie et en sciences sociales. Il s'appuie en effet sur les connaissances d'expert-es et d'éleveur-euses Limousin-es, Français-es, Européen-nes et parfois même au-delà ! 
-
+La <b>méthode scientifique technique</b> pour la mise en place et l'amélioration du CERP a d'ailleurs bénéficié d'un <i> avis favorable du Conseil Scientifique national en charge du Plan National d'Actions sur le loup et les activités d'élevage en 2021</i>. 
 </p>
 <p style="text-align:center">
  Dans une optique de constante amélioration, le questionnaire technique du CERP est précédé d’une enquête sociale 

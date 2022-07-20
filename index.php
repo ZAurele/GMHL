@@ -40,7 +40,7 @@ $description = "";
             </script>
         <meta name="keywords" content=""/>
         <meta charset="utf-8" />
-        <meta property="og:image" content="http://adnskis.com/images/logo.png" />
+        <meta property="og:image" content="http://projetcerp.com.com/images/logo.png" />
         <meta property="og:title" content="CERP" />
         <meta property="og:description" content="<?=$description?>" />
         

@@ -22,9 +22,6 @@ if (isset($_POST["update_questions"]) && isset($_POST["category"]) && isset($_PO
         }
     }
 }
-
-
-
 if ($valid_q) {
     $category = $_GET['category'];
     $type = $_GET['type'];
