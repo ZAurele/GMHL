@@ -91,7 +91,7 @@ if (isset($_GET['category'])) {
 
                 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' 
                         || $_SERVER['SERVER_PORT'] == 443) ? 'https://' : 'http://';
-                header('Location: '.$protocol.$_SERVER['HTTP_HOST'].str_replace('selected=','',str_replace('delete=','',$_SERVER['REQUEST_URI'])).'&selected=1');
+                header($header.'Location: '.$protocol.$_SERVER['HTTP_HOST'].str_replace('selected=','',str_replace('delete=','',$_SERVER['REQUEST_URI'])).'&selected=1');
             }
             ?>
 
@@ -164,7 +164,7 @@ if (isset($_GET['category'])) {
                     unset($_GET["add"]);
                     $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' 
                         || $_SERVER['SERVER_PORT'] == 443) ? 'https://' : 'http://';
-                    header('Location: '.$protocol.$_SERVER['HTTP_HOST'].str_replace('add=','',$_SERVER['REQUEST_URI'])."&selected=".($nb+1));
+                    header($header.'Location: '.$protocol.$_SERVER['HTTP_HOST'].str_replace('add=','',$_SERVER['REQUEST_URI'])."&selected=".($nb+1));
                 } elseif(in_array($_POST["multi"], $names)) {
                     $error = "Ce nom est déja utilisé ! Veuillez en choisir un autre.";
                 } else {
