@@ -11,7 +11,7 @@ liste des mesures auxquelles vous avez droit, leur pourcentage de prise en charg
 </div>
 <p style="text-align:center">
 Pour rejoindre le questionnaire en ligne, 
-<a href="https://ee.kobotoolbox.org/x/KY9GsTJB" title="HTML color codes" style="color:#17202A"> <u>cliquez ici !</u> </a></p>
+<a href="https://ee.kobotoolbox.org/x/KY9GsTJB" target="_blank" title="HTML color codes" style="color:#17202A"> <u>cliquez ici !</u> </a></p>
 
 
 
