@@ -248,7 +248,7 @@ if (isset($_GET['category'])) {
         }
     }
 
-    if (count(array_keys($VERSIONS)) !=  0 !array_key_exists(get_selected_version($_GET['category']), $VERSIONS)) {
+    if (count(array_keys($VERSIONS)) !=  0 && !array_key_exists(get_selected_version($_GET['category']), $VERSIONS)) {
         set_selected_version($_GET['category'], max(array_keys($VERSIONS)));
     }
 }
