@@ -20,6 +20,7 @@ $host = "projeawcerp.mysql.db";
 $user = "projeawcerp";
 $passwd = "LECERPCESTtropcool192387";
 $db = "projeawcerp";
+$port=3306;
 
 if (is_localhost()) {
 	$host="localhost";
